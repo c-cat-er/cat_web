@@ -1,0 +1,59 @@
+﻿@model modpack.ViewModels.COrderViewModel
+@{
+    ViewData["Title"] = "OrderShippingDetail";
+}
+
+
+
+<div>
+    <h4>訂單寄送資訊  @Html.ActionLink("", "OrderShippingEdit", new { id = Model.order.OrderId }, new { @class = "fas fa-edit" })</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.shippingStatus.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.shippingStatus.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.order.RecipientName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.order.RecipientName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.order.RecipientAddress)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.order.RecipientAddress)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.order.BillRecipientName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.order.BillRecipientName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.order.BillRecipientAddress)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.order.BillRecipientAddress)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.shipping.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.shipping.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.shipping.DeliveryCost)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.shipping.DeliveryCost)
+        </dd>
+    </dl>
+</div>
+<div>
+    @* <a asp-action="Edit" asp-route-id="@Model?.OrderId">Edit</a> | *@
+    <a asp-action="List">返回</a>
+</div>

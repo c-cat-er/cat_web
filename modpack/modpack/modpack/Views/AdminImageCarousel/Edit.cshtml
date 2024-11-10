@@ -1,0 +1,34 @@
+﻿@model modpack.ViewModels.CImageCarouselViewModel
+<h1>輪播管理</h1>
+<h4>修改</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" asp-route-id="@Model.aImageCarouselID" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="aImageCarouselID" />
+            <div class="form-group">
+                <label asp-for="aImageFile" class="control-label"></label>
+                <!--<input asp-for="ImageFile" class="form-control" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>-->
+                <img src="~/images/carousel/@Model.aImageFile" width="80" height="60" />
+                <span>當前檔名：@Model.aImageFile</span>
+                <input type="file" name="photo" class="form-control" value="@Model.aImageFile" />
+            </div>
+            <div class="form-group">
+                <label asp-for="aImageDescription" class="control-label"></label>
+                <input asp-for="aImageDescription" class="form-control" />
+                <span asp-validation-for="aImageDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="確認修改" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="List">回到列表</a>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

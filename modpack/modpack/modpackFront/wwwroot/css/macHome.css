@@ -1,0 +1,110 @@
+﻿
+.product-image {
+    position: relative;
+    display: inline-block;
+}
+
+.status {
+    font-size: 28px !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    transform: rotate(45deg) translate(50%, 90%);
+    transform-origin: 100% 0%;
+    width: 190px;
+    text-align: center;
+}
+
+.product-like-active {
+    /**/
+    color: green;
+}
+
+/* skeleton-1 */
+.skeleton-default {
+    position: relative;
+    display: none;
+}
+
+#skeletonContainer2 {
+    margin-right: -100px !important;
+}
+
+.skeleton-rectangle {
+    width: 250px;
+    height: 250px;
+    background-color: #e0e0e0;
+    animation: blink .5s infinite alternate;
+}
+
+.skeleton-rectangle-medium,
+.skeleton-rectangle-small {
+    width: 225px;
+    height: 40px;
+    background-color: #e0e0e0;
+    margin-top: 10px;
+    animation: blink 1.5s infinite alternate;
+}
+
+.skeleton-rectangle-small {
+    width: 150px;
+    height: 20px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1024) {
+    .skeleton-rectangle {
+        width: 330px;
+        height: 446px;
+    }
+
+    .skeleton-rectangle-medium {
+        width: 330px;
+        height: 21px;
+    }
+
+    .skeleton-rectangle-small {
+        width: 97px;
+        height: 20px;
+    }
+}
+
+/* skeleton-2 rwd*/
+@media (max-width: 768px) {
+    .skeleton-rectangle {
+        width: 245px;
+        height: 331px;
+    }
+
+    .skeleton-rectangle-medium {
+        margin-top: 12px;
+        width: 215px;
+        height: 20px;
+    }
+
+    .skeleton-rectangle-small {
+        width: 97px;
+        height: 20px;
+    }
+}
+
+.show-skeleton .skeleton-default {
+    display: block !important;
+}
+
+/*共用*/
+.hide {
+    display: none !important;
+}

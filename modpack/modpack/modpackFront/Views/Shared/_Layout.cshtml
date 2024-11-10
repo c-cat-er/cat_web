@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 基本網頁設定 -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+    <!-- 引入外部 CSS 檔案 -->
+    <link rel="stylesheet" href="~/css/vendor.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <!-- 設定網頁標題 -->
+    <title>Modpack</title>
+    <style>
+        
+        <!-- 用於特定視圖 style -->
+        @RenderSection("Styles", required: false)
+    </style>
+</head>
+
+<body>
+
+ @{
+        var configuration = (IConfiguration)Context.RequestServices.GetService(typeof(IConfiguration));
+        var VueUrl = configuration.GetSection("VueUrl").Value;
+        var buildUrl = configuration.GetSection("BackUrl").Value;
+    }
+
+    <!-- 頁面頭部 -->
+    <header class="header header-dark bg-dark header-sticky">
+        <div class="container">
+            <div class="row">
+                <!-- 導航欄 -->
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <!-- Logo -->
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand order-1 order-lg-2">
+                        <img src="@buildUrl/images/modpack_logo.svg" alt="Logo" />
+                    </a>
+                    <!-- 手機版選單按鈕 -->
+                    <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- 導航欄內容 -->
+                    <div class="collapse navbar-collapse order-3 order-lg-1" id="navbarMenu">
+                        <ul class="navbar-nav mr-auto">
+                            <!-- 精選商品選項 -->
+                            <li class="nav-item">
+                                 <!--<a asp-area="" asp-controller="Home" asp-action="FeaturedProducts" class="nav-link">精選商品</a> -->
+                               @if(User.Identity.IsAuthenticated==true)
+                                {
+                                    <a href="@VueUrl/product_listing/@User.Claims.FirstOrDefault().Value" class="nav-link">精選商品</a>
+                                }
+                                else{
+                                    <a href="@VueUrl/product_listing" class="nav-link">精選商品</a>
+                                }
+                              
+                            </li>
+                            
+                            <!-- 客製化包包選項 -->
+                            <li class="nav-item">
+                            @if(User.Identity.IsAuthenticated==true)
+                            {
+                                <a href="@VueUrl/Custom_listing/@User.Claims.FirstOrDefault().Value" class="nav-link">客製化背包</a>
+                            }else{
+                                <a href="@VueUrl/Custom_listing" class="nav-link">客製化背包</a>
+                            } 
+                               
+                            </li>
+                            
+                            <li class="nav-item">
+                                  <a asp-action="TestService" asp-route-id="1" asp-controller="Home" class="nav-link">客服</a>
+                            </li>
+       
+                        </ul>
+                    </div>
+
+                    <!-- 使用者相關選項 -->
+                    <div class="collapse navbar-collapse order-4 order-lg-3" id="navbarMenu2">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <a asp-area="" asp-controller="Authentication" asp-action="Logout" class="nav-link">登出</a>
+                                    <!-- 會員資料下拉選單 -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle"
+                                       href="#!"
+                                       id="navbarDropdown-10"
+                                       role="button"
+                                       data-toggle="dropdown"
+                                       aria-haspopup="true"
+                                       aria-expanded="false">
+                                            @User.Identity.Name
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown-10">
+                                        <li><a class="dropdown-item" asp-controller="UserProfile" asp-action="Profile">基本資料</a></li>
+                                        <li><a href="@VueUrl/Profile_order" class="dropdown-item">訂單</a></li>
+                                    </ul>
+                                </li>
+                                }
+                                else
+                                {
+                                <a asp-area="" asp-controller="Authentication" asp-action="Login" class="nav-link">登入</a>
+                                }
+                            </li>
+                            <!-- 搜尋框 -->
+                             <li class="nav-item">
+                             <a data-toggle="modal" data-target="#search" class="nav-link"
+                             ><i class="icon-search"></i
+                             ></a>
+                             </li>
+                            <!-- 購物車按鈕 -->
+                            <li class="nav-item cart">
+                                <a href="@VueUrl/Cart" class="nav-link"><span>購物車</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要內容區塊 -->
+    @RenderBody()
+
+    <!-- 頁面底部 -->
+    <footer class="bg-dark text-white py-0 ">
+        <div class="container">
+            <div class="row separated">
+                <div class="col-lg-6 py-10">
+                    <!-- 版權聲明區塊 -->
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p>
+                                 十九世紀後半開始，「南部背包」成為台灣外銷的驕傲。北部背包說的即是今日「台北大稻埕」一帶，在輝煌的全盛時期，當地聚集了約兩百多家背包店，而「ModPack」正是當中的代表。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 快速連結區塊 -->
+                    <div class="row">
+                        <div class="col-md-10">
+                            <ul class="list-group list-group-columns">
+                                <li class="list-group-item">
+                                    <a asp-area="" asp-controller="Home" asp-action="AboutUs">關於我們</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a asp-area="" asp-controller="Home" asp-action="ReachOut">聯絡我們</a>
+                                </li>
+                                <li class="list-group-item"><a asp-area="" asp-controller="Home" asp-action="FAQ">FAQ</a></li>
+                                <li class="list-group-item">
+                                    <a asp-area="" asp-controller="Home" asp-action="GoBlog">部落格</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a asp-area="" asp-controller="Home" asp-action="PrivacyPolicy">隱私權政策</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a asp-area="" asp-controller="Home" asp-action="StoreLocations">門市位置</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 訂閱與社群媒體連結區塊 -->
+                <div class="col-lg-6 py-10">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-10">
+                            <h4 class="eyebrow mb-2">Subscribe</h4>
+                            <div class="input-group">
+                                <input type="text" class="form-control form-control-lg" placeholder="Email" aria-label="Subscribe" aria-describedby="button-addon2" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-white" type="button" id="button-addon2">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-lg-10">
+                            <h4 class="eyebrow mb-2">Follow us</h4>
+                            <nav class="nav nav-icons">
+                                <a class="nav-link" href="#!"><i class="icon-facebook-o"></i></a>
+                                <a class="nav-link" href="#!"><i class="icon-twitter-o"></i></a>
+                                <a class="nav-link" href="#!"><i class="icon-youtube-o"></i></a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 購物車模態框 -->
+    <div class="modal fade sidebar" id="cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- 購物車內容將在這裡顯示 -->
+                </div>
+                <div class="modal-footer">
+                    <div class="container-fluid">
+                        <div class="row gutter-0">
+                            <div class="col d-none d-md-block">
+                                <a href="cart.html" class="btn btn-lg btn-block btn-secondary">View Cart</a>
+                            </div>
+                            <div class="col">
+                                <a href="checkout.html" class="btn btn-lg btn-block btn-primary">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入外部 JavaScript 檔案 -->
+    <script src="~/js/vendor.min.js"></script>
+    <script src="~/js/app.js"></script>
+    <!-- 若有額外腳本，則在此處載入 -->
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

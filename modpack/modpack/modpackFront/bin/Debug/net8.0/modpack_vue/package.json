@@ -1,0 +1,24 @@
+{
+  "name": "modpack_client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vueform/slider": "^2.1.10",
+    "mitt": "^3.0.1",
+    "pinia": "^2.1.7",
+    "router": "^1.3.8",
+    "sweetalert2": "^11.10.6",
+    "vue": "^3.3.11",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.6.2",
+    "vite": "^5.1.6"
+  }
+}

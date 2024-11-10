@@ -1,0 +1,65 @@
+﻿@model modpack.ViewModels.CAdminViewModel
+@{
+    var script = TempData["Script"] as string;
+    if (!string.IsNullOrEmpty(script))
+    {
+        @Html.Raw(script)
+    }
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - 當前管理者</title>
+    <style>
+        .img {
+            width: 100px;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>當前管理者管理</h1>
+    <p class="site-right">
+        <a asp-controller="AdminUser" asp-action="Edit">我要修改資料</a>
+        <a asp-action="Logout" class="btn-delete" onclick="if (confirm('確定要登出嗎?'))'}">登出</a>
+    </p>
+    <hr />
+    <div class="row">
+        <div class="col-6">
+            <img class="img" src="~/images/admin/@Model.AdminImage" />
+        </div>
+        <div class="col-5">
+            <table class="table">
+                <tr>
+                    <th>
+                        職級
+                    </th>
+                    <td>
+                        @Html.DisplayFor(model => model.TitleName)
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        姓名
+                    </th>
+                    <td>
+                        @Html.DisplayFor(model => model.AdminName)
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        管理者編號
+                    </th>
+                    <td>
+                        @Html.DisplayFor(model => model.aAdminCode)
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-modpack-df626c30-fbed-4365-8a85-127b97f437fe</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\AdminDataAnlysis_de\**" />
+    <Compile Remove="Views\Home\**" />
+    <Compile Remove="Views\ServiceRecords\**" />
+    <Compile Remove="Views\StoreLocations\**" />
+    <Compile Remove="wwwroot\NewFolder\**" />
+    <Content Remove="Views\AdminDataAnlysis_de\**" />
+    <Content Remove="Views\Home\**" />
+    <Content Remove="Views\ServiceRecords\**" />
+    <Content Remove="Views\StoreLocations\**" />
+    <Content Remove="wwwroot\NewFolder\**" />
+    <EmbeddedResource Remove="Views\AdminDataAnlysis_de\**" />
+    <EmbeddedResource Remove="Views\Home\**" />
+    <EmbeddedResource Remove="Views\ServiceRecords\**" />
+    <EmbeddedResource Remove="Views\StoreLocations\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder\**" />
+    <None Remove="Views\AdminDataAnlysis_de\**" />
+    <None Remove="Views\Home\**" />
+    <None Remove="Views\ServiceRecords\**" />
+    <None Remove="Views\StoreLocations\**" />
+    <None Remove="wwwroot\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\AdminDataAnlysisController_de.cs" />
+    <Compile Remove="Controllers\HomeController.cs" />
+    <Compile Remove="Controllers\ServiceRecordsController.cs" />
+    <Compile Remove="ViewModels\CAdminEmployeeInfo.cs" />
+    <Compile Remove="ViewModels\CImageCarouselCreateViewModel.cs" />
+    <Compile Remove="ViewModels\CWrapAdmin.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\AdminEmployeeInfo\Index.cshtml" />
+    <Content Remove="Views\AdminUser\Create.cshtml" />
+    <Content Remove="Views\AdminUser\Delete.cshtml" />
+    <Content Remove="Views\AdminUser\Details.cshtml" />
+    <Content Remove="Views\AdminUser\List.cshtml" />
+    <Content Remove="Views\AdminUser\Welcome.cshtml" />
+    <Content Remove="wwwroot\css\Login.cshtml.cs" />
+    <Content Remove="wwwroot\css\Login2.scss" />
+    <Content Remove="wwwroot\images\carousel\carousel08183.jpeg" />
+    <Content Remove="wwwroot\images\carousel\carousel23.jpeg" />
+    <Content Remove="wwwroot\images\carousel\carousel24.jpeg" />
+    <Content Remove="wwwroot\images\carousel\carousel378c2.jpeg" />
+    <Content Remove="wwwroot\images\carousel\carousel4a530.jpeg" />
+    <Content Remove="wwwroot\images\carousel\carousel4f70a.jpeg" />
+    <Content Remove="wwwroot\images\carousel\carousel5.jpeg" />
+    <Content Remove="wwwroot\images\carousel\carousel6.jpeg" />
+    <Content Remove="wwwroot\images\carousel\carousel601a0.jpeg" />
+    <Content Remove="wwwroot\images\carousel\carousel7.jpeg" />
+    <Content Remove="wwwroot\images\carousel\carousel72310.jpeg" />
+    <Content Remove="wwwroot\images\carousel\carousel8.jpeg" />
+    <Content Remove="wwwroot\images\carousel\carousel86d59.jpeg" />
+    <Content Remove="wwwroot\images\carousel\carousel9.jpeg" />
+    <Content Remove="wwwroot\images\carousel\carousela7984.jpeg" />
+    <Content Remove="wwwroot\images\carousel\carouselfc8.jpeg" />
+    <Content Remove="wwwroot\images\modpack_logo.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\images\product\pexels-stephan-seeber-1054218.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="8.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client.Core" Version="8.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Common" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="Microsoft.PowerBI.Api" Version="4.18.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+    <PackageReference Include="X.PagedList" Version="8.4.7" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="8.4.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <None Include="Views\Order\Edit.cshtml" />
+    <None Include="Views\Order\List.cshtml" />
+    <None Include="Views\Order\OrderDetail.cshtml" />
+    <None Include="Views\Order\OrderEdit.cshtml" />
+    <None Include="Views\Order\OrderPaymentDetail.cshtml" />
+    <None Include="Views\Order\OrderPaymentEdit.cshtml" />
+    <None Include="Views\Order\OrderShippingDetail.cshtml" />
+    <None Include="Views\Order\OrderShippingEdit.cshtml" />
+    <None Include="wwwroot\images\modpack_logo.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\modpackApi\modpackApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\AdminUser\Login3.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

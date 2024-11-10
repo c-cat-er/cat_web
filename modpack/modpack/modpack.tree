@@ -1,0 +1,70 @@
+modpack
+├── 專案架構:
+│   ├── modpackApi: Web API。
+│   ├── modpackFront: .NET Core Web 前台。
+│   └── modpack: .NET Core Web 後台。
+│
+├── 開發流程:
+│   ├── 1. 配置 appsettings.json 和 Program.cs。
+│   ├── 2. 加入相關檔案。
+│   └── 3. 資料傳遞模式: EF Core -> Model -> (DTOs) -> VMs。
+│
+├── 檔案架構:
+│   ├── modpackApi (RESTful API)
+│   │   ├── \Controllers
+│   │   │   ├── AdminUserController.cs: 所有管理者相關 API。
+│   │   │   ├── ServiceRecordsDataController.cs: 客服相關 API。
+│   │   │   └── StoreLocationsController.cs: 門市相關 API。
+│   │   ├── \Models
+│   │   │   └── 
+│   │   ├── \DTOs
+│   │   │   └── ..
+│   │   ├── \Profiles
+│   │   │   └── MappingProfile.cs: Model-DTO-VM 映射配置檔。
+│   │   └── \Services
+│   │       ├── DataService.cs: 數據處理檔。
+│   │       ├── IDataService.cs: 數據處理接口。
+│   │       ├── CsvFileReader.cs: 讀取 csv 檔案資料檔。
+│   │       └── ICsvFileReader.cs: 接口。
+│   ├── modpackFront
+│   │   ├── \Controllers
+│   │   │   └── HomeController.cs
+│   │   │       ├── 1. use pack Swiper 輪播圖。
+│   │   │       ├── 2. use skill (AJAX)\Fetch 添加產品列表。
+│   │   │       └── 3. use pack SignalR 即時客服傳訊。
+│   │   ├── \DTOs
+│   │   │   └── ..
+│   │   └── \Views
+│   │       └── \Home
+│   │           ├── Index.cshtml
+│   │           ├── TestService.cshtml
+│   │           └── StoreLocations.cshtml
+│   ├── modpack
+│   │   ├── \Services
+│   │   │   ├── ImageCarouselHub.cs: image SignalR。
+│   │   │   └── ServiceRecordsHub.cs: serviceRecords SignalR。
+│   │   ├── \Profiles
+│   │   │   └── \MappingProfile.cs: Model-DTO-VM 映射配置檔。
+│   │   ├── \Controllers
+│   │   │   ├── AdminUserControllers.cs: 註冊, 登入, 管理者 UI。
+│   │   │   │   ├── 1. use pack Session 登入狀態。
+│   │   │   │   ├── 2. use pack JWT 身分驗證 + 登入狀態。
+│   │   │   │   ├── 3. use pack BCrypt.Net-Next(HashPassword 加密)。
+│   │   │   │   └── 4. use skill LINQ 爬 Db。
+│   │   │   ├── AdminEmployeeInfoControllers.cs: 員工 UI。
+│   │   │   │   └── 1. use pack PageList 分頁。
+│   │   │   ├── AdminImageCarouselControllers.cs: 圖片管理 UI。
+│   │   │   │   └── 1. use pack SignalR。
+│   │   │   ├── AdminServiceRecordsControllers.cs: 客服 UI。
+│   │   │   │   └── use pack SignalR。
+│   │   │   ├── StoreLocationsDTOControllers.cs: 門市 UI。
+│   │   │   └── AdminDataAnlysisControllers.cs: 數據分析 UI。
+│   │   │       ├── 1. use pack Charts bar & line。
+│   │   │       └── 2. use skill partialView 局部更新。
+│   │   ├── \DTOs
+│   │   │   └── ..
+│   │   ├── \VMs
+│   │   │   └── ..
+│   │   ├── \Views
+│   │   │   ├── \AdminServiceRecords
+│   │   │   │   └── 1. use skill partialView 局部更新表格。

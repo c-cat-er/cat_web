@@ -1,0 +1,91 @@
+﻿@model IEnumerable<modpack.ViewModels.CAdminViewModel>
+@using X.PagedList;
+@using X.PagedList.Mvc;
+@using X.PagedList.Mvc.Core;
+<h1><span asp-for="TitleID"></span>職級管理</h1>
+<p><a type="submit" asp-action="Create" class="btn btn-primary btn-addData"><span>新增管理者</span></a></p>
+<hr />
+<div class="form-group">
+    <form asp-action="List" method="get" style="display: flex; align-items: center;">
+        <input class="form-control" placeholder="請輸入姓名" style="width: 300px;" />
+        <button type="submit" class="btn btn-primary">搜索</button>
+    </form>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                序
+                <span class="lb-com" asp-for="@Model.First().AdminID"></span>
+            </th>
+            <th>
+                職級
+                <span class="lb-com" asp-for="@Model.First().TitleID"></span>
+            </th>
+            <th>
+                姓名
+                <span class="lb-com" asp-for="@Model.First().AdminName"></span>
+            </th>
+            <th>
+                管理者編號
+                <span class="lb-com" asp-for="@Model.First().aAdminCode"></span>
+            </th>
+            <th>
+                照片
+                <span class="lb-com" asp-for="@Model.First().AdminImage"></span>
+            </th>
+            <th>
+                帳號
+                <span class="lb-com" asp-for="@Model.First().AdminAccount"></span>
+            </th>
+            <th>
+                密碼
+                <span asp-for="@Model.First().AdminPassword"></span>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int count = 0;
+            foreach (var item in Model)
+            {
+                count++;
+                <tr>
+                    <td>
+                        @count
+                        @* @Html.DisplayFor(modelItem => item.AdminID) *@
+                    </td>
+                    <td>
+                        @item.TitleName
+                    </td>
+                    <td>
+                        @item.AdminName
+                    </td>
+                    <td>
+                        @item.aAdminCode
+                    </td>
+                    <td>
+                        <img src="~/images/admin/@item.AdminImage" width="80" height="60" />
+                    </td>
+                    <td>
+                        @item.AdminAccount
+                    </td>
+                    <td>
+                        @item.AdminPassword
+                        @*@item.AdminPassword.Replace(item.AdminPassword, new string('*', item.AdminPassword.Length))*@
+                    </td>
+                    <td style="display: flex; align-items: center;">
+                        <a href="javascript: void(0)" class="btn-edit" onclick="location.href='@Url.Action("Edit", new { id = item.AdminID })'">編輯<span></span><span></span><span></span><span></span></a>
+                        <a href="javascript: void(0)" class="btn-delete" onclick="if (confirm('確定要刪除嗎?')) { location.href='@Url.Action("Delete", new { id = item.AdminID })' }">刪除</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+@Html.PagedListPager((IPagedList)Model, x => Url.Action("List", new { page = x }))
+@section Styles {
+    <link rel="stylesheet" href="~/css/label-style.css" />
+    <link rel="stylesheet" href="~/css/table-style.css" />
+}

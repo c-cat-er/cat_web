@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewData["Title"] = "StoreLocations";
+    var configuration = (IConfiguration)Context.RequestServices.GetService(typeof(IConfiguration));
+    var buildUrl = configuration.GetSection("BackUrl").Value;
+}
+<!doctype html>
+
+<head>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/FooterStyle.css">
+</head>
+
+
+
+<body>
+   
+
+    <div class="container my-4" style="padding-top:9rem">
+
+        <div class="row row-cols-2 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="@buildUrl/images/3DShop/Donggang store.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 20pt;">東港門市</h5>
+                        <p class="card-text" style="font-size: 16pt;">屏東縣東港鎮長春二路008號</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="@buildUrl/images/3DShop/Guangming store.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 20pt;">光明門市</h5>
+                        <p class="card-text" style="font-size: 16pt;">台南市東區北門路一段003號</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="@buildUrl/images/3DShop/Pacific store.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 20pt;">太平洋門市</h5>
+                        <p class="card-text" style="font-size: 16pt;">台南市中西區西門路一段006號</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="@buildUrl/images/3DShop/sky mall.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 20pt;">天空門市</h5>
+                        <p class="card-text" style="font-size: 16pt;">桃園市大園區航站南路005號</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="@buildUrl/images/3DShop/Xinzhuang store.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 20pt;">新莊門市</h5>
+                        <p class="card-text" style="font-size: 16pt;">新北市新莊區中原路002號</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="@buildUrl/images/3DShop/Yangming store.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 20pt;">陽明門市</h5>
+                        <p class="card-text" style="font-size: 16pt;">高雄市三民區九如一路001號</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    
+</body>
+

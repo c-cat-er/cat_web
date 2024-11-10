@@ -1,0 +1,60 @@
+﻿@model modpack.ViewModels.CAdminViewModel
+<h1>部門管理</h1>
+<h3>新增人員資訊</h3>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div class="form-group">
+                <input type="hidden" asp-for="AdminTitleID" />
+                <label asp-for="TitleID" class="control-label"></label>
+                <select asp-for="TitleID" class="form-control" asp-items="ViewBag.TitleId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdminName" class="control-label"></label>
+                <input asp-for="AdminName" class="form-control" />
+                <span asp-validation-for="AdminName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="aAdminCode" class="control-label"></label>
+                <input asp-for="aAdminCode" class="form-control" />
+                <span asp-validation-for="aAdminCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdminImage" class="control-label"></label>
+                <input type="file" asp-for="AdminImage" class="form-control" />
+                <span asp-validation-for="AdminImage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdminAccount" class="control-label"></label>
+                <input asp-for="AdminAccount" class="form-control" />
+                <span asp-validation-for="AdminAccount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdminPassword" class="control-label"></label>
+                <input asp-for="AdminPassword" class="form-control" />
+                <span asp-validation-for="AdminPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-addData">
+                    <span>確認新增</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="List" class="btn btn-cancel">
+        <span>取消並返回</span>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+    </a>
+</div>
+@section Styles {
+    <link rel="stylesheet" href="~/css/table-style.css" />
+}
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

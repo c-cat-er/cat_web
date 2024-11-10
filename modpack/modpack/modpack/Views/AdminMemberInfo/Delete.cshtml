@@ -1,0 +1,91 @@
+﻿@model modpack.Models.Member
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<style>
+    .btn-icon img {
+        margin-right: 5px; /* 在圖標和文字之間增加空間 */
+        vertical-align: middle; /* 確保圖標和文字垂直對齊 */
+    }
+</style>
+
+
+<h1>刪除會員資料</h1>
+
+<h3></h3>
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            會員帳號
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Account)
+        </dd>
+        @* <dt class = "col-sm-2">
+            會員密碼
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Password)
+        </dd> *@
+        <dt class = "col-sm-2">
+            會員名稱
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            電子信箱
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            電話
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <dt class = "col-sm-2">
+            地址
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt class = "col-sm-2">
+            註冊日期
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreationTime)
+        </dd>
+        <dt class = "col-sm-2">
+            最後修改日期
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ModificationTime)
+        </dd>
+        <dt class = "col-sm-2">
+            會員層級
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Level.Name)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="MemberId" />
+        <div class="form-group">
+            <button type="submit" class="btn btn-icon">
+                <img src="~/svg/person-x.svg" alt="刪除" width="16" height="16" />
+                刪除
+            </button> |
+
+            <a asp-action="List" class="btn btn-icon">
+                <img src="~/svg/arrow-return-left.svg" alt="取消刪除" width="16" height="16" />
+                取消刪除
+            </a>
+        </div>
+    </form>
+</div>

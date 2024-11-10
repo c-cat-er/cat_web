@@ -1,0 +1,64 @@
+﻿@model modpackFront.Models.ServiceRecord
+
+@{
+    ViewData["Title"] = "Sendout";
+}
+
+<h1>Sendout</h1>
+
+<h4>ServiceRecord</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Sendout">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="RecordId" />
+            <div class="form-group">
+                <label asp-for="MemberId" class="control-label"></label>
+                <select asp-for="MemberId" class="form-control" asp-items="ViewBag.MemberId"></select>
+                <span asp-validation-for="MemberId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Question" class="control-label"></label>
+                <input asp-for="Question" class="form-control" />
+                <span asp-validation-for="Question" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QuestionTime" class="control-label"></label>
+                <input asp-for="QuestionTime" class="form-control" />
+                <span asp-validation-for="QuestionTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdministratorId" class="control-label"></label>
+                <select asp-for="AdministratorId" class="form-control" asp-items="ViewBag.AdministratorId"></select>
+                <span asp-validation-for="AdministratorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Answer" class="control-label"></label>
+                <input asp-for="Answer" class="form-control" />
+                <span asp-validation-for="Answer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AnswerTime" class="control-label"></label>
+                <input asp-for="AnswerTime" class="form-control" />
+                <span asp-validation-for="AnswerTime" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsResolved" /> @Html.DisplayNameFor(model => model.IsResolved)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

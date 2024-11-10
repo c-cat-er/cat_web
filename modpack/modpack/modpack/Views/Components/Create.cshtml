@@ -1,0 +1,123 @@
+﻿@model modpack.DTO.ComponentsDTO
+@inject ModPackContext dbContext
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>新增元件</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post" enctype="multipart/form-data" id="ComponentForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group" style="display:none">
+                <label asp-for="ComponentID" class="control-label"></label>
+                <input asp-for="ComponentID" class="form-control" />
+                <span asp-validation-for="ComponentID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaterialID" class="control-label"></label>
+                <select asp-for="MaterialID" class="form-select">
+                    @foreach (var materia in dbContext.Materials.ToList())
+                    {
+                        <option value="@materia.MaterialId">@materia.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="MaterialID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ColorID" class="control-label"></label>
+                <select asp-for="ColorID" class="form-select">
+                    @foreach (var materia in dbContext.Colors.ToList())
+                    {
+                        <option value="@materia.ColorId">@materia.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="ColorID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StatusID" class="control-label"></label>
+                <select asp-for="StatusID" class="form-select">
+                    @foreach (var materia in dbContext.Statuses.ToList())
+                    {
+                        <option value="@materia.StatusId">@materia.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="StatusID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category" class="control-label"></label>
+                <select class="form-select" asp-for="Category">
+                    <option value="主包">主包</option>
+                    <option value="配件">配件</option>
+                </select>
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OriginalPrice" class="control-label"></label>
+                <input asp-for="OriginalPrice" class="form-control" />
+                <span asp-validation-for="OriginalPrice" class="text-danger" type="number" step="0.01"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FBXFileName" class="control-label"></label>
+                <input asp-for="FBXFileName" class="form-control" />
+                <span asp-validation-for="FBXFileName" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsCustomized" />
+                    @Html.DisplayNameFor(model => model.IsCustomized)
+                </label>
+            </div>
+            <div id="categoryList">
+            </div>
+            <input type="hidden" id="dynamicCategories" asp-for="productCategoriesjson" value="">
+            <button type="button" id="addCategory" class="mb-3 btn btn-info">新增類別</button>
+            <div class="form-group">
+                <input type="submit" value="確認新增" class="btn btn-primary" />
+                <a asp-action="List" class="btn btn-danger">取消新增</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        $(document).ready(function () {
+            $("#addCategory").click(function () {
+                var categoryCount = $(".categoryItem").length;
+                var newCategoryHtml =
+                    `<div class="categoryItem mb-3 row">
+                            <div class="col-auto">
+                            <input type="hidden" value="0" />
+                            <input type="text" value=""  class="form-control"/>
+                            </div>
+                            <div class="col-auto">
+                            <button type="button" class="removeCategory  btn btn-warning">刪除類別</button>
+                            </div>
+                            </div>`;
+                $("#categoryList").append(newCategoryHtml);
+            });
+            $(document).on("click", ".removeCategory", function () {
+                $(this).closest(".categoryItem").remove();
+            });
+            $("#ComponentForm").submit(function () {
+                var dynamicCategories = [];
+                $(".categoryItem").each(function () {
+                    dynamicCategories.push({
+                        ComponentID: parseInt($(this).find("input").eq(0).val()),
+                        Name: $(this).find("input").eq(1).val()
+                    });
+                });
+                var dynamicCategoriesJson = JSON.stringify(dynamicCategories);
+                $("#dynamicCategories").val(dynamicCategoriesJson);
+            });
+        });
+    </script>
+}

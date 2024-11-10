@@ -1,0 +1,95 @@
+﻿@model modpackFront.Models.Member
+
+@functions {
+    public string ActivePage(string actionName)
+    {
+        return (ViewBag.ActionName == actionName) ? "active" : "";
+    }
+}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <link rel="stylesheet" href="~/assets/css/vendor.css">
+    <link rel="stylesheet" href="~/assets/css/style.css">
+    <title>@ViewData["Title"]</title>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-121642637-4');
+    </script>
+
+</head>
+<body>
+    <!-- 會員資料標題 -->
+    <section class="hero hero-small bg-purple text-white">
+        <div class="container">
+            <div class="row gutter-2 gutter-md-4 align-items-end">
+                <div class="col-md-6 text-center text-md-left">
+                    <h1 class="mb-0">@Html.DisplayFor(model => model.Name)</h1>
+                    <span class="text-muted">@Html.DisplayFor(model => model.Level.Name)</span>
+                </div>
+                <!-- 會員編輯btn -->
+                @* <div class="col-md-6 text-center text-md-right">
+                    <a asp-action="Edit" class="btn btn-sm btn-outline-white">編輯</a>
+                    <!-- 修改密碼btn -->
+                    <a asp-action="ChangePassword" class="btn btn-sm btn-outline-white">修改密碼</a>
+                </div> *@
+            </div>
+        </div>
+    </section>
+    <!-- 左邊選單 -->
+    <section class="pt-5">
+        <div class="container">
+            <div class="row gutter-4 justify-content-between">
+                <aside class="col-lg-3">
+                    <div class="nav nav-pills flex-column lavalamp" id="sidebar-1" role="tablist">
+                        <a class="nav-link @ActivePage("Profile")" asp-controller="UserProfile" asp-action="Profile" aria-controls="sidebar-1-1" aria-selected="@(ViewBag.ActionName == "Profile" ? "true" : "false")">基本資料</a>
+                        <a class="nav-link @ActivePage("Edit")" asp-controller="UserProfile" asp-action="Edit" aria-controls="sidebar-1-2" aria-selected="@(ViewBag.ActionName == "Edit" ? "true" : "false")">編輯基本資料</a>
+                        <a class="nav-link @ActivePage("ChangePassword")" asp-controller="UserProfile" asp-action="ChangePassword" aria-controls="sidebar-1-5" aria-selected="@(ViewBag.ActionName == "ChangePassword" ? "true" : "false")">修改會員密碼</a>
+                    </div>
+                </aside>
+
+
+                <div class="col-lg-9">
+
+                    <!-- 會員資料 -->
+                    <!-- 會員資料卡片 -->
+                    <div class="container mt-3">
+                        <!-- 系統資訊卡片 -->
+                        @* <div class="card card-data mb-3">
+                            <div class="card-header">
+                                <h2 class="card-title">系統資訊</h2>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>帳號：</strong>@Html.DisplayFor(model => model.Account)</p>
+                                <p><strong>會員等級：</strong>@Html.DisplayFor(model => model.Level.Name)</p>
+                                <p><strong>建立時間：</strong>@Html.DisplayFor(model => model.CreationTime)</p>
+                                <p><strong>最後修改時間：</strong>@Html.DisplayFor(model => model.ModificationTime)</p>
+                            </div>
+                        </div> *@
+
+                        <!-- 個人資訊卡片 -->
+                        <div class="card card-data">
+                            <div class="card-header">
+                                <h2 class="card-title">個人資訊</h2>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>帳號：</strong>@Html.DisplayFor(model => model.Account)</p>
+                                <p><strong>姓名：</strong>@Html.DisplayFor(model => model.Name)</p>
+                                <p><strong>電子信箱：</strong>@Html.DisplayFor(model => model.Email)</p>
+                                <p><strong>電話：</strong>@Html.DisplayFor(model => model.Phone)</p>
+                                <p><strong>地址：</strong>@Html.DisplayFor(model => model.Address)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="~/assets/js/vendor.min.js"></script>
+    <script src="~/assets/js/app.js"></script>
+</body>
+</html>

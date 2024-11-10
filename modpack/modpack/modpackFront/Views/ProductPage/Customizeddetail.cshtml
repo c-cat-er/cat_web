@@ -1,0 +1,303 @@
+﻿@model modpackFront.DTO.ProductsPageDTO
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <link rel="stylesheet" href="~/css/vendor.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Product</title>
+</head>
+
+<body>
+    @{
+        var configuration = (IConfiguration)Context.RequestServices.GetService(typeof(IConfiguration));
+        var VueUrl = configuration.GetSection("VueUrl").Value;
+        var buildUrl = configuration.GetSection("BackUrl").Value;
+    }
+    <!-- breadcrumbs -->
+    <section class="breadcrumbs bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">主頁</a></li>
+                            <li class="breadcrumb-item"><a href="@VueUrl/Custom_listing">客製化背包</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">@Model.Name</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product -->
+    <section class="hero bg-light pt-7">
+        <div class="container">
+            <div class="row gutter-2 gutter-md-4 justify-content-between">
+                <div class="col-lg-7">
+                    <div id="unity-container" class="unity-desktop">
+                        <canvas id="unity-canvas" width=600 height=480></canvas>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="hidden" asp-for="ProductId">
+                            <span class="item-brand" id="PromotionName">@Model.PromotionName</span>
+                            <h1 class="item-title" id="productName">@Model.Name</h1>
+                            <span class="item-price" id="productSalePrice">$@Model.SalePrice</span>
+                        </div>
+                    </div>
+                    <section>
+                        <div class="container">
+                            <div class="row gutter-1 align-items-end">
+                                <div class="col-md-6">
+                                    <h3>您的客製化</h3>
+                                </div>
+                                <div class="col-md-6 text-md-right">
+                                    <ul class="nav nav-tabs lavalamp" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="tab-Inspiration" data-toggle="tab" href="#GroupInspiration" role="tab" aria-controls="GroupInspiration" aria-selected="true">靈感</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="tab-Customized" data-toggle="tab" href="#GroupCustomized" role="tab" aria-controls="GroupCustomized" aria-selected="false">客製化</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="GroupInspiration" role="tabpanel">
+                                            <div class="row gutter-2 gutter-md-3">
+                                                <div class="form-group">
+                                                    <div class="btn-group-toggle btn-group-square btn-group-colors" data-toggle="buttons">
+                                                        <label id="Inspiration,@Model.ProductId" class="btn active mb-3" style="width:156px; height:225px;background-image:url(@buildUrl/images/Inspiration/@Model.ImageFileName);color:transparent">
+                                                            <input type="radio" name="options" id="option1-2">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="GroupCustomized" role="tabpanel">
+                                            <div class="row gutter-2 gutter-md-3">
+                                                <div class="form-group">
+                                                    <div class="btn-group-toggle btn-group-square btn-group-colors" data-toggle="buttons">
+                                                        @for (int i = 0; i < Model.Customizedid.Count; i++)
+                                                        {
+                                                            if (i == 0)
+                                                            {
+                                                                <label id="Customized,@Model.Customizedid[i]" class="btn active mb-3" style="width:156px; height:225px;background-image:url(@buildUrl/images/Customized/@Model.CustomizedImageFileName[i]);color:transparent">
+                                                                    <input type="radio" name="options" id="option1-2">
+                                                                    <input type="hidden" name="options" id="CustomizedName" value=@Model.CustomizedName[i]>
+                                                                    <input type="hidden" name="options" id="CustomizedSalePrice" value=$@Model.CustomizedSalePrice[i]>
+                                                                </label>
+                                                            }
+                                                            else
+                                                            {
+                                                                <input type="hidden" id="customizedIndex" value=@i />
+                                                                <label id="Customized,@Model.Customizedid[i]" class="btn mb-3" style="width:156px; height:225px;background-image:url(@buildUrl/images/Customized/@Model.CustomizedImageFileName[i]);color:transparent">
+                                                                    <input type="radio" name="options" id="option1-2">
+                                                                    <input type="hidden" name="options" id="CustomizedName" value=@Model.CustomizedName[i]>
+                                                                    <input type="hidden" name="options" id="CustomizedSalePrice" value=$@Model.CustomizedSalePrice[i]>
+                                                                </label>
+                                                            }
+                                                        }
+                                                    </div>
+                                                    @if (Model.Customizedid.Count!=0)
+                                                    {
+                                                        <div class="mb-3">
+                                                            <a href="#" class="btn btn-block btn-lg btn-danger" id="deleteCustomized">刪除客製化</a>
+                                                        </div>
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    購買數量：<input type="number" id="Quantity" value="1" class="mb-3 form-control" />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-block btn-lg btn-primary" id="addcart">加入購物車</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-block btn-lg btn-primary" id="goCustomized">前往客製化</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="~/js/vendor.min.js"></script>
+    <script src="~/js/app.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        @{
+            var configuration = (IConfiguration)Context.RequestServices.GetService(typeof(IConfiguration));
+            var ApiUrl = configuration.GetSection("ApiUrl").Value;
+            var buildUrl = configuration.GetSection("Kestrel:Endpoints:Http:Url").Value;
+        }
+        var gameInstance = null;
+        var Pid = @Model.ProductId;
+        var id = @Model.ProductId;
+        var type = "Inspiration";
+        var config = {
+            dataUrl: "@buildUrl" + "/Build/ProdViewWebgl.data",
+            frameworkUrl: "@buildUrl" + "/Build/ProdViewWebgl.framework.js",
+            codeUrl: "@buildUrl" + "/Build/ProdViewWebgl.wasm",
+        };
+        var script = document.createElement("script");
+        script.src = "@buildUrl" + "/Build/ProdViewWebgl.loader.js";
+        script.onload = () => {
+            createUnityInstance(document.querySelector("#unity-canvas"), config, (progress) => {
+            }).then((unityInstance) => {
+                gameInstance = unityInstance;
+            }).catch((message) => {
+                alert(message);
+            });
+        };
+        document.body.appendChild(script);
+        function jsreturnid() {
+            return id;
+        }
+        function jsreturntype() {
+            return type;
+        }
+        $(document).ready(function () {
+
+            $("label[id^='Inspiration']").click(function () {
+                id = $(this).attr("id").split(",")[1];
+                $("#productName").html("@Model.Name");
+                $("#productSalePrice").text(`$${@Model.SalePrice}`);
+                gameInstance.SendMessage('changeback', 'changpack', $(this).attr("id"));//用於呼叫unity方法
+            });
+
+            $("label[id^='Customized']").click(function () {
+                id = $(this).attr("id").split(",")[1];
+                $("#productName").html($(this).find("input[id='CustomizedName']").val());
+                $("#productSalePrice").html($(this).find("input[id='CustomizedSalePrice']").val());
+                gameInstance.SendMessage('changeback', 'changpack', $(this).attr("id"));//用於呼叫unity方法
+            });
+            $("#tab-Inspiration").click(function () {
+                id = $("#GroupInspiration .active").attr("id").split(",")[1];
+                type = "Inspiration"
+                $("#productName").html("@Model.Name");
+                $("#productSalePrice").text(`$${@Model.SalePrice}`);
+                gameInstance.SendMessage('changeback', 'changpack', $("#GroupInspiration .active").attr("id"));//用於呼叫unity方法
+            });
+            $("#tab-Customized").click(function () {
+                if (@Model.Customizedid.Count != 0) {
+                    id = $("#GroupCustomized .active").attr("id").split(",")[1];
+                    type = "Customized";
+                    $("#productName").html($("#GroupCustomized .active").find("input[id='CustomizedName']").val());
+                    $("#productSalePrice").html($("#GroupCustomized .active").find("input[id='CustomizedSalePrice']").val());
+                    gameInstance.SendMessage('changeback', 'changpack', $("#GroupCustomized .active").attr("id"));//用於呼叫unity方法
+                }
+                else{
+                    $('#tab-Inspiration').click();
+                }
+            });
+            $("#addcart").click(function () {
+                var InspirationId = null;
+                var CustomizedId = null;
+                if (type == "Inspiration") {
+                    InspirationId = id;
+                    CustomizedId = null;
+                }
+                else if (type == "Customized") {
+                    InspirationId = null;
+                    CustomizedId = id;
+                }
+                var data = {
+                    MemberId: @User.Claims.FirstOrDefault()?.Value,
+                    InspirationId,
+                    CustomizedId,
+                    Quantity : document.getElementById("Quantity").value,
+                };
+                // 发送 POST 请求
+                fetch("@ApiUrl/api/Carts", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                    }).then(response => {
+                    if (response.status != 200) {
+                            throw new Error("Network response was not ok");
+                        }
+                    }).then(data => {
+                        alert("已加入購物車");
+                    }).catch(error => {
+                        alert("加入購物車失敗");
+                    });
+            });
+            $("#deleteCustomized").click(function (event) {
+                event.preventDefault();
+                var deleteUrl = "@ApiUrl/api/Customizeds/" + id;
+                // 发送 POST 请求
+                fetch(deleteUrl, {
+                    method: "DELETE",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                }).then(response => {
+                    if (response.status!=200) {
+                        throw new Error("Network response was not ok");
+                    }
+                    $("#Customized\\," + id).remove();
+                    var remainingLabels = $("[id^='Customized\\,']").length;
+                    if (remainingLabels == 0) {
+                        $("#deleteCustomized").remove();
+                        $('#tab-Inspiration').click();
+                    }
+                    else{
+                        id = $("label[id^='Customized']").attr("id").split(",")[1];
+                        $("[id^='Customized\\," + id + "']").filter(function () {
+                            return $(this).attr("id") === "Customized," + id;
+                        }).addClass("active");
+                        $("#productName").html($("label[id^='Customized']").find("input[type='radio']").val());
+                        $("#productName").html($("label[id^='Customized']").find("input[id='CustomizedName']").val());
+                        $("#productSalePrice").html($("label[id^='Customized']").find("input[id='CustomizedSalePrice']").val());
+                        gameInstance.SendMessage('changeback', 'changpack', $("label[id^='Customized']").attr("id"));//用於呼叫unity方法
+                    }
+                }).then(data => {
+                    alert("已刪除客製化");
+                }).catch(error => {
+                    alert("刪除客製化失敗");
+                });
+            });
+            $("#goCustomized").click(function (e) {
+                e.preventDefault();
+                if (@Model.Customizedid.Count > 5) {
+                    alert("超過最大客製化數");
+                } else {
+                    var data = {
+                        id,
+                        type,
+                        Pid
+                    };
+                    sessionStorage.setItem("customizationData", JSON.stringify(data));
+                    window.location.href = "/Customized/Edit";
+                }
+            });
+        });
+    </script>
+}

@@ -1,0 +1,16 @@
+﻿@model modpack.ViewModels.CLoginViewModel
+
+<form asp-controller="AdminUser" asp-action="Login2" method="post">
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <input asp-for="txtAccount" class="form-control form-control-user"
+               placeholder="請輸入帳號" value="" />
+    </div>
+    <div class="form-group">
+        <input asp-for="txtPassword" type="password" class="form-control form-control-user"
+               placeholder="請輸入密碼" value="">
+    </div>
+    <div class="form-group " style="display:flex;justify-content:center;">
+        <button type="submit" class="btn btn-login" data-hover="點擊登入" onclick="showAuthenticating();"><div>登入</div></button>
+    </div>
+</form>

@@ -1,0 +1,23 @@
+﻿<div id="serviceTableContainer">
+    @await Html.PartialAsync("_Table.cshtml")
+</div>
+@section Styles {
+    <link rel="stylesheet" href="~/css/label-style.css" />
+    <link rel="stylesheet" href="~/css/table-style.css" />
+}
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.5/signalr.min.js"></script>
+    <script>
+        var connection = new signalR.HubConnectionBuilder().withUrl("/serviceRecordsHub").build();
+        connection.start().then(function () {
+            console.log("SignalR connected");
+        }).catch(function (err) {
+            console.error(err.toString());
+        });
+        connection.on("QuestionReceived", function (newData) {
+            $.get("/AdminServiceRecords/List", function (data) {
+                $("#serviceTableContainer").find("tbody").html($(data).find("tbody").html());
+            });
+        });
+    </script>
+}

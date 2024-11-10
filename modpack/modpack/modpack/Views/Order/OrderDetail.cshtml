@@ -1,0 +1,37 @@
+﻿@model modpack.ViewModels.COrderViewModel
+
+@{
+    ViewData["Title"] = "OrderDetail";
+}
+
+
+<div>
+    <h4>訂單資訊  @Html.ActionLink("", "OrderEdit", new { id = Model.order.OrderId }, new { @class = "fas fa-edit" })</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.orderStatus.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.orderStatus.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.order.CreationTime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.order.CreationTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.order.CompletionTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.order.CompletionTime)
+        </dd>
+       
+
+    </dl>
+</div>
+<div>
+   @*  <a asp-action="Edit" asp-route-id="@Model?.OrderId">Edit</a> | *@
+    <a asp-action="List">返回</a>
+</div>

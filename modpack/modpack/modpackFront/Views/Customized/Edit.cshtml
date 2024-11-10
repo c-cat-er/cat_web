@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Customized</title>
+    <style>
+    </style>
+</head>
+<body>
+    <section class="breadcrumbs">
+    </section>
+    <div class="container d-flex justify-content-center align-items-center mb-4">
+        <div id="unity-container" class="unity-desktop">
+            <canvas id="unity-canvas" width="1020" height="510"></canvas>
+        </div>
+    </div>
+    <script>
+        @{
+            var configuration = (IConfiguration)Context.RequestServices.GetService(typeof(IConfiguration));
+            var buildUrl = configuration.GetSection("Kestrel:Endpoints:Http:Url").Value;
+        }
+            setTimeout(function () {
+                var config = {
+                    dataUrl: "@buildUrl" + "/Build/CustWebGL.data",
+                    frameworkUrl: "@buildUrl" + "/Build/CustWebGL.framework.js",
+                    codeUrl: "@buildUrl" + "/Build/CustWebGL.wasm",
+                };
+                var script = document.createElement("script");
+                script.src = "@buildUrl" + "/Build/CustWebGL.loader.js";
+                script.onload = () => {
+                    createUnityInstance(document.querySelector("#unity-canvas"), config, (progress) => {
+                    }).then((unityInstance) => {
+                    }).catch((message) => {
+                        alert(message);
+                    });
+                };
+                document.body.appendChild(script);
+            }, 0);
+         
+        var data = JSON.parse(sessionStorage.getItem("customizationData"));
+        function jsreturnlist() {
+            setTimeout(function () {
+                window.location.href = "@buildUrl" + "/ProductPage/Customizeddetail/" + data.Pid;
+            }, 300);
+        }
+        console.log(data);
+        function jsreturnid() {
+            return data.id;
+        }
+        function jsreturntype() {
+            return data.type;
+        }
+        function jsreturnmemberid() {
+            return @User.Claims.FirstOrDefault()?.Value;
+        }
+    </script>
+</body>
+</html>

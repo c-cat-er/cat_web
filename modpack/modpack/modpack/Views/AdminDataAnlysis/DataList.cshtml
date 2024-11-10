@@ -1,0 +1,102 @@
+﻿@model List<modpack.ViewModels.CDataAnlysisViewModel>
+<h1>數據管理</h1>
+<a class="btn btn-bar" asp-action="ChartjsBarTwo" data-hover="Bar"><div>長條圖</div></a>
+<a class="btn btn-bar" asp-action="ChartjsLine" data-hover="Line"><div>折線圖</div></a>
+<hr />
+<h3>數據總表</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <label class="lb-com" asp-for="@Model.First().aOrderID"></label>
+            </th>
+            <th>
+                <label class="lb-com" asp-for="@Model.First().aOrderStatus"></label>
+            </th>
+            <th>
+                <label class="lb-com" asp-for="@Model.First().aMember"></label>
+            </th>
+            <th>
+                <label class="lb-com" asp-for="@Model.First().aShippingFee"></label>
+            </th>
+            <th>
+                <label class="lb-com" asp-for="@Model.First().aCompletionTime"></label>
+            </th>
+            <th>
+                <label asp-for="@Model.First().aTotalPrice"></label>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int count = 0;
+            foreach (var item in Model)
+            {
+                count++;
+                <tr>
+                    <td>
+                        @count
+                        @* @Html.DisplayFor(modelItem => item.aOrderID) *@
+                    </td>
+                    <td>
+                        @{
+                            if (count <= 6)
+                            {
+                                <text>已付款</text>
+                            }
+                            else
+                            {
+                                @Html.DisplayFor(modelItem => item.aOrderStatus)
+                            }
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.aMember)
+                    </td>
+                    <td>
+                        $/ @Html.DisplayFor(modelItem => item.aShippingFee) 元
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.aCompletionTime)
+                    </td>
+                    <td>
+                        $/ @String.Format("{0:0.##}", item.aTotalPrice) 元
+                    </td>
+                    <td>
+                        @* <a asp-action="Edit" asp-route-id="@item.aOrderID">編輯</a> | *@
+                        @* <a asp-action="OrderDetails" class="btn-edit" asp-route-id="@item.aOrderID">查看詳細<span></span><span></span><span></span><span></span></a> *@
+                        @* <a asp-action="OrderDetails" class="order-details-link btn-edit" data-order-id="@item.aOrderID">查看詳細<span></span><span></span><span></span><span></span></a> *@
+                        @* <a asp-action="Delete" asp-route-id="@item.aOrderID">刪除</a> *@
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<div id="orderDetailsContainer"></div>
+@section Styles{
+    <link rel="stylesheet" href="~/css/table-style.css" />
+    <link rel="stylesheet" href="~/css/label-style.css" />
+}
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a.order-details-link').click(function (e) {
+                e.preventDefault();
+                var orderId = $(this).data('order-id');
+                $.ajax({
+                    url: '/AdminDataAnlysis/OrderDetails/' + orderId,
+                    type: 'GET',
+                    success: function (response) {
+                        $('#orderDetailsContainer').html(response);
+                    },
+                    error: function (xhr, status, error) {
+                        console.error(error);
+                    }
+                });
+            });
+        });
+    </script>
+}

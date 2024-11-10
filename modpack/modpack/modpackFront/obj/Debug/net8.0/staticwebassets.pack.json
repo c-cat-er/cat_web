@@ -1,0 +1,573 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\modpackFront.bundle.scp.css",
+      "PackagePath": "staticwebassets\\modpackFront.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\Build\\CustWebGL.data",
+      "PackagePath": "staticwebassets\\Build\\CustWebGL.data"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\Build\\CustWebGL.framework.js",
+      "PackagePath": "staticwebassets\\Build\\CustWebGL.framework.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\Build\\CustWebGL.loader.js",
+      "PackagePath": "staticwebassets\\Build\\CustWebGL.loader.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\Build\\CustWebGL.wasm",
+      "PackagePath": "staticwebassets\\Build\\CustWebGL.wasm"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\Build\\ProdViewWebgl.data",
+      "PackagePath": "staticwebassets\\Build\\ProdViewWebgl.data"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\Build\\ProdViewWebgl.framework.js",
+      "PackagePath": "staticwebassets\\Build\\ProdViewWebgl.framework.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\Build\\ProdViewWebgl.loader.js",
+      "PackagePath": "staticwebassets\\Build\\ProdViewWebgl.loader.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\Build\\ProdViewWebgl.wasm",
+      "PackagePath": "staticwebassets\\Build\\ProdViewWebgl.wasm"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\css\\FooterStyle.css",
+      "PackagePath": "staticwebassets\\css\\FooterStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\css\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Index.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\css\\css.css",
+      "PackagePath": "staticwebassets\\css\\css.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\css\\macHome.css",
+      "PackagePath": "staticwebassets\\css\\macHome.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\css\\vendor.css",
+      "PackagePath": "staticwebassets\\css\\vendor.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\js\\clipboard.min.js",
+      "PackagePath": "staticwebassets\\js\\clipboard.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\js\\js.js",
+      "PackagePath": "staticwebassets\\js\\js.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\js\\vendor.min.js",
+      "PackagePath": "staticwebassets\\js\\vendor.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue-router\\vue-router.cjs.js",
+      "PackagePath": "staticwebassets\\lib\\vue-router\\vue-router.cjs.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue-router\\vue-router.cjs.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue-router\\vue-router.cjs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue-router\\vue-router.cjs.prod.js",
+      "PackagePath": "staticwebassets\\lib\\vue-router\\vue-router.cjs.prod.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue-router\\vue-router.cjs.prod.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue-router\\vue-router.cjs.prod.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue-router\\vue-router.esm-browser.js",
+      "PackagePath": "staticwebassets\\lib\\vue-router\\vue-router.esm-browser.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue-router\\vue-router.esm-browser.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue-router\\vue-router.esm-browser.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue-router\\vue-router.esm-bundler.js",
+      "PackagePath": "staticwebassets\\lib\\vue-router\\vue-router.esm-bundler.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue-router\\vue-router.esm-bundler.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue-router\\vue-router.esm-bundler.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue-router\\vue-router.global.js",
+      "PackagePath": "staticwebassets\\lib\\vue-router\\vue-router.global.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue-router\\vue-router.global.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue-router\\vue-router.global.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue-router\\vue-router.global.prod.js",
+      "PackagePath": "staticwebassets\\lib\\vue-router\\vue-router.global.prod.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue-router\\vue-router.global.prod.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue-router\\vue-router.global.prod.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.cjs.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.cjs.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.cjs.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.cjs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.cjs.prod.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.cjs.prod.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.cjs.prod.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.cjs.prod.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.esm-browser.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.esm-browser.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.esm-browser.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.esm-browser.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.esm-browser.prod.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.esm-browser.prod.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.esm-browser.prod.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.esm-browser.prod.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.esm-bundler.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.esm-bundler.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.esm-bundler.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.esm-bundler.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.global.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.global.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.global.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.global.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.global.prod.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.global.prod.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.global.prod.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.global.prod.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.runtime.esm-browser.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.runtime.esm-browser.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.runtime.esm-browser.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.runtime.esm-browser.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.runtime.esm-browser.prod.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.runtime.esm-browser.prod.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.runtime.esm-browser.prod.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.runtime.esm-browser.prod.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.runtime.esm-bundler.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.runtime.esm-bundler.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.runtime.esm-bundler.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.runtime.esm-bundler.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.runtime.global.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.runtime.global.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.runtime.global.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.runtime.global.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.runtime.global.prod.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.runtime.global.prod.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\lib\\vue\\vue.runtime.global.prod.min.js",
+      "PackagePath": "staticwebassets\\lib\\vue\\vue.runtime.global.prod.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\vue\\HelloWorld.js",
+      "PackagePath": "staticwebassets\\vue\\HelloWorld.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\7Auwp_0qiz-afT3GLRrX.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\7Auwp_0qiz-afT3GLRrX.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\7Auwp_0qiz-afTLGLQ.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\7Auwp_0qiz-afTLGLQ.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\7Auwp_0qiz-afTzGLRrX.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\7Auwp_0qiz-afTzGLRrX.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\icomoon.eot",
+      "PackagePath": "staticwebassets\\webfonts\\icomoon.eot"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\icomoon.svg",
+      "PackagePath": "staticwebassets\\webfonts\\icomoon.svg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\icomoon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\icomoon.woff",
+      "PackagePath": "staticwebassets\\webfonts\\icomoon.woff"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\FinalWork\\modpack\\modpackFront\\wwwroot\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.modpackFront.props",
+      "PackagePath": "build\\modpackFront.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.modpackFront.props",
+      "PackagePath": "buildMultiTargeting\\modpackFront.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.modpackFront.props",
+      "PackagePath": "buildTransitive\\modpackFront.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.modpackFront.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

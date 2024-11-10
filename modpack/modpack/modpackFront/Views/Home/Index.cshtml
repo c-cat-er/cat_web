@@ -1,0 +1,250 @@
+@model modpackFront.DTO.HomeDTO
+@{
+    var username = User.Identity.IsAuthenticated ? User.Identity.Name : "Guest";
+    var configuration = (IConfiguration)Context.RequestServices.GetService(typeof(IConfiguration));
+    var buildUrl = configuration.GetSection("BackUrl").Value;
+}
+<div class="swiper-container swiper-container-alt">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="image image-overlay image-zoom" style="background-image:url(@buildUrl/images/carousel/@Model.ImageCarousel[0].Image)"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center vh-80">
+                    <div class="col-lg-8 text-white text-center" data-swiper-parallax-y="-100%">
+                        <h1 class="display-2 mb-2">
+                            @Model.ImageCarousel[0].Description
+                        </h1>
+                        <a href="@buildUrl/images/carousel/@Model.ImageCarousel[0].Image" class="btn btn-outline-white">立即觀看</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="image image-overlay image-zoom" style="background-image:url(@buildUrl/images/carousel/@Model.ImageCarousel[1].Image)"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center vh-80">
+                    <div class="col-lg-6 text-white text-center" data-swiper-parallax-y="-100%">
+                        <h1 class="display-2 mb-2">
+                            @Model.ImageCarousel[1].Description
+                        </h1>
+                        <a href="@buildUrl/images/carousel/@Model.ImageCarousel[1].Image" class="btn btn-outline-white">立即觀看</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="image image-overlay image-zoom" style="background-image:url(@buildUrl/images/carousel/@Model.ImageCarousel[2].Image)"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center vh-80">
+                    <div class="col-lg-6 text-white text-center" data-swiper-parallax-y="-100%">
+                        <h1 class="display-2 mb-2">
+                            @Model.ImageCarousel[2].Description
+                        </h1>
+                        <a href="@buildUrl/images/carousel/@Model.ImageCarousel[2].Image" class="btn btn-outline-white">立即觀看</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+<section class="pt-1">
+    <div class="container-full">
+        <div class="row masonry gutter-1">
+            <div class="col-md-4">
+                <a href="" class="card card-equal equal-50 equal-md-100 card-scale">
+                    <span class="image image-overlay"
+                          style="background-image: url(@buildUrl/images/home/home-itme1.jpeg"></span>
+                    <div class="card-body text-center text-white">
+                        <h3>最新背包</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="" class="card card-equal equal-50 equal-md-100 card-scale">
+                    <span class="image image-overlay"
+                          style="background-image: url(@buildUrl/images/home/home-itme2.jpeg)"></span>
+                    <div class="card-body text-center text-white">
+                        <h3>人氣靈感</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="" class="card card-equal equal-50 equal-md-100 card-scale">
+                    <span class="image image-overlay"
+                          style="background-image: url(@buildUrl/images/home/home-itme3.jpeg)"></span>
+                    <div class="card-body text-center text-white">
+                        <h3>名人客製</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-0 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2>本月精選</h2>
+            </div>
+        </div>
+        <div class="row gutter-2 gutter-md-3">
+            @{
+                int productCount = 0;
+            }
+            @foreach(var item in Model.Product)
+            {
+                if (productCount < 4 && item.PromotionId == 2)
+                {
+                    <div class="col-6 col-lg-3">
+                        <div class="product">
+                            <figure class="product-image">
+                                <a href="#!">
+                                    <img src="@buildUrl/images/product/@item.ImageFileName" alt="Image" />
+                                    <div class="status">@item.Promotion.Name</div>
+                                </a>
+                            </figure>
+                            <div class="product-meta">
+                                <h3 class="product-title">
+                                    <a href="#!">@item.Category / @item.Name</a>
+                                </h3>
+                                <div class="product-price">
+                                    <span><del>NT$ @item.OriginalPrice</del>&nbsp;&nbsp;NT$ @item.SalePrice</span>
+                                    <span class="product-action">
+                                        <a href="#!">加到購物車</a>
+                                    </span>
+                                </div>
+                                <a href="#!" class="product-like"></a>
+                            </div>
+                        </div>
+                    </div>
+                    productCount++;
+                }
+            }
+
+            <div class="col-sm-4 skeleton-default" id="skeletonContainer1">
+                <div class="skeleton-rectangle"></div>
+                <div class="skeleton-rectangle-medium"></div>
+                <div class="skeleton-rectangle-small"></div>
+            </div>
+            <div class="col-sm-4 skeleton-default" id="skeletonContainer2">
+                <div class="skeleton-rectangle"></div>
+                <div class="skeleton-rectangle-medium"></div>
+                <div class="skeleton-rectangle-small"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <a href="#!" class="btn btn-outline-secondary" id="loadMoreBtn">顯示更多</a>
+            </div>
+        </div>
+    </div>
+</section>
+@section Styles {
+    <link rel="stylesheet" href="~/css/Index.css">
+    <link rel="stylesheet" href="~/css/macHome.css">
+}
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.5/signalr.min.js"></script>
+    <script>
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("@buildUrl/imageCarouselHub")
+            .configureLogging(signalR.LogLevel.Information)
+            .build();
+
+        coˇ登入網站nnection.on("ReceiveImagePaths", function (imagePaths, descriptions) {
+            console.log("Received image paths:", imagePaths);
+            console.log("Received descriptions:", descriptions);
+            updateCarousel(imagePaths, descriptions);
+        });
+
+        connection.start().then(function () {
+            console.log("SignalR Connected!");
+        }).catch(function (err) {
+            console.error(err.toString());
+        });
+
+        function updateCarousel(imagePaths, descriptions) {
+            const carouselSlides = document.querySelectorAll('.swiper-slide');
+            carouselSlides.forEach((slide, index) => {
+                const imageElement = slide.querySelector('.image.image-overlay.image-zoom');
+                const descriptionElement = slide.querySelector('.display-2.mb-2');
+                const linkElement = slide.querySelector('a.btn.btn-outline-white');
+                imageElement.style.backgroundImage = `url(@buildUrl/images/carousel/${imagePaths[index]})`;
+                linkElement.href = `@buildUrl/images/carousel/${imagePaths[index]}`;
+                descriptionElement.textContent = descriptions[index];
+            });
+        }
+
+        // loadmore
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('loadMoreBtn').addEventListener('click', function () {
+                var skeletonContainer1 = document.getElementById('skeletonContainer1');
+                var skeletonContainer2 = document.getElementById('skeletonContainer2');
+                skeletonContainer1.style.display = 'block';
+                skeletonContainer2.style.display = 'block';
+                setTimeout(function () {
+                    skeletonContainer1.style.display = 'none';
+                    skeletonContainer2.style.display = 'none';
+                    loadMoreProducts();
+                }, 2000);
+            });
+        });
+
+        var displayedProductIds = [1, 2];
+        function loadMoreProducts() {
+            var ids = displayedProductIds.join(',');
+            fetch(`@buildUrl/AdminImageCarousel/imagesTwo?ids=${ids}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    renderProducts(data);
+                })
+                .catch(error => {
+                    console.error('加載失敗，請重新加載', error);
+                });
+        }
+
+        function renderProducts(productList) {
+            var productsContainer = document.querySelector('.gutter-2');
+            productList.forEach(productItems => {
+                var productHTML =
+                    `<div class="col-6 col-lg-3">
+                                <div class="product">
+                                    <figure class="product-image">
+                                        <a href="#!">
+                                                    <img src="@buildUrl/images/product/${productItems.ImageFileName}" alt="Image" />
+                                            <div class="status">${productItems.Promotion.Name}</div>
+                                        </a>
+                                    </figure>
+                                    <div class="product-meta">
+                                        <h3 class="product-title">
+                                            <a href="#!">${productItems.Category} / ${productItems.Name}</a>
+                                        </h3>
+                                        <div class="product-price">
+                                            <span><del>NT$ ${productItems.OriginalPrice}</del>&nbsp;&nbsp;NT$ ${productItems.SalePrice}</span>
+                                            <span class="product-action">
+                                                <a href="#!">加到購物車</a>
+                                            </span>
+                                        </div>
+                                        <a href ="#!" class="product-like"></a>
+                                    </div>
+                                </div>
+                            </div>`;
+                productsContainer.innerHTML += productHTML;
+                displayedProductIds.length = 0;
+                displayedProductIds.push(productItems.ProductId);
+            });
+        }
+    </script>
+}

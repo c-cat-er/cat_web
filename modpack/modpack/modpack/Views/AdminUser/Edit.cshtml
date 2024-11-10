@@ -1,0 +1,54 @@
+﻿@model modpack.ViewModels.CAdminViewModel
+<h1>當前管理者管理</h1>
+<h3>修改我的資料</h3>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="AdminID" />
+            <div class="form-group">
+                <label asp-for="AdminTitleID" class="control-label"></label>
+                <select asp-for="AdminTitleID" class="form-control" asp-items="@(ViewData["TitleId"] as SelectList)"></select>
+                <span asp-validation-for="AdminTitleID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdminName" class="control-label"></label>
+                <input asp-for="AdminName" class="form-control" />
+                <span asp-validation-for="AdminName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="aAdminCode" class="control-label"></label>
+                <input asp-for="aAdminCode" class="form-control" />
+                <span asp-validation-for="aAdminCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdminImage" class="control-label"></label>
+                <img src="~/images/admin/@Model.AdminImage" width="80" height="60" />
+                <span>當前檔案：@Model.AdminImage</span>
+                <input type="file" name="photo" class="form-control" value="@Model.AdminImage" />
+            </div>
+            <div class="form-group">
+                <label asp-for="AdminAccount" class="control-label"></label>
+                <input asp-for="AdminAccount" class="form-control" />
+                <span asp-validation-for="AdminAccount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdminPassword" class="control-label"></label>
+                <input asp-for="AdminPassword" class="form-control" />
+                <span asp-validation-for="AdminPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="確認修改" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">取消修改</a>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

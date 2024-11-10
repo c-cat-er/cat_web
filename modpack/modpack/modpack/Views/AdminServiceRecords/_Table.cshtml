@@ -1,0 +1,86 @@
+﻿@model IEnumerable<modpack.ViewModels.CServiceRecordsViewModel>
+@{
+    Layout = null;
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <label class="lb-com">序</label>
+            </th>
+            <th>
+                <label class="lb-com">@Html.DisplayNameFor(model => model.aMemberID)</label>
+            </th>
+            <th>
+                <label class="lb-com">@Html.DisplayNameFor(model => model.aMemberName)</label>
+            </th>
+            <th>
+                <label class="lb-com">@Html.DisplayNameFor(model => model.aQuestionContent)</label>
+            </th>
+            <th>
+                <label class="lb-com">@Html.DisplayNameFor(model => model.aQuestionTime)</label>
+            </th>
+            <th>
+                <label class="lb-com">@Html.DisplayNameFor(model => model.aAdminCode)</label>
+            </th>
+            <th>
+                <label class="lb-com">@Html.DisplayNameFor(model => model.aAdminName)</label>
+            </th>
+            <th>
+                <label class="lb-com">@Html.DisplayNameFor(model => model.aAnswerContent)</label>
+            </th>
+            <th>
+                <label class="lb-com">@Html.DisplayNameFor(model => model.aAnswerTime)</label>
+            </th>
+            <th>
+                <label>@Html.DisplayNameFor(model => model.aIsResolved)</label>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int count = 0;
+            foreach (var item in Model)
+            {
+                count++;
+                <tr>
+                    <td>
+                        @count
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.aMemberID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.aMemberName)
+                    </td>
+                    <td>
+                        @(item.aQuestionContent.Length > 5 ? item.aQuestionContent.Substring(0, 5) + "..." : item.aQuestionContent)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.aQuestionTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.aAdminCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.aAdminName)
+                    </td>
+                    <td>
+                        @((item.aAnswerContent?.Length ?? 0) > 5 ? item.aAnswerContent?.Substring(0, 5) + "..." : item.aAnswerContent)
+                    </td>
+                    <td>
+                            @Html.DisplayFor(modelItem => item.aAnswerTime)
+                    </td>
+                    <td>
+                            @Html.DisplayFor(modelItem => item.aIsResolved)
+                    </td>
+                    <td style="display: flex; align-items: center;">
+                        <a asp-action="ReplyTwo" class="btn-edit" asp-route-id="@item.aRecordID" asp-route-recordId="@item.aRecordID">回覆<span></span><span></span><span></span><span></span></a>
+   
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

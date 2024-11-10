@@ -1,0 +1,124 @@
+﻿@model IEnumerable<modpack.DTO.ComponentsDTO>
+
+@{
+    ViewData["Title"] = "List";
+}
+<body id="page-top">
+    <h1 class="h3 mb-2 text-gray-800">元件一覽表</h1>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" method="post" action="">
+                <div class="input-group">
+                    <input type="text" id="txtKeyword" name="txtKeyword" class="form-control bg-light border-0 small" placeholder="輸入關鍵字" aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit">
+                            <i class="fas fa-search fa-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="card-body table">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr style="text-align: center;">
+                            <th>
+                                序號
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Name)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Category)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.StatusName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.MateriaName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ColorName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.OriginalPrice)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.IsCustomized)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.productCategories.First().Name)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ImageFileName)
+                            </th>
+                            <th>
+                                操作
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int count = 0;
+                            foreach (var item in Model)
+                            {
+                                count++;
+                                <tr style="text-align: center;">
+                                    <td>
+                                        @count
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Category)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.StatusName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.MateriaName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ColorName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.OriginalPrice)
+                                    </td>
+                                    <td>
+                                        @Html.CheckBoxFor(modelItem => item.IsCustomized, new { disabled = "disabled" })
+                                    </td>
+                                    <td>
+                                        @{
+                                            if (item.productCategories.Count != 0)
+                                            {
+                                                @Html.DropDownListFor(modelItem => item.ComponentID,
+                                                 new SelectList(item.productCategories, "CategoryID", "Name"),
+                                                 new { @class = "form-control" })
+                                            }
+                                            else
+                                            {
+                                                @Html.DropDownListFor(modelItem => item.ComponentID,
+                                                 new List<SelectListItem> { new SelectListItem { Text = "無分類" } },
+                                                 new { @class = "form-control" })
+                                            }
+                                        }
+                                    </td>
+                                    <td>
+                                        <img src="~/images/component/@item.ImageFileName" width="60" height="60" />
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("修改", "Edit", "Components", new { id = item.ComponentID }, new { @class = "btn btn-primary" })
+                                        @Html.ActionLink("修正圖片", "ViewImage", "Components", new { id = item.ComponentID }, new { @class = "btn btn-primary" })
+                                        @Html.ActionLink("刪除", "Delete", "Components", new { id = item.ComponentID }, new { @class = "btn btn-primary" })
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,46 @@
+﻿@model modpack.ViewModels.CKeywordViewModel
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | ComponentView</title>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="hidden" asp-for="txtId" />
+    <div id="unity-container" class="unity-desktop">
+        <canvas id="unity-canvas" width=960 height=480></canvas>
+    </div>
+    <script>
+        @{
+            var configuration = (IConfiguration)Context.RequestServices.GetService(typeof(IConfiguration));
+            var buildUrl = configuration.GetSection("Kestrel:Endpoints:Http:Url").Value;
+        }
+        var config = {
+            dataUrl: "@buildUrl" + "/Build/CompWebGL.data",
+            frameworkUrl: "@buildUrl" + "/Build/CompWebGL.framework.js",
+            codeUrl: "@buildUrl" + "/Build/CompWebGL.wasm",
+        };
+        var script = document.createElement("script");
+        script.src = "@buildUrl" + "/Build/CompWebGL.loader.js";
+        script.onload = () => {
+            createUnityInstance(document.querySelector("#unity-canvas"), config, (progress) => {
+            }).then((unityInstance) => {
+            }).catch((message) => {
+                alert(message);
+            });
+        };
+        document.body.appendChild(script);
+        function jsreturnlist() {
+            setTimeout(function () {
+                window.location.href = "@buildUrl" + "/Components/List";
+            }, 300);
+        }
+        function jsreturnid() {
+            return txtId.defaultValue;
+        }
+    </script>
+</body>
+</html>

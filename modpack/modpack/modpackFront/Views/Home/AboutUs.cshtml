@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "AboutUs";
+    var configuration = (IConfiguration)Context.RequestServices.GetService(typeof(IConfiguration));
+    var buildUrl = configuration.GetSection("BackUrl").Value;
+}
+
+
+<head>
+    <link rel="stylesheet" href="~/css/FooterStyle.css">
+</head>
+<div class="container" style="padding-top:9rem">
+    <br>
+    <p>
+        <img class="img1" src="@buildUrl/images/3DShop/Modpack01.jpg">
+    </p>
+    <br>
+    <p>
+        <img class="img1" src="@buildUrl/images/3DShop/Modpack02.jpg">
+    </p>
+    <br>
+    <p>
+        <img class="img1" src="@buildUrl/images/3DShop/Modpack03.jpg">
+    </p>
+    <br>
+    <p>
+        <img class="img1" src="@buildUrl/images/3DShop/Modpack04.jpg">
+    </p>
+    <br>
+    <p>
+        <img class="img1" src="@buildUrl/images/3DShop/Modpack05.jpg">
+    </p>
+    <p>
+        <img class="img1" src="@buildUrl/images/3DShop/Modpack08.jpg">
+    </p>
+</div>
+
+
+

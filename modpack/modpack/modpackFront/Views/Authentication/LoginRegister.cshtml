@@ -1,0 +1,132 @@
+﻿@model modpackFront.ViewModels.LoginRegisterViewModel
+
+@{
+    ViewData["Title"] = "登入註冊";
+}
+@{
+    var configuration = (IConfiguration)Context.RequestServices.GetService(typeof(IConfiguration));
+    var buildUrl = configuration.GetSection("BackUrl").Value;
+}
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
+<section class="py-md-0">
+    <div class="image image-overlay" style="background-image:url('@buildUrl/images/product/pexels-stephan-seeber-1054218.jpg')"></div>
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-md-100">
+            <div class="col-md-10 col-lg-5">
+                <div class="accordion accordion-portal" id="accordionExample">
+                    <!-- 表單 -->
+                    <div class="card active">
+                        <form id="Login" asp-action="Login" asp-controller="Authentication" method="post">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        登入
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <!-- 登入表單 -->
+                                    <div class="row mt-2">
+                                        <div class="form-group col-12">
+                                            <label for="LoginAccount">帳號</label>
+                                            <input asp-for="Login.Account" type="text" class="form-control" id="Account" placeholder="請輸入帳號">
+                                        </div>
+                                        <div class="form-group col-12 mt-1">
+                                            <label for="LoginPassword">密碼</label>
+                                            <input asp-for="Login.Password" type="password" class="form-control" id="Password" placeholder="請輸入密碼">
+                                        </div>
+                                        <div class="col-12 mt-2">
+                                            <a href="javascript:void(0);" class="btn btn-block btn-primary" onclick="document.getElementById('Login').submit();">登入</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- 註冊表單 -->
+                    <div class="card">
+                        <form id="Register" asp-action="Register" asp-controller="Authentication" method="post">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        註冊新會員帳戶
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row mt-2">
+                                        <div class="form-group col-12">
+                                            <label asp-for="Account">帳號</label>
+                                            <input asp-for="Account" class="form-control" id="Account" placeholder="輸入4-16碼英數字做為註冊帳號">
+                                            <span asp-validation-for="Account" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-12 mt-1">
+                                            <label asp-for="Password">密碼</label>
+                                            <input asp-for="Password" class="form-control" id="Password" placeholder="輸入4-16碼英數字做為註冊密碼">
+                                            <span asp-validation-for="Password" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-12 mt-1">
+                                            <label asp-for="ConfirmPassword">確認密碼</label>
+                                            <input asp-for="ConfirmPassword" class="form-control" id="ConfirmPassword" placeholder="再次輸入密碼">
+                                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-12 mt-1">
+                                            <label asp-for="Name">名稱</label>
+                                            <input asp-for="Name" class="form-control" id="Name" placeholder="輸入會員名稱">
+                                            <span asp-validation-for="Name" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-12 mt-1">
+                                            <label asp-for="Email">電子郵件</label>
+                                            <input asp-for="Email" type="email" class="form-control" id="Email" placeholder="輸入用戶電子信箱">
+                                            <span asp-validation-for="Email" class="text-danger"></span>
+                                        </div>
+                                        <div class="col-12 mt-2">
+                                            <a href="javascript:void(0);" class="btn btn-block btn-primary" onclick="document.getElementById('Register').submit();">註冊</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- 忘記密碼表單 -->
+                    <div class="card">
+                        <form id="ForgotPassword" asp-action="ForgotPassword" asp-controller="Authentication" method="post">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        忘記密碼
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row mt-2">
+                                        <div class="form-group col-12">
+                                            <label asp-for="Account">帳號</label>
+                                            <input asp-for="Account" class="form-control" id="Account" placeholder="請輸入帳號">
+                                            <span asp-validation-for="Account" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-12">
+                                            <label asp-for="Email">信箱</label>
+                                            <input asp-for="Email" class="form-control" id="Email" placeholder="請輸入註冊時使用的信箱">
+                                            <span asp-validation-for="Email" class="text-danger"></span>
+                                        </div>
+                                        <div class="col-12 mt-2">
+                                            <a href="javascript:void(0);" class="btn btn-block btn-primary" onclick="document.getElementById('ForgotPassword').submit();">送出</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

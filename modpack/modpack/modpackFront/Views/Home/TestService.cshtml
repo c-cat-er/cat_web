@@ -1,0 +1,143 @@
+﻿@model modpackFront.Models.ServiceRecord
+@{
+    var configuration = (IConfiguration)Context.RequestServices.GetService(typeof(IConfiguration));
+    var buildUrl = configuration.GetSection("BackUrl").Value;
+}
+<h1>客服</h1>
+<hr />
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-4">
+        <form id="form">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group" hidden>
+                <label asp-for="MemberId" class="control-label"></label>
+                <input asp-for="MemberId" class="form-control" name="MemberId" value="@ViewBag.MemberID" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Member.Name" class="control-label">會員姓名：</label>
+                <input asp-for="Member.Name" class="form-control" name="MemberName" value="@ViewBag.MemberName" readonly />
+            </div>
+            <div class="form-group">
+                <label asp-for="Question" class="control-label">客服提問：</label>
+                <input asp-for="Question" class="form-control" name="Question" value="" />
+                <span asp-validation-for="Question" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="QuestionTime" class="control-label"></label>
+                <input asp-for="QuestionTime" class="form-control" name="QuestionTime" />
+                <span asp-validation-for="QuestionTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" id="sendButton" value="送出" class="btn btn-primary" />
+                <a asp-action="Index">取消並返回</a>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <div id="chatWindow" style="height: 300px; overflow-y: scroll;">
+            <div class=""></div>
+            <div class=""></div>
+        </div>
+    </div>
+</div>
+@section Styles {
+    <style>
+        .row {
+            display: flex;
+        }
+
+        .col-md-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        #form {
+            background-color: lightgoldenrodyellow;
+        }
+
+        #chatWindow {
+            background-color: deepskyblue;
+        }
+    </style>
+}
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.5/signalr.min.js"></script>
+    <script>
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("@buildUrl/serviceRecordsHub")
+            .configureLogging(signalR.LogLevel.Information)
+            .build();
+
+        connection.start().then(function () {
+            console.log("SignalR connected2");
+        }).catch(function (err) {
+            console.error(err.toString());
+        });
+        function addHours(date, hours) {
+            return new Date(date.getTime() + hours * 60 * 60 * 1000);
+        }
+
+        document.getElementById('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var formData = new FormData(document.getElementById('form'));
+            var memberId = parseInt(formData.get('MemberId'));
+            var memberName = formData.get('MemberName').toString();
+            var question = formData.get('Question');
+
+            if (!question.trim()) {
+                console.log('尚未輸入問題');
+                return;
+            }
+
+            var questionTime = new Date();
+            var adjustedTime = addHours(questionTime, 8);
+
+            var requestData = {
+                MemberId: memberId,
+                MemberName: memberName,
+                Question: question,
+                QuestionTime: adjustedTime.toISOString()
+            };
+
+            connection.invoke("SendMessage", requestData)
+                .then(function () {
+                    console.log("傳送成功");
+                })
+                .catch(function (err) {
+                    console.error(err.toString());
+                });
+        });
+
+        connection.on("QuestionReceivedTwo", function (memberId, question, questionTime) {
+            console.log("New question received:", memberId, question, questionTime);
+            appendMessageToChatWindow(memberId, question, questionTime);
+        });
+
+        connection.on("AdminReplyReceived", function (adminId, reply, replyTime) {
+            console.log("Admin reply received:", adminId, reply, replyTime);
+            appendAdminReplyToChatWindow(adminId, reply, replyTime);
+        });
+
+        function appendMessageToChatWindow(memberId, question, currentDateTime) {
+            var chatWindow = document.getElementById("chatWindow");
+            var messageDiv = document.createElement("div");
+            var formattedTime = new Date(currentDateTime).toLocaleString();
+            messageDiv.innerHTML = "<strong>會員 " + memberId + ":</strong> " + question + "（" + currentDateTime + "）";
+            chatWindow.appendChild(messageDiv);
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+        }
+
+        function appendAdminReplyToChatWindow(adminId, answer, answerTime) {
+            var chatWindow = document.getElementById("chatWindow");
+            var messageDiv = document.createElement("div");
+            var formattedTime = new Date(answerTime).toLocaleString();
+            messageDiv.innerHTML = "<strong>管理員 " + adminId + ":</strong> " + answer + "（" + answerTime + "）";
+            chatWindow.appendChild(messageDiv);
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+        }
+    </script>
+}

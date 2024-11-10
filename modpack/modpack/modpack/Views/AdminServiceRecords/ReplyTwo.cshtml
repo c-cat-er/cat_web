@@ -1,0 +1,211 @@
+﻿@model IEnumerable<modpack.Models.ServiceRecord>
+@{
+    var configuration = (IConfiguration)Context.RequestServices.GetService(typeof(IConfiguration));
+    var buildUrl = configuration.GetSection("BackUrl").Value;
+}
+<h1>回覆</h1>
+<p><a asp-action="List">回到列表</a></p>
+<hr />
+<div class="serviceRoom">
+    <div class="chat-top friend">
+        <div class="control">
+            <span class="arrow"></span>
+            @* <span>Chat</span> *@
+        </div>
+        <div class="name">
+            <h5>會員ID：<span id="currentMemberId">@ViewData["CurrentMemberId"]</span></h5>
+            <p>姓名：<span id="currentMemberName">@ViewData["CurrentMemberName"]</span></p>
+        </div>
+        <div class="profile">
+            <img src="/images/admin/mac.jpeg" alt="" class="icon" />
+            <div>
+                <h6>管理者ID：<span id="currentAdminId">@ViewData["CurrentAdminId"]</span></h6>
+                <p>姓名：@ViewData["CurrentAdminName"]</p>
+            </div>
+        </div>
+    </div>
+    <div class="chat-mid" id="chatWindow">
+        @foreach (var item in Model)
+        {
+            <div class="chat">
+                <div class="chatbox left">
+                    <div class="profile">
+                        <img src="/images/admin/em1.jpeg" alt="User" class="icon" />
+                    </div>
+                    <div class="message-right">
+                        <div class="message">
+                            <p>@item.Question</p>
+                        </div>
+                        <span class="time">@item.QuestionTime</span>
+                    </div>
+                </div>
+            </div>
+            @if (!string.IsNullOrEmpty(item.Answer))
+            {
+                <div class="chat" id="chatRight">
+                    <div class="chatbox right">
+                        <div class="profile">
+                            @*<img src="/images/admin/mac.jpeg" alt="" class="icon" />*@
+                        </div>
+                        <div class="message-right">
+                            <div class="message">
+                                <p>@item.Answer</p>
+                            </div>
+                            <span class="time">@item.AnswerTime</span>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+    <div class="inputbox chat-bottom">
+            <form id="form">
+            <div class="input-container">
+                <textarea name="message" id="message" placeholder="..."></textarea>
+                <span>+</span>
+            </div>
+            <div class="button-container">
+                <button class="btn btn-info clearBtn" type="button">清除內容</button>
+                <button class="btn btn-primary submitBtn" type="button">送出回覆</button>
+            </div>
+        </form>
+    </div>
+</div>
+@section Styles {
+    <link rel="stylesheet" href="~/css/ReplyTwo2.css" />
+}
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.5/signalr.min.js"></script>
+    <script>
+        document.querySelector('.clearBtn').addEventListener('click', function () {
+            document.getElementById('message').value = '';
+        });
+        document.querySelector('.submitBtn').addEventListener('click', function () {
+            var message = document.getElementById('message').value.trim();
+            if (message !== '') {
+                sendAdminReply();
+            } else {
+                console.log('請輸入消息');
+            }
+        });
+
+        const connection = new signalR.HubConnectionBuilder().withUrl("@buildUrl/serviceRecordsHub")
+            .build();
+        connection.start().then(function () {
+            console.log("SignalR 連接已建立");
+        }).catch(function (err) {
+            console.error(err.toString());
+        });
+        function addHours(date, hours) {
+            return new Date(date.getTime() + hours * 60 * 60 * 1000);
+        }
+
+        function sendAdminReply() {
+            var currentMemberId = parseInt(document.getElementById("currentMemberId").textContent);
+            var currentAdminId = parseInt(document.getElementById("currentAdminId").textContent);
+            var answer = document.getElementById('message').value.toString();
+            var answerTime = new Date();
+            var adjustedTime = addHours(answerTime, 8);
+            var requestData = {
+                MemberId: currentMemberId,
+                AdminId: currentAdminId,
+                Answer: answer,
+                AnswerTime: adjustedTime.toISOString(),
+                IsResolved: false
+            };
+
+            connection.invoke("SendAdminMessage", requestData)
+                .then(function () {
+                    console.log("回覆發送成功");
+                    document.getElementById('message').value = '';
+                })
+                .catch(function (err) {
+                    console.error("發送回覆出錯: " + err.toString());
+                });
+        }
+
+        function formatDateTime(dateTimeString) {
+            var dateTime = new Date(dateTimeString);
+            var options = {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true,
+                hourCycle: 'h12',
+                timeZone: 'Asia/Shanghai'
+            };
+            return dateTime.toLocaleString('zh-CN', options);
+        }
+
+        connection.on("QuestionReceived", function (memberId, question, currentDateTime) {
+            appendMessageToChatWindow(memberId, question, currentDateTime);
+        });
+
+        function appendMessageToChatWindow(memberId, question, currentDateTime) {
+            var chatWindow = document.getElementById("chatWindow");
+            var chatBox = document.createElement('div');
+            chatBox.classList.add('chat');
+            chatBox.classList.add('chatbox', 'left');
+            var profile = document.createElement('div');
+            profile.classList.add('profile');
+            var img = document.createElement('img');
+            img.src = "/images/admin/em1.jpeg";
+            img.alt = "Member";
+            img.classList.add('icon');
+            profile.appendChild(img);
+            var messageLeft = document.createElement('div');
+            messageLeft.classList.add('message-left');
+            var message = document.createElement('div');
+            message.classList.add('message');
+            message.innerHTML = "</strong> " + question;
+            var timeSpan = document.createElement('span');
+            timeSpan.classList.add('time');
+            timeSpan.innerHTML = formatDateTime(currentDateTime);
+            messageLeft.appendChild(message);
+            messageLeft.appendChild(timeSpan);
+            chatBox.appendChild(profile);
+            chatBox.appendChild(messageLeft);
+            chatWindow.appendChild(chatBox);
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+            message.classList.add('left-message-style');
+        }
+
+        connection.on("AdminReplyReceived", function (adminId, answer, currentAdminDateTime) {
+            appendAdminReplyToChatWindow(adminId, answer, currentAdminDateTime);
+        });
+
+        function appendAdminReplyToChatWindow(adminId, answer, currentAdminDateTime) {
+            var chatWindow = document.getElementById("chatWindow");
+            var chatBox = document.createElement('div');
+            chatBox.classList.add('chat');
+            chatBox.classList.add('chatbox', 'right');
+
+            var messageContainerRight = document.createElement('div');
+            messageContainerRight.classList.add('message-container-right');
+            messageContainerRight.classList.add('right-container');
+            var message = document.createElement('div');
+            message.classList.add('message');
+            message.innerHTML = answer;
+            var timeSpan = document.createElement('span');
+            timeSpan.classList.add('time');
+            timeSpan.classList.add('right-time');
+            timeSpan.innerHTML = formatDateTime(currentAdminDateTime);
+            var profile = document.createElement('div');
+            profile.classList.add('profile');
+            var img = document.createElement('img');
+            //img.classList.add('icon');
+            //profile.appendChild(img);
+            messageContainerRight.appendChild(message);
+            messageContainerRight.appendChild(profile);
+            messageContainerRight.appendChild(timeSpan);
+            message.classList.add('right-message-style');
+            profile.style.order = '1';
+            chatBox.appendChild(messageContainerRight);
+            chatWindow.appendChild(chatBox);
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+        }
+    </script>
+}

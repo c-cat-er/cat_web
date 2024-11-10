@@ -1,0 +1,42 @@
+﻿@model modpack.ViewModels.CImageCarouselViewModel
+<h1>輪播管理</h1>
+<h3>新增圖片</h3>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="aImageCarouselID" />
+            <div class="form-group">
+                <label asp-for="photo" class="control-label"></label>
+                <input type="file" asp-for="photo" name="photo" class="form-control" />
+                <span asp-validation-for="photo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="aImageDescription" class="control-label"></label>
+                <input asp-for="aImageDescription" class="form-control" />
+                <span asp-validation-for="aImageDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-addData">
+                    <span>確認新增</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="List" class="btn btn-cancel">
+        <span>取消並返回</span>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+    </a>
+</div>
+@section Styles {
+    <link rel="stylesheet" href="~/css/table-style.css" />
+}
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,47 @@
+﻿@model List<modpack.ViewModels.CDataAnlysisViewModel>
+<h3>訂單明細商品表</h3>
+<p><a asp-action="DataList">返回訂單列表</a></p>
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <label asp-for="@Model[0].aOrderID"></label>
+            </th>
+            <th>
+                <label asp-for="@Model[0].aProductID"></label>
+            </th>
+            <th>
+                <label asp-for="@Model[0].aProduct"></label>
+            </th>
+            <th>
+                <label asp-for="@Model[0].aUnitPrice"></label>
+            </th>
+            <th>
+                <label asp-for="@Model[0].aQuantity"></label>
+            </th>
+            <th>
+                <label asp-for="@Model[0].aUQPrice"></label>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.aOrderID</td>
+                <td>@item.aProductID</td>
+                <td>@item.aProduct</td>
+                <td>@item.aUnitPrice</td>
+                <td>@item.aQuantity</td>
+                <td>@item.aUQPrice</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.aOrderID">編輯</a> |
+                    <a asp-action="Chart" asp-route-id="@item.aOrderID">看圖</a> |
+                    <a asp-action="Delete" asp-route-id="@item.aOrderID">刪除</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

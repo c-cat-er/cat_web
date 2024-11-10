@@ -1,0 +1,170 @@
+﻿@model modpackFront.DTO.ProductsPageDTO
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <link rel="stylesheet" href="~/css/vendor.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Product</title>
+</head>
+
+<body>
+    @{
+        var configuration = (IConfiguration)Context.RequestServices.GetService(typeof(IConfiguration));
+        var VueUrl = configuration.GetSection("VueUrl").Value;
+        var buildUrl = configuration.GetSection("BackUrl").Value;
+    }
+    <!-- breadcrumbs -->
+    <section class="breadcrumbs bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">主頁</a></li>
+                            <li class="breadcrumb-item"><a href="@VueUrl/Product_listing">精選商品</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">@Model.Name</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product -->
+    <section class="hero bg-light pt-7">
+        <div class="container">
+            <div class="row gutter-2 gutter-md-4 justify-content-between">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <img src="@buildUrl/images/product/@Model.ImageFileName" />
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="hidden" asp-for="ProductId">
+                            <span class="item-brand">@Model.PromotionName</span>
+                            <h1 class="item-title">@Model.Name</h1>
+                            <span class="item-price">$@Model.SalePrice</span>
+                        </div>
+                    </div>
+                    購買數量：<input type="number" id="Quantity" value="1" class="mb-3 form-control" />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="#" class="btn btn-block btn-lg btn-primary" id="addcart">加入購物車</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- related products -->
+    <section class="no-overflow">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <ul class="nav nav-tabs lavalamp" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">相關產品</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">上次購買</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="owl-carousel owl-carousel-arrows visible" data-items="[4,4,2,1]" data-margin="10" data-dots="true" data-nav="true">
+                               @for (int i = 0; i < Model.relatedproductsId.Count; i++)
+                                {
+                                    <div class="product">
+                                        <figure class="product-image">
+                                            <a href="@buildUrl/ProductPage/Productsdetail/@Model.relatedproductsId[i]">
+                                                <img src="@buildUrl/images/product/@Model.relatedproductsImageFileName[i]" />
+                                            </a>
+                                        </figure>
+                                        <div class="product-meta">
+                                            <h3 class="product-title"><a href="@buildUrl/ProductPage/Productsdetail/@Model.relatedproductsId[i]">@Model.relatedproductsName[i]</a></h3>
+                                            <div class="product-price">
+                                                <span>$@Model.relatedproductsSalePrice[i]</span>
+                                            </div>
+                                            @*  <a href="#!" class="product-like"></a> *@
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="owl-carousel visible" data-items="[4,4,2,1]" data-margin="10" data-dots="true">
+                                @for (int i = 0; i < Model.purchasedproductsId?.Count; i++)
+                                {
+                                    <div class="product">
+                                        <figure class="product-image">
+                                            <a href="@buildUrl/ProductPage/Productsdetail/@Model.purchasedproductsId[i]">
+                                                <img src="@buildUrl/images/product/@Model.purchasedproductsImageFileName[i]" />
+                                            </a>
+                                        </figure>
+                                        <div class="product-meta">
+                                            <h3 class="product-title"><a href="@buildUrl/ProductPage/Productsdetail/@Model.purchasedproductsId[i]">@Model.purchasedproductsName[i]</a></h3>
+                                            <div class="product-price">
+                                                <span>$@Model.purchasedproductsSalePrice[i]</span>
+                                            </div>
+                                            @*  <a href="#!" class="product-like"></a> *@
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="~/js/vendor.min.js"></script>
+    <script src="~/js/app.js"></script>
+</body>
+</html>
+
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+
+        $(document).ready(function () {
+            $("#addcart").click(function () {
+                var data = {
+                    MemberId: @User.Claims.FirstOrDefault()?.Value,
+                    productId: @Model.ProductId,
+                    Quantity: document.getElementById("Quantity").value,
+                };
+        @{
+            var configuration = (IConfiguration)Context.RequestServices.GetService(typeof(IConfiguration));
+            var buildUrl = configuration.GetSection("ApiUrl").Value;
+        }
+                    // 发送 POST 请求
+                    fetch("@buildUrl/api/Carts", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(data)
+                    }).then(response => {
+                        if (!response.ok) {
+                            throw new Error("Network response was not ok");
+                        }
+                    }).then(data => {
+                        alert("已加入購物車");
+                    }).catch(error => {
+                        alert("加入購物車失敗");
+                    });
+            });
+        });
+    </script>
+}

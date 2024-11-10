@@ -1,0 +1,77 @@
+﻿@model modpack.ViewModels.CLoginViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Login2.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="container__elements">
+            <div class="pack">
+                <div class="pack__handle"></div>
+                <div class="pack__top">
+                    <div class="pack__top-shadow"></div>
+                    <div class="pack__top-design"></div>
+                    <div class="pack__top-text align-items-center" style="margin-left: 25%; margin-top: 50px;">
+                        <h1><i>Modpack</i>&nbsp;工作室</h1>
+                        <h1>管理者後台系統</h1>
+                    </div>
+                </div>
+                <div class="pack__bottom">
+                    <form asp-controller="AdminUser" asp-action="Login2" method="post">
+                        @Html.AntiForgeryToken()
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-md-10 d-flex align-items-center" style="margin-left: 25%; margin-top: 50px;">
+                                    <img src="/images/index/login-account.jpg" width="30" height="30" />
+                                    <input asp-for="txtAccount" style="width: 50%;" class="form-control" placeholder="請輸入帳號" value="" />
+                                </div>
+                                <div class="col-md-10 d-flex align-items-center" style="margin-left: 25%; margin-top: 5px;">
+                                    <img src="/images/index/login-password.jpg" width="30" height="30" />
+                                    <input asp-for="txtPassword" type="password" style="width: 50%;" class="form-control" placeholder="請輸入密碼" value="" />
+                                </div>
+                                <div class="alert-container">
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pack__bottom-fold">
+                            <div class="pack__zipper"></div>
+                            <div class="pack__zipper-handle"></div>
+
+                            <div style="text-align: center; margin-top: 10px;">
+                                <button type="submit" class="btn btn-login" data-hover="點擊登入" onclick="showAuthenticating();"><div>登入</div></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+@section Scripts {
+    <script>
+        function showAuthenticating() {
+            console.log("Function called");
+            var loginBtn = document.querySelector('.btn-login > div');
+            loginBtn.innerText = '認證中';
+            var btn = document.querySelector('.btn-login');
+            btn.classList.add('authenticating');
+            console.log("Function calle22d");
+        }
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <text>
+                            var errorMessages = '@Html.Raw(string.Join("\\n", ViewData.ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage)))';
+            if (errorMessages.trim() !== "") {
+                alert(errorMessages);
+            }
+            </text>
+        }
+    </script>
+}

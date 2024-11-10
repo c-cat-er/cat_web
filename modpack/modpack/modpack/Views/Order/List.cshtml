@@ -1,0 +1,74 @@
+﻿@model IEnumerable<modpack.ViewModels.COrderViewModel>
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>訂單一覽表</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.order.OrderId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.member.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.orderStatus.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.paymentStatus.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.shippingStatus.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.order.CreationTime)
+            </th>
+           @*  <th>
+                狀態修改
+            </th> *@
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.order.OrderId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.member.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.orderStatus.Name)
+                    @Html.ActionLink("", "OrderDetail", new { id = item.order.OrderId }, new { @class = "fas fa-info-circle" })
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.paymentStatus.Name)
+                    @Html.ActionLink("", "OrderPaymentDetail", new { id = item.order.OrderId }, new { @class = "fas fa-info-circle" })
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.shippingStatus.Name)
+                    @Html.ActionLink("", "OrderShippingDetail", new { id = item.order.OrderId }, new { @class = "fas fa-info-circle" })
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.order.CreationTime)
+                </td>
+                @* <td>
+                    @Html.ActionLink("", "Edit", new { id = item.order.OrderId }, new { @class = "fas fa-edit" })
+                </td> *@
+                @* <td>
+            @Html.DisplayFor(modelItem => item.MemberName)
+            @Html.ActionLink("會員資訊", "Member", new { id = item.OrderId })
+            </td>
+            <td>
+            @Html.DisplayFor(modelItem => item.CreationTime)
+            </td> *@
+
+            </tr>
+        }
+    </tbody>
+</table>

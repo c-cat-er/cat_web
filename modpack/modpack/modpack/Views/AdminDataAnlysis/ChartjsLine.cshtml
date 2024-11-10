@@ -1,0 +1,111 @@
+﻿@model List<modpack.ViewModels.CDataAnlysisViewModel>
+<h1>數據管理--各年月份的總收益額折線圖</h1>
+<a asp-action="DataList" class="btn btn-cancel">
+    <span>返回列表</span>
+    <svg width="13px" height="10px" viewBox="0 0 13 10">
+        <path d="M1,5 L11,5"></path>
+        <polyline points="8 1 12 5 8 9"></polyline>
+    </svg>
+</a>
+<hr />
+<select id="yearDropdown">
+    @foreach (var year in ViewBag.Years)
+    {
+        <option value="@year">@year</option>
+    }
+</select>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Month</th>
+            @for (int month = 1; month <= 12; month++)
+            {
+                <th>@month 月</th>
+            }
+        </tr>
+    </thead>
+    <tbody id="salesDataBody">
+        <tr>
+            <td>總金額(NT$)</td>
+            @for (int month = 1; month <= 12; month++)
+            {
+                <td></td>
+            }
+        </tr>
+    </tbody>
+</table>
+<canvas id="salesChart" width="800" height="400"></canvas>
+@section Styles {
+    <link rel="stylesheet" href="~/css/table-style.css" />
+}
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var yearDropdown = document.getElementById('yearDropdown');
+            var salesChartContext = document.getElementById('salesChart').getContext('2d');
+            var myChart;
+            function loadSalesData(year) {
+                fetch(`/AdminDataAnlysis/ChartjsLineJson?year=${year}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const months = Array.from({ length: 12 }, (_, i) => i + 1);
+                        const totalPrices = Array.from({ length: 12 }, () => 0);
+                        
+                        data.forEach(item => {
+                            totalPrices[item.aMonth - 1] = item.aTotalPrice || 0;
+                        });
+
+                        updateTableAndChart(year, months, totalPrices);
+                    });
+            }
+
+            function updateTableAndChart(year, months, totalPrices) {
+                var tableBody = document.getElementById('salesDataBody');
+                var totalSalesRow = tableBody.querySelector('tr');
+                months.forEach((month, index) => {
+                    var cell = totalSalesRow.children[month];
+                    cell.textContent = totalPrices[index];
+                });
+
+                if (myChart)
+                    myChart.destroy();
+                renderChart(year, months, totalPrices);
+            }
+
+            function renderChart(year, months, totalPrices) {
+                const chartData = {
+                    labels: months,
+                    datasets: [{
+                        label: `${year}年--總銷售額--折線圖`,
+                        data: totalPrices,
+                        fill: false,
+                        borderColor: 'rgb(75, 192, 192)',
+                        tension: 0.1
+                    }]
+                };
+                
+                if (myChart) {
+                    myChart.destroy();
+                }
+
+                myChart = new Chart(salesChartContext, {
+                    type: 'line',
+                    data: chartData,
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            }
+
+            loadSalesData(document.getElementById('yearDropdown').value);
+            document.getElementById('yearDropdown').addEventListener('change', function () {
+                loadSalesData(this.value);
+            });
+        });
+    </script>
+}

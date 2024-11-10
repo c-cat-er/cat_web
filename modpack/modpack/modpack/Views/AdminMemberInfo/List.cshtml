@@ -1,0 +1,87 @@
+﻿@model IEnumerable<modpack.Models.Member>
+
+@{
+    ViewData["Title"] = "會員資料一覽";
+}
+
+<head>
+    <style>
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            .table th, .table td {
+                text-align: center; /* 修改為 center 以實現置中對齊 */
+                padding: 8px;
+            }
+
+            .table th {
+                background-color: #f2f2f2;
+            }
+
+    </style>
+</head>
+
+<h1>會員資料一覽</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                序
+            </th>
+            <th>
+                會員帳號
+            </th>
+
+            <th>
+                會員名稱
+            </th>
+            <th>
+                電子信箱
+            </th>
+            <th>
+                電話
+            </th>
+
+            <th>
+                會員層級
+            </th>
+            <th>詳細資訊</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int count = 0;
+            foreach (var item in Model)
+            {
+                count++;
+                <tr>
+                    <td>
+                        @count
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Account)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Level.Name)
+                    </td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.MemberId"><img src="~/svg/info-circle.svg" alt="詳細資訊" width="16" height="16" /></a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

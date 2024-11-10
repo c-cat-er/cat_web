@@ -1,0 +1,175 @@
+﻿@{
+    ViewData["Title"] = "GoBlog";
+    var configuration = (IConfiguration)Context.RequestServices.GetService(typeof(IConfiguration));
+    var buildUrl = configuration.GetSection("BackUrl").Value;
+}
+<!doctype html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="~/css/FooterStyle.css">
+</head>
+
+
+
+<body>
+    <div class="container" style="padding-top:9rem">
+
+        <div class="overflow-auto py-1">
+            <nav class="nav justify-content-between flex-nowrap text-nowrap">
+               
+                <a class="nav-link link-secondary" href="#">社群</a>
+                <a class="nav-link link-secondary" href="#">探險</a>
+                <a class="nav-link link-secondary" href="#">背包</a>
+                <a class="nav-link link-secondary" href="#">組合</a>
+                <a class="nav-link link-secondary" href="#">設計</a>
+                <a class="nav-link link-secondary" href="#">創意</a>
+            </nav>
+        </div>
+
+        <div class="p-4 p-md-5 mb-4 text-white rounded-3 bg-cover" style="background-image: url(https://i.pinimg.com/564x/1a/ac/9c/1aac9cebef88ede1e099b7c2460814cb.jpg);">
+            <div class="col-md-6">
+                <h1 class="display-4 fst-italic">探險者背包</h1>
+                <p class="lead my-4">
+                    背包是一種常見的日常用品，人們在日常生活中使用背包的經驗可以成為背包設計的靈感。例如，如果一個人經常需要背負沉重的物品，那麼可能會設計一款更加舒適耐用的背包。
+                </p>
+                <p class="lead"><a class="text-white">繼續閱讀</a></p>
+            </div>
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-lg-2 mb-5">
+            <div class="col">
+                <div class="card row g-0 flex-row h-100">
+                    <div class="col">
+                        <div class="p-4 d-flex flex-column h-100">
+
+                            <strong class="d-inline-block mb-2 text-primary">功能</strong>
+                            <h3 class="mb-0">背包的功能</h3>
+                            <div class="mb-1 text-muted">三月12日</div>
+                            <p class="card-text mb-auto">背包需要能夠滿足使用者的需求。 例如，如果背包是為學生設計的，那麼它需要能夠容納筆記本電腦、書籍和其他學習用品。</p>
+                            <a href="#" class="stretched-link">繼續閱讀</a>
+                        </div>
+                    </div>
+                    @* 你好 *@
+                    <div class="col-4  bg-cover rounded-3" style="background-image: url(https://i.pinimg.com/564x/04/1e/7c/041e7cc00ab8420ee4d942b3357d6e0b.jpg);"></div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card row g-0 flex-row h-100">
+                    <div class="col">
+                        <div class="p-4">
+
+                            <strong class="d-inline-block mb-2 text-primary">舒適度</strong>
+                            <h3 class="mb-0">背包的舒適度</h3>
+                            <div class="mb-1 text-muted">三月12日</div>
+                            <p class="card-text mb-auto">背包需要配戴舒適。 例如，背包的肩帶需要有一定的寬度和厚度，以分散重量。</p>
+                            <a href="#" class="stretched-link">繼續閱讀</a>
+                        </div>
+                    </div>
+                    <div class="col-4 bg-cover" style="background-image: url(https://i.pinimg.com/564x/35/30/03/353003a7ed49f1289cf4507da1a37c70.jpg);"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row g-md5-5">
+            <div class="col-md-8">
+                <article>
+                    <h2>
+                        太陽能背包為偏鄉學童帶來光明
+                    </h2>
+                    <p>2022 年一月<a href="#">測試人員A</a></p>
+                    <p >台灣偏鄉學童常因缺乏電燈照明，而影響課業表現。近日，一項由台灣科技公司研發的太陽能背包，為偏鄉學童帶來光明。
+                        這款太陽能背包配備太陽能板和電池，可在白天吸收太陽能，並在晚上為 LED 燈提供電力。背包的重量僅 2 公斤，方便學童攜帶。
+                        在試用計畫中，這款太陽能背包為偏鄉學童的家庭帶來了顯著的改善。學童們表示，有了太陽能背包，他們可以延長學習時間，並提高學習效率。
+                    </p>
+                     <br >
+                     <p>
+                        <img class="img1" src="@buildUrl/images/3DShop/Modpack01.jpg">
+                     </p>
+                    <h2>時尚背包結合科技，打造智慧生活</h2>
+                    <p>
+                        隨著科技的發展，背包不再只是用來裝物品的工具，更成為人們日常生活中的時尚配件。近日，一款結合科技的時尚背包，為人們帶來了全新的智慧生活體驗。
+                        這款智慧背包配備了多項科技功能，包括：無線充電：可為手機、平板電腦等電子設備充電。
+                        藍牙追蹤：可防止背包遺失或被盜。環境監測：可監測周圍環境的溫度、濕度、空氣品質等。這款智慧背包的推出，為人們的生活提供了更多便利。
+                    </p>
+                         <br >
+                         <p>
+                        <img class="img1" src="@buildUrl/images/3DShop/Modpack02.jpg">
+                         </p>
+                        <h3>2024年，ModPack 組合背包誕生了。</h3>
+                    <p>
+                        ModPack 組合背包的推出，為 探險 玩家們帶來了極大的便利，也迅速成為 探險 社群中的熱門產品。
+                        如今，ModPack 組合背包已經成為 Minecraft 玩家的必備裝備，陪伴著無數玩家在遊戲世界中創造了一個又一個奇蹟。
+                    </p>
+                    <p>
+                        <img class="img1" src="@buildUrl/images/3DShop/Modpack03.jpg">
+                        </p>
+                    <ul>
+                        <li>堅固耐用</li>
+                        <li>並配有舒適的肩帶和腰帶</li>
+                        <li>方便攜帶</li>
+                    </ul>
+                    <figure >
+                        <img class="img-fluid" src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*1mAgefdcAipAcP7dtNXkzw.jpeg" >
+                        <figcaption>探險背包的風格需要符合使用者的喜好。</figcaption>
+                    </figure>
+                </article>
+
+
+            </div>
+
+
+            <div class="col-md-4 d-none d-md-block">
+
+                <div class="sticky-top" style="top: 16px">
+                    <div class="p-4 bg-light rounded">
+                        <h4>ModPack組合背包的靈感</h4>
+                        <p class="mb-0">
+                            一款專為學生設計的背包，可以容納筆記本電腦、書籍和其他學習用品。
+                            一款專為旅行者設計的背包，可以容納衣服、洗漱用品和其他旅行用品。
+                            一款專為運動員設計的背包，可以容納運動器材和水壺。 一款時尚的背包，
+                            可以作為日常配飾。
+                        </p>
+                    </div>
+                    <div class="p-4">
+                        <h4>每一個美好的當月</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#">2024年 1月</a></li>
+                            <li><a href="#">2024年 2月</a></li>
+                            <li><a href="#">2024年 3月</a></li>
+                            <li><a href="#">2024年 4月</a></li>
+                            <li><a href="#">2024年 5月</a></li>
+                            <li><a href="#">2024年 6月</a></li>
+                            <li><a href="#">2024年 7月</a></li>
+                            <li><a href="#">2024年 8月</a></li>
+                            <li><a href="#">2024年 9月</a></li>
+                            <li><a href="#">2024年 10月</a></li>
+                            <li><a href="#">2024年 11月</a></li>
+                            <li><a href="#">2024年 12月</a></li>
+                        </ol>
+                    </div>
+                    <div class="p-4">
+                        <h4>歡迎連結</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">github</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="border-top py-4 mt-5 text-center">
+        <p class="bg-light">ModPack - 你的組合靈感由我們實現</p>
+        <p >
+            <a href="#">回最上頁</a>
+        </p>
+
+    </footer>
+</body>
+

@@ -1,0 +1,107 @@
+﻿@model IEnumerable<modpack.Models.Order>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RecipientName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RecipientAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillRecipientName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillRecipientAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreationTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CompletionTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Member)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Payment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PaymentStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PromoCode)
+            </th>
+@*             <th>
+                @Html.DisplayNameFor(model => model.Shipping)
+            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.ShippingStatus)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecipientName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecipientAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillRecipientName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillRecipientAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreationTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompletionTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Member.MemberId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderStatus.OrderStatusId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Payment.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PaymentStatus.PaymentStatusId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PromoCode.Code)
+            </td>
+   @*          <td>
+                @Html.DisplayFor(modelItem => item.Shipping.Description)
+            </td> *@
+            <td>
+                @Html.DisplayFor(modelItem => item.ShippingStatus.ShippingStatusId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.OrderId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.OrderId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.OrderId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

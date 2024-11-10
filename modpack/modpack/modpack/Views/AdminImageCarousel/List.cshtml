@@ -1,0 +1,101 @@
+﻿@model IEnumerable<modpack.ViewModels.CImageCarouselViewModel>
+<h1>輪播管理</h1>
+<p><a asp-action="Create" class="btn btn-primary btn-addData"><span>新增資料</span></a></p>
+<hr />
+    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            @foreach (var item in Model)
+            {
+                <div class="carousel-item @(item == Model.First() ? "active" : "")">
+                    <h5>@item.aImageDescription</h5>
+                    <img src="~/images/carousel/@item.aImageFile" class="d-block w-100" alt="@item.aImageDescription">
+                </div>
+            }
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">上一個</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">下一個</span>
+        </button>
+    </div>
+    <hr />
+    <div class="form-group">
+        <form asp-action="List" method="get" style="display: flex; align-items: center;">
+            <input class="form-control" id="searchStringTitle" placeholder="請輸入關鍵字" style="width: 200px;"
+                name="searchStringDescription" value="@ViewBag.CurrentFilterDescription" oninput="searchOnChange()" />
+            <button type="submit" class="btn btn-primary">搜索</button>
+            <button type="submit" class="btn btn-primary">重新搜索</button>
+        </form>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <label class="lb-com" asp-for="@Model.First().aImageCarouselID"></label>
+                </th>
+                <th>
+                <label class="lb-com">
+                    @Html.DisplayNameFor(model => model.aImageFile)
+                    </label>
+                </th>
+                <th>
+                    <label asp-for="@Model.First().aImageDescription"></label>
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            @{
+            int count = 0;
+            foreach (var item in Model)
+            {
+                count++;
+                <tr>
+                    <td>
+                        @count
+                        @* @Html.DisplayFor(modelItem => item.aImageCarouselID) *@
+                    </td>
+                    <td>
+                        <img src="~/images/carousel/@item.aImageFile" width="80" height="60" />
+                        (示例性瀏覽檔名：@Html.DisplayFor(modelItem => item.aImageFile))
+                    </td>
+                    <th>
+                        @Html.DisplayFor(modelItem => item.aImageDescription)
+                    </th>
+                    <td style="display: flex; align-items: center;">
+                        <a asp-action="Edit" class="btn-edit" asp-route-id="@item.aImageCarouselID">編輯<span></span><span></span><span></span><span></span></a>
+                        @* <a asp-action="Details" class="btn-edit" asp-route-id="@item.aImageCarouselID">詳情<span></span><span></span><span></span><span></span></a> *@
+                        <a asp-action="Delete" class="btn-delete" asp-route-id="@item.aImageCarouselID">刪除</a>
+                    </td>
+                </tr>
+            }
+            }
+        </tbody>
+    </table>
+@section Styles {
+    <link rel="stylesheet" href="~/css/table-style.css" />
+    <link rel="stylesheet" href="~/css/label-style.css" />
+    <style>
+        #imageCarousel {
+            width: 200px;
+            height: 150px;
+            background-color: lightblue;
+            margin: 0 auto;
+        }
+    </style>
+}
+@section Scripts {
+    <script>
+        var myCarousel = new bootstrap.Carousel(document.getElementById('imageCarousel'), {
+            interval: 5000
+        });
+
+        var noSearchResults = 'ViewBag.NoSearchResults';
+        if (noSearchResults === 'True') {
+            alert("未找到匹配的結果，請嘗試其他關鍵字。");
+        }
+    </script>
+}

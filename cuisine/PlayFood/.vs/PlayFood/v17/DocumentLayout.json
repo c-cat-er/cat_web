@@ -1,0 +1,419 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|c:\\users\\user\\documents\\github\\mypublicwork\\program\\ispan\\midtermwork\\playfood\\formfood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formfood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formfooddetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formfooddetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formpersonmang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formpersonmang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formshoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formshoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\globalvar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:globalvar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formpersonmang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formpersonmang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formpay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formpay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formloginmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formloginmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formcustommessagebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formcustommessagebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formcustommessagebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formcustommessagebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formfood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formfood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formfooddetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formfooddetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formloginmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formloginmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formpay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formpay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\formpay.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD7615A6-2A17-4CB6-B5B2-D667CFC882B6}|PlayFood.csproj|solutionrelative:formpay.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAApwCUAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.388Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormPersonMang.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormPersonMang.cs",
+              "RelativeDocumentMoniker": "FormPersonMang.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormPersonMang.cs",
+              "RelativeToolTip": "FormPersonMang.cs",
+              "ViewState": "AQIAAIoBAAAAAAAAAAAYwDkBAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.332Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormLoginMember.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormLoginMember.cs",
+              "RelativeDocumentMoniker": "FormLoginMember.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormLoginMember.cs",
+              "RelativeToolTip": "FormLoginMember.cs",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAuwLsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.156Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormLogin.cs",
+              "RelativeDocumentMoniker": "FormLogin.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormLogin.cs",
+              "RelativeToolTip": "FormLogin.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAnwCQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.154Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormPay.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormPay.cs",
+              "RelativeDocumentMoniker": "FormPay.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormPay.cs",
+              "RelativeToolTip": "FormPay.cs",
+              "ViewState": "AQIAADsCAAAAAAAAAAAAAFACAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.153Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormShoppingCart.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormShoppingCart.cs",
+              "RelativeDocumentMoniker": "FormShoppingCart.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormShoppingCart.cs",
+              "RelativeToolTip": "FormShoppingCart.cs",
+              "ViewState": "AQIAAGoBAAAAAAAAAAApwG8BAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.111Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormRegister.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormRegister.cs",
+              "RelativeDocumentMoniker": "FormRegister.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormRegister.cs",
+              "RelativeToolTip": "FormRegister.cs",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAqwJsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.398Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.399Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FormCustomMessageBox.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormCustomMessageBox.cs",
+              "RelativeDocumentMoniker": "FormCustomMessageBox.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormCustomMessageBox.cs",
+              "RelativeToolTip": "FormCustomMessageBox.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAiwGoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-05-05T06:04:31.397Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormMain.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormMain.cs",
+              "RelativeDocumentMoniker": "FormMain.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormMain.cs",
+              "RelativeToolTip": "FormMain.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAYwDEAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GlobalVar.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\GlobalVar.cs",
+              "RelativeDocumentMoniker": "GlobalVar.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\GlobalVar.cs",
+              "RelativeToolTip": "GlobalVar.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAACgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormFood.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormFood.cs",
+              "RelativeDocumentMoniker": "FormFood.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormFood.cs",
+              "RelativeToolTip": "FormFood.cs",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAowLoBAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormFoodDetails.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormFoodDetails.cs",
+              "RelativeDocumentMoniker": "FormFoodDetails.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormFoodDetails.cs",
+              "RelativeToolTip": "FormFoodDetails.cs",
+              "ViewState": "AQIAAC0BAAAAAAAAAAAnwDoBAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FormFoodDetails.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormFoodDetails.cs",
+              "RelativeDocumentMoniker": "FormFoodDetails.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormFoodDetails.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "FormFoodDetails.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormPersonMang.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormPersonMang.cs",
+              "RelativeDocumentMoniker": "FormPersonMang.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormPersonMang.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "FormPersonMang.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormOrder.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormOrder.cs",
+              "RelativeDocumentMoniker": "FormOrder.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormOrder.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "FormOrder.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FormFood.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormFood.cs",
+              "RelativeDocumentMoniker": "FormFood.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormFood.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "FormFood.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FormLogin.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormLogin.cs",
+              "RelativeDocumentMoniker": "FormLogin.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormLogin.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "FormLogin.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Form1.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\Form1.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "Form1.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FormCustomMessageBox.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormCustomMessageBox.cs",
+              "RelativeDocumentMoniker": "FormCustomMessageBox.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\iSpan\\SecondMidterm\\PlayFood\\FormCustomMessageBox.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Desktop\\iSpan\\SecondMidterm\\PlayFood\\FormCustomMessageBox.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-05-05T06:04:31.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FormMain.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormMain.cs",
+              "RelativeDocumentMoniker": "FormMain.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormMain.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "FormMain.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FormLoginMember.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormLoginMember.cs",
+              "RelativeDocumentMoniker": "FormLoginMember.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormLoginMember.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "FormLoginMember.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FormPay.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormPay.cs",
+              "RelativeDocumentMoniker": "FormPay.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormPay.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "FormPay.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FormRegister.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormRegister.cs",
+              "RelativeDocumentMoniker": "FormRegister.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormRegister.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "FormRegister.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FormPay.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormPay.Designer.cs",
+              "RelativeDocumentMoniker": "FormPay.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\iSpan\\MidtermWork\\PlayFood\\FormPay.Designer.cs",
+              "RelativeToolTip": "FormPay.Designer.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAqwCQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:31.414Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

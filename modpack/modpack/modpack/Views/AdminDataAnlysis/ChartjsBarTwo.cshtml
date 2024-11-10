@@ -1,0 +1,127 @@
+﻿@using System.Text.Json
+@model List<modpack.ViewModels.CDataAnlysisViewModel>
+<h1>數據管理--各月份的產品類別長條圖</h1>
+<p>
+    <a asp-action="DataList" class="btn btn-cancel">
+        <span>返回列表</span>
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+    </a>
+</p>
+<hr />
+<h3>每月各產品總金額</h3>
+<p>選擇年-月份：</p>
+<select id="yearMonth">
+    @foreach (var item in Model.Select(m => m.aYearMonth).Distinct())
+    {
+        <option value="@item">@item</option>
+    }
+</select>
+<canvas id="monthlyChart" width="800" height="400"></canvas>
+@section Styles {
+    <link rel="stylesheet" href="~/css/table-style.css" />
+    <style>
+        canvas {
+            background-color: whitesmoke !important;
+        }
+    </style>
+}
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        async function updateChart(selectedYearMonth) {
+            const datas = await new Promise((resolve, reject) => $.ajax({
+                url: `/AdminDataAnlysis/ChartjsBarJsonTwo?selectedYearMonth=${selectedYearMonth}`,
+                type: 'GET',
+                success: resolve,
+                error: reject,
+            }));
+            renderChart(datas);
+        }
+
+        function renderChart(data) {
+            var ctx = document.getElementById('monthlyChart').getContext('2d');
+            if (window.chart) {
+                window.chart.destroy();
+            }
+
+            var datasets = {};
+            var labels = {};
+            data.forEach(function (item) {
+                var label = "";
+                var category = item.aProductCategory;
+
+                if (category === "Product") {
+                    label = "產品類";
+                } else if (category === "Inspiration") {
+                    label = "靈感類";
+                } else if (category === "Customized") {
+                    label = "客製化類";
+                }
+
+                if (!datasets[category]) {
+                    datasets[category] = {
+                        label: label,
+                        data: [],
+                        backgroundColor: getRandomColor(),
+                        borderColor: getRandomColor(),
+                        borderWidth: 2
+                    };
+                    labels[category] = [];
+                }
+
+                datasets[category].data.push(item.aTotalPrice);
+                labels[category].push(label);
+            });
+
+            var chartData = Object.values(datasets);
+            var allLabels = Object.values(labels).flat();
+            window.chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: allLabels,
+                    datasets: [{
+                        label: `總銷售額`,
+                        data: data.map(item => item.aTotalPrice),
+                        backgroundColor: [
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(201, 203, 207, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgb(54, 162, 235)',
+                            'rgb(153, 102, 255)',
+                            'rgb(201, 203, 207)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        var initialYearMonth = document.getElementById('yearMonth').value;
+        updateChart(initialYearMonth);
+        document.getElementById('yearMonth').addEventListener('change', function () {
+            var selectedYearMonth = this.value;
+            updateChart(selectedYearMonth);
+        });
+    </script>
+}

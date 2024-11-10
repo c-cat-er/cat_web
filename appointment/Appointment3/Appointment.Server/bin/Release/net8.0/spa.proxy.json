@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:5173",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "S:\\113年_茗豐\\Appointment\\Appointment3\\Appointment.Server\\..\\appointment.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

@@ -1,0 +1,396 @@
+Niseko
+├── 專案架構:
+│   ├── Niseko.Server: .NET Core Web API。
+│   ├── Niseko.client: Vuejs。
+│   └── Niseko.Mana: .NET Core Web MVC。
+│
+├── 開發考量:
+│   ├── 設計
+│   │   ├── 旺季: 12-03月, 淡季: 04-11月。
+│   │   ├── 
+│   │   └── 
+│   └── 開發
+│       ├── UI時間顯示當地時間，Db儲存國際時間。
+│       ├── 
+│       ├── 
+│       ├── 
+│       └── 
+├── 開發流程:
+│   ├── db
+│   │   ├── use 遮罩隱藏員工表相關欄位
+│   │   ├── use AES 加密，員工表和會員表帳號和密碼。
+│   │   ├── use 視圖，在 Server 專案內使用。
+│   │   ├── use SP。
+│   │   └── USE TR。
+│   ├── Niseko.Server
+│   │   ├── 1. EF Core Tool and ng i 3-db pack
+│   │   ├── 2. ng i other pack
+│   │   │   ├── Authentication.JwtBearer
+│   │   │   └── SHA3.Net
+│   │   └── 3. 配置 appsettings.json 和 Program.cs
+│   ├── Niseko.client
+│   │   ├── npm init -y
+│   │   ├── npm i pack
+│   │   │   ├── //1. 安裝 Vue CLI (用於創建和管理 Vue 專案的工具。)//npm i @vue/cli@latest //此不用
+│   │   │   ├── 2. 安裝 Vue Router (用於處理單頁應用程式 (SPA) 路由。)//npm i vue-router@latest
+│   │   │   ├── 3. 安裝 Pinia (狀態管理工具。)//npm i pinia@latest
+│   │   │   ├── 4. 安裝 Axios (用於處理 HTTP 請求的庫。)//npm i axios@latest
+│   │   │   ├── 5. 安裝 Vue CLI Plugins:
+│   │   │   │   ├── (用於轉譯現代 JavaScript 語法，以確保代碼在所有瀏覽器中都能正常運行。)
+│   │   │   │   │   ├── //vue add @vue/cli-plugin-babel@latest
+│   │   │   │   │   └── npm i @babel/core @babel/preset-env babel-loader --save-dev
+│   │   │   │   ├── (用於在開發過程中執行代碼檢查，確保代碼風格一致並且減少錯誤。)
+│   │   │   │   │   ├── //vue add @vue/cli-plugin-eslint@latest
+│   │   │   │   │   └── npm i eslint eslint-plugin-vue --save-dev
+│   │   │   │   ├── (用於單元測試，集成了 Jest 測試框架。)
+│   │   │   │   │   ├── //vue add @vue/cli-plugin-unit-jest@latest
+│   │   │   │   │   └── //npm i jest @babel/preset-env @babel/preset-typescript babel-jest @vue/test-utils@next vue-jest@next --save-dev
+│   │   │   │   └── (用於將應用程序轉換為漸進式網頁應用 (PWA)，包括服務工作者和 manifest 文件。)
+│   │   │   │       ├── //vue add @vue/cli-plugin-pwa@latest
+│   │   │   │       └── npm i workbox-webpack-plugin --save-dev
+│   │   │   ├── 6. 安裝 Style Libraries (使用 CSS 或 UI 框架來快速構建樣式和佈局。)
+│   │   │   │   ├── Vuetify (一個 Material Design 風格的 Vue 組件庫，提供豐富的 UI 組件。)
+│   │   │   │   │   ├── //vue add vuetify@latest
+│   │   │   │   │   ├── //npm i vuetify@latest vite-plugin-vuetify //最新穩定版
+│   │   │   │   │   └── npm i vuetify@next vite-plugin-vuetify //最新測試版
+│   │   │   │   ├── MDI Icon
+│   │   │   │   │   └── npm install @mdi/font //圖標
+│   │   │   │   ├── BootstrapVue (將 Bootstrap 的樣式和組件引入 Vue 中。)
+│   │   │   │   │   ├── //npm i bootstrap-vue bootstrap@latest
+│   │   │   │   │   ├── //npm i bootstrap-vue@latest bootstrap@latest
+│   │   │   │   │   └── npm i bootstrap-vue-next@latest bootstrap@latest
+│   │   │   │   └── Tailwind CSS (快速構建 CSS 框架)(日後再改用)
+│   │   │   │       ├── //vue add tailwind@latest
+│   │   │   │       └── //npm i tailwindcss
+│   │   │   ├── 7. 安裝 Linting and Formatting Tools (保持代碼風格一致。) (上面已安裝)
+│   │   │   │   └── //npm i eslint prettier eslint-plugin-vue@latest
+│   │   │   ├── 8. 安裝支付相關套件
+│   │   │   │   ├── npm install @paypal/paypal-js //PayPal
+│   │   │   ├── 8. 安裝 Testing Libraries (用於單元測試和端到端測試。(日後再決定ˇ)
+│   │   │   │   ├── //Vue Test Utils (用於單元測試 Vue 組件的官方工具) //npm i @vue/test-utils@next --save-dev
+│   │   │   │   ├── //Jest (一個強大的 JavaScript 測試框架，常用於單元測試) //npm i jest @babel/preset-env @babel/preset-typescript babel-jest --save-dev
+│   │   │   │   ├── //Vue Jest (用於處理 Vue 文件的 Jest 預設) //npm i vue-jest@next --save-dev\
+│   │   │   │   ├── //ts-jest (用於 TypeScript 項目的 Jest 預設) //npm i ts-jest --save-dev  //日後再改用
+│   │   │   │   ├── //eslint-plugin-jest (用於支持 Jest 的 ESLint 插件) //npm i eslint-plugin-jest --save-dev
+│   │   │   │   └── //Cypress (端到端測試) //npm i cypress@latest
+│   │   │   ├── 9. 安裝 Vue Devtools (開發時的瀏覽器擴展)，網上下載。
+│   │   │   ├── 10. 其他
+│   │   │   │   ├── cookie
+│   │   │   │   │   ├── npm i js-cookie //用於儲存 token
+│   │   │   │   ├── 日期選擇器
+│   │   │   │   │   ├── npm i flatpickr@latest --save
+│npm install jwt-decode@latest //用於解碼 token
+│
+│   │   │   └── //11. 配置 webpack。
+│//npm i webpack webpack-cli webpack-dev-server --save-dev
+│//npm i vue-loader vue-style-loader css-loader --save-dev
+│//npm i html-webpack-plugin --save-dev
+│   │   ├── 修改 vite.config.cs。
+│   │   ├── 修改 .gitignore, 註解 .vscode。
+│   │   ├── 架構和創建所有檔案。
+│   │   ├── 設置全局 url。
+│   │   ├── 組件皆 use useAuthStore 儲存狀態 and use storeToRefs 保持響應式。
+│   │   ├── 10. 配置第三方登入。(使用如 vue-social-auth 或其他類似庫來實現第三方登入)
+│   │   ├── 11. 配置金流支付。(使用官方提供的 SDK 或 API 來集成綠界和藍星金流支付)
+│   │   ├── 12. 測試和調試 npm run serve。
+│   │   ├── 13. 使用如 vue-social-auth 或其他類似庫來實現第三方登入。
+│   │   └── 14. 使用如 vue-social-auth 或其他類似庫來實現第三方登入。
+│   └── Niseko.Mana
+│       ├── 1. 配置 appsettings.json 和 Program.cs。
+│       └── 2. 加入所有檔案。
+│
+├── 檔案架構:
+│   ├── Niseko.Server
+│   │   ├── \Controllers
+│   │   │   ├── MemberAuthWebsiteController
+│   │   │   │   ├── POST register
+│   │   │   │   │   ├── //客戶端已安裝 js-cookie
+│   │   │   │   │   ├── ng i SHA3.Net
+│   │   │   │   │   ├── 註冊驗證
+│   │   │   │   │   ├── use SHA-3 加密
+│   │   │   │   │   ├── use fn GenerateSalt
+│   │   │   │   │   ├── use Sha3Helper
+│   │   │   │   │   ├── use fn GenerateMemberCode
+│   │   │   │   │   ├── use fn GenerateJwtToken
+│   │   │   │   │   ├── //use HttpOnly and Secure .. store Token in cookie 目前錯誤改在前端設置
+│   │   │   │   │   └── return token and id
+│   │   │   │   ├── POST login
+│   │   │   │   │   ├── //客戶端已安裝 js-cookie
+│   │   │   │   │   ├── ng i SHA3.Net
+│   │   │   │   │   ├── 登入驗證
+│   │   │   │   │   ├── use SHA-3 加密
+│   │   │   │   │   ├── use fn GenerateSalt
+│   │   │   │   │   ├── use Sha3Helper
+│   │   │   │   │   ├── use fn GenerateJwtToken
+│   │   │   │   │   ├── //use HttpOnly and Secure .. store Token in cookie 目前錯誤改在前端設置
+│   │   │   │   │   └── return token and id
+│   │   │   │   ├── POST logout
+│   │   │   │   └── 筆記
+│   │   │   │       ├── 時區從前端獲取，因為它取決於用戶的地理位置和瀏覽器設置。
+│   │   │   │       └── IP地址從後端獲取，因為它更可靠。從前端獲取IP可能會不準確，因為它可以被偽裝，且會有CORS配置問題。
+│   │   │   ├── MemberAuthThirdPartyController
+│   │   │
+│   │   │   ├── PEmployeeAuthController //未重製
+│   │   │   │   ├── POST register
+│   │   │   │   ├── POST login
+│   │   │   │   │   ├── ng i Microsoft.AspNetCore.Authentication.JwtBearer //JWT 中間件驗證
+│   │   │   │   │   ├── 登入驗證
+│   │   │   │   │   └── from GenerateJwtToken get Token
+│   │   │   │   └── fn GenerateJwtToken
+│   │   │   │       ├── ng i System.IdentityModel.Tokens.Jwt //生成 JWT Token
+│   │   │   │       └── ng i BCrypt.Net-Next //哈希加密
+│   │   │   ├── MMemberShoppingCartsController
+│   │   │   │   ├── GET 取得購物車資料
+│   │   │   │   │   ├── use include 加入多個表
+│   │   │   ├── CartsController
+│   │   │   │   ├── GET 
+│   │   │   │   │   ├── 
+│   │   ├── \Models
+│   │   │   └── EF Core Tool Model
+│   │   └── \DTOs
+│   │
+│   ├── Niseko.client
+│   │   ├── \node_modules
+│   │   │   └── npm i
+│   │   ├── \dist //放webpack 處理的文檔
+│   │   │   └── 
+│   │   ├── \public //放不需要 Webpack 處理的靜態文檔
+│   │   │   ├── \cscs
+│   │   │   ├── \js
+│   │   │   └── \images
+│   │   ├── \src
+│   │   │   ├── \assets
+│   │   │   │   ├── \css
+│   │   │   │   ├── \js
+│   │   │   │   └── \images
+│   │   │   ├── \layouts //放佈局
+│   │   │   │   ├── DefaultLayout.vue //默認佈局，適用於大多數頁面
+│   │   │   │   ├── AuthLayout.vue //用於認證相關頁面的佈局，如登入和註冊頁面
+│   │   │   │   └── //AdminLayout.vue //用於管理員後台的佈局
+│   │   │   │
+│   │   │   ├── \constants //放應用程序中使用的常量或配置文件
+│   │   │   │   ├── routers.js //Vue Router set 路由管理，set 路由守衛
+│   │   │   │   │   └── set pages route name
+│   │   │   │   ├── pinia.js //use pinia 管理狀態，use pinia-plugin-persistedstate 儲存至 cookie
+│   │   │   │   ├── axios.js //axiosInstance and url 相關配置
+│   │   │   │   │   ├── use env server api url
+│   │   │   │   │   ├── set request Interceptor and set HTTP header
+│   │   │   │   │   ├── set response interceptor
+│   │   │   │   │   └── use cookie storeage JWT token
+│   │   │   │   └── vuetify.js //vuetify/styles 相關配置
+│   │   │   │       └── use components and directives
+│   │   │   │
+│   │   │   ├── \pages //頁面級別 Vue 組件，每個組件對應一個路由和頁面
+│   │   │   │   ├── RegisterPage.vue //註冊p，含註冊表單c
+│   │   │   │   ├── LoginPage.vue //登入p，含登入表單c、第三方登入c
+│   │   │   │   ├── HomePage.vue //首頁p，use 動態路由展示內容
+│   │   │   │   ├── AboutPage.vue //關於我們p，含網站或公司信息
+│   │   │   │   ├── LodgingPage.vue //民宿p，含民宿介紹和預定頁面
+│   │   │   │   │   ├── 
+│   │   │   │   │   ├── 
+│   │   │   │   ├── StoragePage.vue //寄放p
+│   │   │   │   ├── ShuttlePage.vue //接送p
+│   │   │   │   ├── CoursePage.vue //課程p
+│   │   │   │   ├── PhotographyPage.vue //攝影p
+│   │   │   │   ├── ShoppingCartPage.vue //購物車p
+│   │   │   │   │   ├── 
+│   │   │   │   │   ├── 
+│   │   │   │   ├── PaymentPage.vue //付款p
+│   │   │   │   │   ├── 
+│   │   │   │   │   ├── 
+│   │   │   │   │   ├── 
+│   │   │   │   │   ├── 
+│   │   │   │   ├── MemberCenterPage.vue //會員中心p
+│   │   │   │   └── NotFoundPage.vue //404 未找到內容p，當用戶訪問不存在的路由時顯示
+│   │   │   │
+│   │   │   ├── \components //放可重用組件
+│   │   │   │   ├── \register
+│   │   │   │   │   └── RegisterForm.vue //註冊表單c
+│   │   │   │   │       └── 包含輸入框 下拉 日期選擇器 勾選框
+│   │   │   │   ├── \login
+│   │   │   │   │   ├── LoginForm.vue //登入表單c
+│   │   │   │   │   ├── GoogleLogin.vue //Google 登入c
+│   │   │   │   │   ├── FacebookLogin.vue //Facebook 登入c
+│   │   │   │   │   └── TwitterLogin.vue //Twitter 登入c
+│   │   │   │   ├── \home
+│   │   │   │   │   ├── Home.vue //初始首頁內容c
+│   │   │   │   │   └── //
+│   │   │   │   ├── \Lodging
+│   │   │   │   │   ├── LodgingIntro.vue //民宿介紹c
+│   │   │   │   │   └── LodgingForm.vue //民宿預定表單c
+│   │   │   │   │       ├── use lodgingFormStore 儲存狀態
+│   │   │   │   │       └── use storeToRefs 保持響應式
+│   │   │   │   ├── \storage
+│   │   │   │   │   ├── StorageIntro.vue //寄放介紹
+│   │   │   │   │   └── //寄放價格
+│   │   │   │   ├── \shuttle
+│   │   │   │   │   ├── //接送介紹
+│   │   │   │   │   └── //接送價格
+│   │   │   │   ├── \course
+│   │   │   │   │   ├── //課程介紹
+│   │   │   │   │   └── //課程價格
+│   │   │   │   ├── \photography
+│   │   │   │   │   ├── PhotographyIntro.vue //攝影介紹c
+│   │   │   │   │   └── PhotographyPrice.vue //攝影價格c
+│   │   │   │   ├── \cart
+│   │   │   │   │   ├── ShoppingCartItems.vue //所有商品項目c，含商品勾選框、商品編號、數量修改、移除商品，商品預覽窗
+│   │   │   │   │   ├── //曾經購買的商品推送c
+│   │   │   │   │   └── //曾經瀏覽(未購買)的商品推送c
+│   │   │   │   ├── \payment
+│   │   │   │   │   ├── SelectedItems.vue //勾選之商品項目列表c(僅列表，不可預覽)
+│   │   │   │   │   ├── MemberData.vue //會員帳戶資料c，含切換帳戶、顯示當前會員資料(姓名、電話、信箱)
+│   │   │   │   │   ├── //運送方式c
+│   │   │   │   │   ├── //優惠券c
+│   │   │   │   │   ├── PaymentEcpay.vue //綠界金流支付c
+│   │   │   │   │   ├── PaymentBlueStar.vue //藍星金流支付c
+│   │   │   │   │   └── CartSummary.vue //金額計算c，含當前總計、折扣後總計、稅金及最終應支付金額。(不含運費)
+│   │   │   │   └── \share //共享
+│   │   │   │       └── Datepicker.vue //日期選擇器c
+│   │   │   │ 
+│   │   │   ├── \utils //放工具函數和配置文件
+│   │   │   │ 
+│   │   │   ├── \stores //放組件狀態管理檔
+│   │   │   │   ├── RegisterFormStore.js //註冊表單c--會員註冊狀態
+│   │   │   │   │   ├── POST register
+│   │   │   │   │   ├── storage 會員資料 in pinia cookie
+│   │   │   │   │   └── use jwtDecode 解碼 token get cookie 資料
+│   │   │   │   ├── LoginFormStore.js //登入表單c--會員登入狀態
+│   │   │   │   │   ├── POST login
+│   │   │   │   │   ├── storage 會員資料 in pinia
+│   │   │   │   │   ├── use js-cookie store token //這個令牌可以用來在後續的 API 請求中進行身份驗證
+│   │   │   │   │   └── 解碼 token get 會員資料 storage in pinia
+│   │   │   │   ├── MemberDataStore.js //共用c--管理會員資料，從 cookie 中取得會員資料。
+│   │   │   │   ├── LodgingFormStore.js //民宿預定表單c--民宿預定表單狀態，含表單數據、加載狀態和錯誤信息
+│   │   │   │   │   ├── 設置唯讀欄位
+│   │   │   │   │   ├── use pinia defineStore 管理狀態
+│   │   │   │   │   └── use axiosInstance POST
+│   │   │   │   ├── CartItemsStore.js //所有商品項目c--購物車狀態，管理購物車中的項目。
+│   │   │   │   │   ├── 
+│   │   │   │   │   ├── 
+│   │   │   │   ├── PaymentStore.js //綠界金流支付c&藍星金流支付c--付款狀態，含管理支付狀態和相關信息
+│   │   │   │   │   ├── 
+│   │   │   │   │   ├── 
+│   │   │   ├── \services //放服務層代碼，與後端 API 交互，暫不用
+│   │   │   │   ├── authService.js //處理用戶認證相關的 API 請求，如登入、註冊和登出等
+│   │   │   │   ├── lodgingService.js //處理與民宿相關的 API 請求，如獲取民宿列表、民宿詳細信息等
+│   │   │   │   ├── shuttleService.js //處理接送服務相關的 API 請求
+│   │   │   │   ├── rentalService.js //處理租借服務相關的 API 請求
+│   │   │   │   ├── ecpayService.js //處理綠界金流支付相關的 API 請求
+│   │   │   │   └── bluestarService.js //處理藍星金流支付相關的 API 請求
+│   │   │   │
+│   │   │   ├── \locales //放不同語言版本的翻譯文件
+│   │   │   │   ├── 
+│   │   │   │   ├── 
+│   │   │   │   └── 
+│   │   │   ├── \tests //放測試文件
+│   │   │   │   ├── 
+│   │   │   │   ├── 
+│   │   │   │   └── 
+│   │   │   ├── App.vue //根組件，是應用程式的入口組件。(k-p, App.vue 是應用程式的根組件，通常不直接引入具體的頁面組件，而是使用路由來控制哪個頁面組件應該被渲染。)
+│   │   │   │   ├── //Navbar.vue //導航欄組件，包含網站的導航連結
+│   │   │   │   └── //Footer.vue //頁腳組件，包含網站的版權信息和其他連結
+│   │   │   ├── main.js //入口 JavaScript 文件，負責初始化 Vue 實例並掛載到 DOM 上。
+│   │   │   └── router.js //路由配置文件
+│   │   ├── .env //設置全域環境變數
+│   │   ├── .babel.config.js //Babel 配置文件，用於轉譯 JavaScript
+│   │   ├── .eslintrc.js //ESLint 配置文件，用於代碼質量檢查
+│   │   ├── package.json
+│   │   ├── index.html //最外層 HTML, css, js 架構
+│   │   ├── vite.config.js //Vue CLI 相關配置文件
+│   │   ├── imageConfig.js //k-p, 所有組件圖片相關配置
+│   │   └── webpack.config.js //Webpack 相關配置文件
+│   │
+│   ├── Niseko.Mana
+│   │   ├── \Controllers
+│   │   ├── \Services
+│   │   │   └── UrlSettings.cs //api url
+│   │   ├── \DTOs
+│   │   ├── \VMs
+│   │   └── \Views
+
+
+若之後要用webpoack，package.json 再加上:
+    //"webpack": "^5.0.0",
+    //"webpack-cli": "^4.0.0",
+    //"webpack-dev-server": "^4.0.0",
+
+尚未做的
+1. MemberLoginPartial 會員登入
+您是否需要更多關於 Vue Router 的導航守衛或動態路由的詳細信息？
+b. 是否需要幫助設置全局狀態管理（例如，用 Pinia 管理用戶認證狀態）？
+
+
+若要做
+1. 屬標懸浮時，顯示
+
+
+進階:
+1. 配置三種URL，前端請求API 獲取當前啟動之URL。
+2. 顯示訂單進行的進度，如購物車、輸入信息、確認訂單、完成。
+
+
+索引
+查詢所有未離職員工資料
+查詢所有已離職員工資料
+查詢某員工ID的所有資料
+查詢所有員工的帳號密碼
+查詢當前登入中員工
+
+查詢所有未離職教練資料
+查詢所有已離職教練資料
+查詢某教練ID的所有資料
+
+查詢所有合作中廠商資料
+查詢某廠商ID的所有資料
+
+查詢所有民宿(房間)資料
+查詢所有已清潔的民宿(房間)資料
+查詢所有未清潔的民宿(房間)資料
+
+查詢所有接送服務資料
+查詢所有已開放的接送服務資料
+查詢所有未開放的接送服務資料
+
+查詢所有滑雪課程資料
+查詢所有已開放的滑雪課程資料
+查詢所有未開放的滑雪課程資料
+
+查詢所有雪具資料
+查詢所有已開放租借的雪具資料
+查詢所有未開放租借的雪具資料
+
+查詢所有寄放的資料
+
+查詢所有權限不為0的會員資料
+查詢所有會員的帳號密碼
+查詢當前登入中會員
+查詢某會員ID的所有個人資料
+查詢某會員ID的購物車資料
+查詢某會員ID的訂單資料
+查詢某會員ID的付款紀錄資料
+查詢某會員ID支付的卡號資料
+查詢某會員ID當月支付總金額
+查詢某會員ID當年支付總金額
+
+查詢所有訂單資料
+查詢當日所有訂單資料
+查詢當週所有訂單資料
+查詢當月所有訂單資料
+查詢當年所有訂單資料
+查詢所有未赴約訂單資料
+查詢當日所有訂單總金額
+查詢當週所有訂單總金額
+查詢當月所有訂單總金額
+查詢當年所有訂單總金額
+
+查詢所有評論資料
+查詢某會員ID評論資料
+
+若客戶如期報到，則修改訂單民宿表 訂單客戶表為1
+
+
+三間民宿的多張照片
+各民宿各房間的多張照片
+
+刪除對話框和錯誤信息，可作為可重用組件  !!??
+

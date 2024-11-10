@@ -1,0 +1,6 @@
+@Niseko.Server_HostAddress = http://localhost:5038
+
+GET {{Niseko.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

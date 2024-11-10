@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DIlZrB3XLrBpzFd8efVN7wM2+DUtHpt/pxd872H8N5s=",
+  "Source": "Appointment.Server",
+  "BasePath": "_content/Appointment.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

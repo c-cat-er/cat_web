@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:5173",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "C:\\Users\\gn055\\OneDrive\\文件\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\..\\niseko.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

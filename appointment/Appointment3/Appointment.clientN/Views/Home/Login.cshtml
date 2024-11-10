@@ -1,0 +1,65 @@
+﻿@model Appointment.clientN.VMs.LoginVM
+@{
+    ViewData["Title"] = "Login";
+    var storeListJson = System.Text.Json.JsonSerializer.Serialize(Model.StoreList);
+}
+
+<form asp-controller="Home" asp-action="Login" method="post">
+    <h2>登入</h2>
+    @Html.AntiForgeryToken()
+    <div>
+        <label asp-for="SHOPNO">@Html.DisplayNameFor(model => model.SHOPNO)：</label>
+        <select asp-for="SHOPNO" id="SHOPNO" required>
+            @foreach (var item in Model.StoreList)
+            {
+                <option value="@item.CNUM" selected>@item.CNAME</option>
+            }
+        </select>
+        <input type="hidden" name="StoreListJson" value="@storeListJson" />
+    </div>
+    <div>
+        @*<label asp-for="USERID">@Html.DisplayNameFor(model => model.USERID)</label>*@
+        <input asp-for="USERID" class="form-control form-control-user" id="USERID" placeholder="請輸入帳號" required />
+        <span asp-validation-for="USERID" class="text-danger"></span>
+    </div>
+    <div class="input-container">
+        @*<label asp-for="PASSWD">@Html.DisplayNameFor(model => model.PASSWD)</label>*@
+        <input asp-for="PASSWD" type="password" class="form-control form-control-user" id="PASSWD" placeholder="請輸入密碼" required />
+        <span id="switchPasswd">👁️‍🗨️</span>
+        <span asp-validation-for="PASSWD" class="text-danger"></span>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">登入</button>
+    </div>
+</form>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/login.css" />
+}
+
+@if (TempData["AlertMessage"] != null)
+{
+    <div id="alert-message" class="alert alert-info" role="alert">
+        @TempData["AlertMessage"]
+    </div>
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            function switchPasswd() {
+                var passwdField = $('#PASSWD');
+                var currentType = passwdField.attr('type');
+                passwdField.attr('type', currentType === 'password' ? 'text' : 'password');
+            }
+
+            $('#switchPasswd').on('click', switchPasswd);
+
+            var alertMessage = $('#alert-message');
+            if (alertMessage.length) {
+                alert(alertMessage.text());
+                window.location.href = '@TempData["RedirectUrl"]';
+            }
+        });
+    </script>
+}

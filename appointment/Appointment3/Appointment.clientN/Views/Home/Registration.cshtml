@@ -1,0 +1,99 @@
+﻿@model Appointment.clientN.VMs.RegistrationVM
+@{
+    ViewData["Title"] = "Registration";
+}
+
+<form class="p-3" id="registrationForm" data-swagger-api-url="@ViewBag.SwaggerApiUrl" onsubmit="return submitForm(event)">
+    <div class="row">
+        <div class="col">
+            <label asp-for="CNUM">@Html.DisplayNameFor(model => model.CNUM)：</label>
+            <input asp-for="CNUM" id="CNUM" class="form-control form-control-user textbox" name="CNUM" maxlength="10" placeholder="請輸入會員編" />
+        </div>
+        <div class="col">
+            <label asp-for="RDATE">@Html.DisplayNameFor(model => model.RDATE)：</label>
+            <input asp-for="RDATE" id="datetimepicker3" class="form-control form-control-user textbox" name="RDATE" placeholder="請選擇日期" data-input />
+        </div>
+        <div class="col">
+            <label asp-for="ACUTE">@Html.DisplayNameFor(model => model.ACUTE)：</label>
+            <select asp-for="ACUTE" class="select" id="ACUTE" title="選擇預約類型" name="ACUTE">
+                <option value="未選" selected>未選</option>
+                <option value="看診">看診</option>
+                <option value="療程">療程</option>
+                <option value="諮詢">諮詢</option>
+                <option value="手術">手術</option>
+            </select>
+        </div>
+        <div class="col">
+            <label asp-for="CSTAT">@Html.DisplayNameFor(model => model.CSTAT)：</label>
+            <select asp-for="CSTAT" class="select" id="CSTAT" title="選擇預約狀態" name="CSTAT">
+                <option value="未選" selected>未選</option>
+                <option value="Q">查詢</option>
+                <option value="K">查詢完成</option>
+                <option value="A">已掛</option>
+                <option value="Y">掛號完成</option>
+                <option value="D">退掛</option>
+                <option value="P">退掛完成</option>
+            </select>
+        </div>
+        <div class="col">
+            <label asp-for="USERID">@Html.DisplayNameFor(model => model.USERID)：</label>
+            <select asp-for="USERID" class="select" id="USERID" title="選擇執行人" name="USERID">
+                <option value="未選" selected>未選</option>
+            </select>
+        </div>
+        <div class="col-1">
+            <br />
+            <button type="button" class="btn btn-danger" id="clearBtn" title="重選" aria-label="重選">重選</button>
+        </div>
+    </div>
+</form>
+<div class="row mt-3" id="registrationTableContainer">
+    <div class="col table-container mb-5">
+        <table class="table" id="registrationTable">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(m => m.ACUTE)</th>
+                    <th>@Html.DisplayNameFor(m => m.CNUM)</th>
+                    <th>@Html.DisplayNameFor(m => m.CURENO)</th>
+                    <th>@Html.DisplayNameFor(m => m.CURENAME)</th>
+                    <th>@Html.DisplayNameFor(m => m.RDATE)</th>
+                    <th>@Html.DisplayNameFor(m => m.RTIME)</th>
+                    <th>@Html.DisplayNameFor(m => m.OPERUSER)</th>
+                    <th>@Html.DisplayNameFor(m => m.CDOC)</th>
+                    <th>@Html.DisplayNameFor(m => m.CDOCS)</th>
+                    <th>@Html.DisplayNameFor(m => m.CDOCP)</th>
+                    <th>@Html.DisplayNameFor(m => m.CURECNT)</th>
+                    <th>@Html.DisplayNameFor(m => m.CURECNTS)</th>
+                    <th>動作</th>
+                </tr>
+            </thead>
+            <tbody id="registrationTableBody"></tbody>
+        </table>
+    </div>
+</div>
+
+@section Styles {
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="~/lib/DataTables/datatables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/2.0.3/css/select.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="~/css/registration.css" />
+}
+
+@section Scripts {
+    @*
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>*@
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="~/lib/DataTables/datatables.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.dataTables.responsive.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/1.11.3/i18n/zh-HANT.json"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+    <script src="~/js/registration.js"></script>
+}

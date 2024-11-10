@@ -1,0 +1,87 @@
+﻿@model Appointment.clientN.VMs.CalendarVM
+@{
+    ViewData["Title"] = "Calendar";
+    var startTime = new TimeSpan(8, 0, 0);
+    var endTime = new TimeSpan(20, 0, 0);
+    var interval = new TimeSpan(0, 30, 0);
+}
+
+<form class="p-2" id="calendarForm" data-swagger-api-url="@ViewBag.SwaggerApiUrl" data-user-id="@ViewBag.UserId">
+    <div class="row d-flex flex-grow-1">
+        <div class="col">
+            <label asp-for="CNUM">@Html.DisplayNameFor(model => model.CNUM)：</label>
+            <input asp-for="CNUM" id="CNUM" class="form-control form-control-user textbox" name="CNUM" maxlength="10" placeholder="請輸入會員編" />
+        </div>
+        <div class="col">
+            <label asp-for="RDATE">@Html.DisplayNameFor(model => model.RDATE)：</label>
+            <input asp-for="RDATE" id="datetimepicker4" class="form-control form-control-user textbox" name="RDATE" placeholder="請選擇日期" data-input />
+        </div>
+        <div class="col">
+            <label asp-for="ACUTE">@Html.DisplayNameFor(model => model.ACUTE)：</label>
+            <select asp-for="ACUTE" class="select" id="ACUTE" title="選擇預約類型" name="ACUTE">
+                <option value="未選" selected>未選</option>
+                <option value="看診">看診</option>
+                <option value="療程">療程</option>
+                <option value="諮詢">諮詢</option>
+                <option value="手術">手術</option>
+            </select>
+        </div>
+        <div class="col">
+            <label asp-for="CSTAT">@Html.DisplayNameFor(model => model.CSTAT)：</label>
+            <select asp-for="CSTAT" class="select" id="CSTAT" title="選擇預約狀態" name="CSTAT">
+                <option value="未選" selected>未選</option>
+                <option value="Q">查詢</option>
+                <option value="K">查詢完成</option>
+                <option value="A">已掛</option>
+                <option value="Y">掛號完成</option>
+                <option value="D">退掛</option>
+                <option value="P">退掛完成</option>
+            </select>
+        </div>
+        <div class="col">
+            <label asp-for="USERID">@Html.DisplayNameFor(model => model.USERID)：</label>
+            <select asp-for="USERID" class="select" id="USERID" title="選擇執行人" name="USERID">
+                <option value="未選" selected>未選</option>
+            </select>
+        </div>
+        <div class="col-1">
+            <br />
+            <button type="button" class="btn btn-danger" id="clearBtn" title="重選" aria-label="重選">重選</button>
+        </div>
+    </div>
+</form>
+<hr />
+<div class="calendar-container" id="calendar"></div>
+
+@section Styles {
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/main.min.css' />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/daygrid/main.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/timegrid/main.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/list/main.min.css" />
+    <link rel="stylesheet" href="~/css/calendar.css" />
+}
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/daygrid/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/timegrid/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/interaction/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/list/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/locales/zh-tw.js"></script>
+    @*
+    <script src="~/lib/fullcalendar-scheduler-6.1.14/dist/index.global.min.js"></script>
+    <script src="~/lib/fullcalendar/core/index.global.min.js"></script>
+    <script src="~/lib/fullcalendar/daygrid/index.global.min.js"></script>
+    <script src="~/lib/fullcalendar/timegrid/index.global.min.js"></script>
+    <script src="~/lib/fullcalendar/interaction/index.global.min.js"></script>*@
+    <script src="~/lib/fullcalendar/core/locales/zh-tw.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/min/moment.min.js"></script>
+    <script src="~/js/calendar.js"></script>
+}

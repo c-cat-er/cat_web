@@ -1,0 +1,61 @@
+﻿#registrationForm {
+    border: 1px solid #0080FF;
+    padding: 8px;
+}
+#registrationForm > div {
+    border: 1px solid #66B3FF;
+    padding: 8px;
+}
+#registrationForm > div > h2 {
+    text-align: center;
+}
+
+.select {
+    width: 15vw;
+}
+#cureNoContainer {
+    display: none;
+}
+#CMESS {
+    width: 100%;
+}
+
+#memberTableContainer {
+    margin-bottom: 50px;
+}
+.table tbody tr {
+    height: 40px !important;
+}
+.table tbody tr:nth-of-type(odd) {
+    background-color: #C4E1FF;
+}
+.table tbody tr:hover {
+    background-color: lightgoldenrodyellow;
+}
+.selected-row {
+    background-color: #0080FF !important;
+    color: white;
+}
+
+table.dataTable th,
+table.dataTable td {
+    border: 1px solid #0080FF;
+}
+table.dataTable th {
+    text-align: center;
+}
+.dt-left {
+    text-align: left !important;
+}
+.dt-center {
+    text-align: center !important;
+}
+.dt-right {
+    text-align: right !important;
+}
+
+.table-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

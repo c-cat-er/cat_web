@@ -1,0 +1,885 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\components\\cart\\shoppingcartitems.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\components\\cart\\shoppingcartitems.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\components\\payment\\paypalbutton.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\components\\payment\\paypalbutton.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.server\\controllers\\membershoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|solutionrelative:niseko.server\\controllers\\membershoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.server\\controllers\\producthomestayscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|solutionrelative:niseko.server\\controllers\\producthomestayscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\stores\\shoppingcartitemsstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\stores\\shoppingcartitemsstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\stores\\lodgingstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\stores\\lodgingstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\pages\\paymentpage.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\pages\\paymentpage.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\components\\payment\\selecteditems.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\components\\payment\\selecteditems.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.server\\dtos\\membershoppingcartbothdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|solutionrelative:niseko.server\\dtos\\membershoppingcartbothdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.server\\controllers\\producthomestayroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|solutionrelative:niseko.server\\controllers\\producthomestayroomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.server\\models\\tproducthomestayprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|solutionrelative:niseko.server\\models\\tproducthomestayprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.server\\models\\tproducthomestayroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|solutionrelative:niseko.server\\models\\tproducthomestayroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.server\\models\\tproducthomestay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|solutionrelative:niseko.server\\models\\tproducthomestay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.server\\dtos\\membershoppingcarthomestaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|solutionrelative:niseko.server\\dtos\\membershoppingcarthomestaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.server\\dtos\\membershoppingcartcoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|solutionrelative:niseko.server\\dtos\\membershoppingcartcoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.server\\controllers\\memberorderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|solutionrelative:niseko.server\\controllers\\memberorderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\stores\\paymentstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\stores\\paymentstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\components\\share\\flatpickr.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\components\\share\\flatpickr.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\components\\payment\\paymentecpay.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\components\\payment\\paymentecpay.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\pages\\registerpage.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\pages\\registerpage.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\components\\payment\\paymentbluestar.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\components\\payment\\paymentbluestar.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\pages\\shoppingcartpage.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\pages\\shoppingcartpage.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\components\\lodgingbooking\\lodgingbookingform.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\components\\lodgingbooking\\lodgingbookingform.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\stores\\lodgingbookingformstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\stores\\lodgingbookingformstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\components\\payment\\cartsummary.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\components\\payment\\cartsummary.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\stores\\memberdatastore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\stores\\memberdatastore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\components\\payment\\memberdata.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\components\\payment\\memberdata.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\components\\lodgingbooking\\lodgingbookingintro.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\components\\lodgingbooking\\lodgingbookingintro.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\pages\\lodgingbookingpage.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\pages\\lodgingbookingpage.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\components\\lodging\\lodgingselect.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\components\\lodging\\lodgingselect.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\pages\\lodgingpage.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\pages\\lodgingpage.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\components\\lodging\\lodgingfilter.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\components\\lodging\\lodgingfilter.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\constants\\imageconfig.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\constants\\imageconfig.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\components\\home\\home.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\components\\home\\home.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.server\\dtos\\memberwebsiteregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|solutionrelative:niseko.server\\dtos\\memberwebsiteregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\stores\\loginformstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\stores\\loginformstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.server\\dtos\\producthomestayroomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|solutionrelative:niseko.server\\dtos\\producthomestayroomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.server\\dtos\\producthomestaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|solutionrelative:niseko.server\\dtos\\producthomestaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.server\\controllers\\memberauthwebsitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|solutionrelative:niseko.server\\controllers\\memberauthwebsitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.server\\controllers\\tlocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|solutionrelative:niseko.server\\controllers\\tlocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\stores\\registerformstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\stores\\registerformstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\components\\register\\registerform.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\components\\register\\registerform.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\components\\login\\loginform.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\components\\login\\loginform.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\constants\\routers.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\constants\\routers.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\constants\\pinia.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\constants\\pinia.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\constants\\axios.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\constants\\axios.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.client\\src\\constants\\vuetify.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9C048E75-7A83-40F4-8372-244746002658}|niseko.client\\niseko.client.esproj|solutionrelative:niseko.client\\src\\constants\\vuetify.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|c:\\users\\user\\documents\\github\\ni2\\niseko\\niseko\\niseko.server\\dtos\\memberorderhomestaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEF994BE-9C5F-431E-8B20-1060C1DF7C5D}|Niseko.Server\\Niseko.Server.csproj|solutionrelative:niseko.server\\dtos\\memberorderhomestaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 30,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "MemberAuthWebsiteController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Controllers\\MemberAuthWebsiteController.cs",
+              "RelativeDocumentMoniker": "Niseko.Server\\Controllers\\MemberAuthWebsiteController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Controllers\\MemberAuthWebsiteController.cs",
+              "RelativeToolTip": "Niseko.Server\\Controllers\\MemberAuthWebsiteController.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAAAHEAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T08:56:14.43Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "TLocationController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Controllers\\TLocationController.cs",
+              "RelativeDocumentMoniker": "Niseko.Server\\Controllers\\TLocationController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Controllers\\TLocationController.cs",
+              "RelativeToolTip": "Niseko.Server\\Controllers\\TLocationController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T05:50:36.187Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductHomestaysController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Controllers\\ProductHomestaysController.cs",
+              "RelativeDocumentMoniker": "Niseko.Server\\Controllers\\ProductHomestaysController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Controllers\\ProductHomestaysController.cs",
+              "RelativeToolTip": "Niseko.Server\\Controllers\\ProductHomestaysController.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAiwGQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T07:01:55.484Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductHomestayRoomController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Controllers\\ProductHomestayRoomController.cs",
+              "RelativeDocumentMoniker": "Niseko.Server\\Controllers\\ProductHomestayRoomController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Controllers\\ProductHomestayRoomController.cs",
+              "RelativeToolTip": "Niseko.Server\\Controllers\\ProductHomestayRoomController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAADwv0EAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T07:28:33.413Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ProductHomestayDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\DTOs\\ProductHomestayDTO.cs",
+              "RelativeDocumentMoniker": "Niseko.Server\\DTOs\\ProductHomestayDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\DTOs\\ProductHomestayDTO.cs",
+              "RelativeToolTip": "Niseko.Server\\DTOs\\ProductHomestayDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T08:45:40.211Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ProductHomestayRoomDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\DTOs\\ProductHomestayRoomDTO.cs",
+              "RelativeDocumentMoniker": "Niseko.Server\\DTOs\\ProductHomestayRoomDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\DTOs\\ProductHomestayRoomDTO.cs",
+              "RelativeToolTip": "Niseko.Server\\DTOs\\ProductHomestayRoomDTO.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA+wA8AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T08:53:26.854Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MemberShoppingCartController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Controllers\\MemberShoppingCartController.cs",
+              "RelativeDocumentMoniker": "Niseko.Server\\Controllers\\MemberShoppingCartController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Controllers\\MemberShoppingCartController.cs",
+              "RelativeToolTip": "Niseko.Server\\Controllers\\MemberShoppingCartController.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAUwI0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T07:57:47.41Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MemberShoppingCartBothDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\DTOs\\MemberShoppingCartBothDTO.cs",
+              "RelativeDocumentMoniker": "Niseko.Server\\DTOs\\MemberShoppingCartBothDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\DTOs\\MemberShoppingCartBothDTO.cs",
+              "RelativeToolTip": "Niseko.Server\\DTOs\\MemberShoppingCartBothDTO.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAowBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T09:52:37.927Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MemberShoppingCartHomestayDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\DTOs\\MemberShoppingCartHomestayDTO.cs",
+              "RelativeDocumentMoniker": "Niseko.Server\\DTOs\\MemberShoppingCartHomestayDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\DTOs\\MemberShoppingCartHomestayDTO.cs",
+              "RelativeToolTip": "Niseko.Server\\DTOs\\MemberShoppingCartHomestayDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T07:53:15.496Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MemberShoppingCartCourseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\DTOs\\MemberShoppingCartCourseDTO.cs",
+              "RelativeDocumentMoniker": "Niseko.Server\\DTOs\\MemberShoppingCartCourseDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\DTOs\\MemberShoppingCartCourseDTO.cs",
+              "RelativeToolTip": "Niseko.Server\\DTOs\\MemberShoppingCartCourseDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T09:50:02.667Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MemberOrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Controllers\\MemberOrdersController.cs",
+              "RelativeDocumentMoniker": "Niseko.Server\\Controllers\\MemberOrdersController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Controllers\\MemberOrdersController.cs",
+              "RelativeToolTip": "Niseko.Server\\Controllers\\MemberOrdersController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAkwCkAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T07:24:11.246Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "MemberOrderHomestayDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\DTOs\\MemberOrderHomestayDTO.cs",
+              "RelativeDocumentMoniker": "Niseko.Server\\DTOs\\MemberOrderHomestayDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\DTOs\\MemberOrderHomestayDTO.cs",
+              "RelativeToolTip": "Niseko.Server\\DTOs\\MemberOrderHomestayDTO.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAuwCAAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T07:24:45.261Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "routers.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\constants\\routers.js",
+              "RelativeDocumentMoniker": "niseko.client\\src\\constants\\routers.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\constants\\routers.js",
+              "RelativeToolTip": "niseko.client\\src\\constants\\routers.js",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wBMAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-03T15:43:47.901Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "pinia.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\constants\\pinia.js",
+              "RelativeDocumentMoniker": "niseko.client\\src\\constants\\pinia.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\constants\\pinia.js",
+              "RelativeToolTip": "niseko.client\\src\\constants\\pinia.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-03T15:43:48.493Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "axios.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\constants\\axios.js",
+              "RelativeDocumentMoniker": "niseko.client\\src\\constants\\axios.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\constants\\axios.js",
+              "RelativeToolTip": "niseko.client\\src\\constants\\axios.js",
+              "ViewState": "AQIAABsAAAAAAAAAAAA1wCMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-03T15:43:49.021Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "vuetify.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\constants\\vuetify.js",
+              "RelativeDocumentMoniker": "niseko.client\\src\\constants\\vuetify.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\constants\\vuetify.js",
+              "RelativeToolTip": "niseko.client\\src\\constants\\vuetify.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-03T15:43:47.096Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "main.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\main.js",
+              "RelativeDocumentMoniker": "niseko.client\\src\\main.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\main.js",
+              "RelativeToolTip": "niseko.client\\src\\main.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-05T01:37:14.594Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "vite.config.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\vite.config.js",
+              "RelativeDocumentMoniker": "niseko.client\\vite.config.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\vite.config.js",
+              "RelativeToolTip": "niseko.client\\vite.config.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-05T09:06:31.254Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "imageConfig.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\constants\\imageConfig.js",
+              "RelativeDocumentMoniker": "niseko.client\\src\\constants\\imageConfig.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\constants\\imageConfig.js",
+              "RelativeToolTip": "niseko.client\\src\\constants\\imageConfig.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-04T09:03:07.474Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "App.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\App.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\App.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\App.vue",
+              "RelativeToolTip": "niseko.client\\src\\App.vue",
+              "ViewState": "AQIAAMUAAAAAAAAAAAAAAOwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-05T03:38:14.811Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Home.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\home\\Home.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\components\\home\\Home.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\home\\Home.vue",
+              "RelativeToolTip": "niseko.client\\src\\components\\home\\Home.vue",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAAAEwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-04T08:23:57.344Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "LodgingPage.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\pages\\LodgingPage.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\pages\\LodgingPage.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\pages\\LodgingPage.vue",
+              "RelativeToolTip": "niseko.client\\src\\pages\\LodgingPage.vue",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-08-08T07:02:33.859Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "LodgingFilter.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\lodging\\LodgingFilter.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\components\\lodging\\LodgingFilter.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\lodging\\LodgingFilter.vue",
+              "RelativeToolTip": "niseko.client\\src\\components\\lodging\\LodgingFilter.vue",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA2wBgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-02T03:27:29.019Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LodgingSelect.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\lodging\\LodgingSelect.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\components\\lodging\\LodgingSelect.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\lodging\\LodgingSelect.vue",
+              "RelativeToolTip": "niseko.client\\src\\components\\lodging\\LodgingSelect.vue",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAmwCIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-02T03:45:20.875Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LodgingStore.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\stores\\LodgingStore.js",
+              "RelativeDocumentMoniker": "niseko.client\\src\\stores\\LodgingStore.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\stores\\LodgingStore.js",
+              "RelativeToolTip": "niseko.client\\src\\stores\\LodgingStore.js",
+              "ViewState": "AQIAAHkAAAAAAAAAAAAAwIoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-02T06:10:21.997Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LodgingBookingPage.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\pages\\LodgingBookingPage.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\pages\\LodgingBookingPage.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\pages\\LodgingBookingPage.vue",
+              "RelativeToolTip": "niseko.client\\src\\pages\\LodgingBookingPage.vue",
+              "ViewState": "AQIAABEAAAAAAAAAAAA2wBsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-02T03:33:57.675Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LodgingBookingIntro.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\lodgingBooking\\LodgingBookingIntro.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\components\\lodgingBooking\\LodgingBookingIntro.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\lodgingBooking\\LodgingBookingIntro.vue",
+              "RelativeToolTip": "niseko.client\\src\\components\\lodgingBooking\\LodgingBookingIntro.vue",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-02T03:41:12.275Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LodgingBookingForm.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\lodgingBooking\\LodgingBookingForm.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\components\\lodgingBooking\\LodgingBookingForm.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\lodgingBooking\\LodgingBookingForm.vue",
+              "RelativeToolTip": "niseko.client\\src\\components\\lodgingBooking\\LodgingBookingForm.vue",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-02T03:41:46.635Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LodgingBookingFormStore.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\stores\\LodgingBookingFormStore.js",
+              "RelativeDocumentMoniker": "niseko.client\\src\\stores\\LodgingBookingFormStore.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\stores\\LodgingBookingFormStore.js",
+              "RelativeToolTip": "niseko.client\\src\\stores\\LodgingBookingFormStore.js",
+              "ViewState": "AQIAAAwAAAAAAAAAAADwvxkAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-02T06:10:45.03Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ShoppingCartPage.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\pages\\ShoppingCartPage.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\pages\\ShoppingCartPage.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\pages\\ShoppingCartPage.vue",
+              "RelativeToolTip": "niseko.client\\src\\pages\\ShoppingCartPage.vue",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-03T02:19:41.887Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShoppingCartItems.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\cart\\ShoppingCartItems.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\components\\cart\\ShoppingCartItems.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\cart\\ShoppingCartItems.vue",
+              "RelativeToolTip": "niseko.client\\src\\components\\cart\\ShoppingCartItems.vue",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAAwJwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-03T03:04:36.201Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShoppingCartItemsStore.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\stores\\ShoppingCartItemsStore.js",
+              "RelativeDocumentMoniker": "niseko.client\\src\\stores\\ShoppingCartItemsStore.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\stores\\ShoppingCartItemsStore.js",
+              "RelativeToolTip": "niseko.client\\src\\stores\\ShoppingCartItemsStore.js",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-03T02:17:29.671Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PaymentPage.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\pages\\PaymentPage.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\pages\\PaymentPage.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\pages\\PaymentPage.vue",
+              "RelativeToolTip": "niseko.client\\src\\pages\\PaymentPage.vue",
+              "ViewState": "AQIAAAgAAAAAAAAAAAA2wA0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-03T02:17:45.055Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SelectedItems.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\payment\\SelectedItems.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\components\\payment\\SelectedItems.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\payment\\SelectedItems.vue",
+              "RelativeToolTip": "niseko.client\\src\\components\\payment\\SelectedItems.vue",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAwB8AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-03T02:18:08.406Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MemberData.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\payment\\MemberData.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\components\\payment\\MemberData.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\payment\\MemberData.vue",
+              "RelativeToolTip": "niseko.client\\src\\components\\payment\\MemberData.vue",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-03T06:03:01.889Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MemberDataStore.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\stores\\MemberDataStore.js",
+              "RelativeDocumentMoniker": "niseko.client\\src\\stores\\MemberDataStore.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\stores\\MemberDataStore.js",
+              "RelativeToolTip": "niseko.client\\src\\stores\\MemberDataStore.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-03T06:03:16.408Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CartSummary.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\payment\\CartSummary.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\components\\payment\\CartSummary.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\payment\\CartSummary.vue",
+              "RelativeToolTip": "niseko.client\\src\\components\\payment\\CartSummary.vue",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-03T02:18:04.302Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PaymentEcpay.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\payment\\PaymentEcpay.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\components\\payment\\PaymentEcpay.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\payment\\PaymentEcpay.vue",
+              "RelativeToolTip": "niseko.client\\src\\components\\payment\\PaymentEcpay.vue",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-03T02:18:07.093Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PaymentBlueStar.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\payment\\PaymentBlueStar.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\components\\payment\\PaymentBlueStar.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\payment\\PaymentBlueStar.vue",
+              "RelativeToolTip": "niseko.client\\src\\components\\payment\\PaymentBlueStar.vue",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-03T02:18:05.998Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PayPalButton.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\payment\\PayPalButton.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\components\\payment\\PayPalButton.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\payment\\PayPalButton.vue",
+              "RelativeToolTip": "niseko.client\\src\\components\\payment\\PayPalButton.vue",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-04T01:39:32.188Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PaymentStore.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\stores\\PaymentStore.js",
+              "RelativeDocumentMoniker": "niseko.client\\src\\stores\\PaymentStore.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\stores\\PaymentStore.js",
+              "RelativeToolTip": "niseko.client\\src\\stores\\PaymentStore.js",
+              "ViewState": "AQIAABgAAAAAAAAAAADwvyEAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-03T02:17:31.111Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RegisterPage.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\pages\\RegisterPage.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\pages\\RegisterPage.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\pages\\RegisterPage.vue",
+              "RelativeToolTip": "niseko.client\\src\\pages\\RegisterPage.vue",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-05T05:40:00.908Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "RegisterForm.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\register\\RegisterForm.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\components\\register\\RegisterForm.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\register\\RegisterForm.vue",
+              "RelativeToolTip": "niseko.client\\src\\components\\register\\RegisterForm.vue",
+              "ViewState": "AQIAADUAAAAAAAAAAAA2wEcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-05T05:39:42.692Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "LoginForm.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\login\\LoginForm.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\components\\login\\LoginForm.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\login\\LoginForm.vue",
+              "RelativeToolTip": "niseko.client\\src\\components\\login\\LoginForm.vue",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-05T07:22:23.41Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "RegisterFormStore.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\stores\\RegisterFormStore.js",
+              "RelativeDocumentMoniker": "niseko.client\\src\\stores\\RegisterFormStore.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\stores\\RegisterFormStore.js",
+              "RelativeToolTip": "niseko.client\\src\\stores\\RegisterFormStore.js",
+              "ViewState": "AQIAAFMAAAAAAAAAAADwv1kAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-05T05:41:02.286Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "LoginFormStore.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\stores\\LoginFormStore.js",
+              "RelativeDocumentMoniker": "niseko.client\\src\\stores\\LoginFormStore.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\stores\\LoginFormStore.js",
+              "RelativeToolTip": "niseko.client\\src\\stores\\LoginFormStore.js",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAADsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-05T07:22:44.121Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "MemberWebsiteRegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\DTOs\\MemberWebsiteRegisterDTO.cs",
+              "RelativeDocumentMoniker": "Niseko.Server\\DTOs\\MemberWebsiteRegisterDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\DTOs\\MemberWebsiteRegisterDTO.cs",
+              "RelativeToolTip": "Niseko.Server\\DTOs\\MemberWebsiteRegisterDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T07:42:23.538Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Flatpickr.vue",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\share\\Flatpickr.vue",
+              "RelativeDocumentMoniker": "niseko.client\\src\\components\\share\\Flatpickr.vue",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\src\\components\\share\\Flatpickr.vue",
+              "RelativeToolTip": "niseko.client\\src\\components\\share\\Flatpickr.vue",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFIAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-09-05T07:50:16.091Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TProductHomestayPrice.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Models\\TProductHomestayPrice.cs",
+              "RelativeDocumentMoniker": "Niseko.Server\\Models\\TProductHomestayPrice.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Models\\TProductHomestayPrice.cs",
+              "RelativeToolTip": "Niseko.Server\\Models\\TProductHomestayPrice.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T09:33:31.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TProductHomestayRoom.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Models\\TProductHomestayRoom.cs",
+              "RelativeDocumentMoniker": "Niseko.Server\\Models\\TProductHomestayRoom.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Models\\TProductHomestayRoom.cs",
+              "RelativeToolTip": "Niseko.Server\\Models\\TProductHomestayRoom.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T09:33:24.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TProductHomestay.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Models\\TProductHomestay.cs",
+              "RelativeDocumentMoniker": "Niseko.Server\\Models\\TProductHomestay.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\ni2\\Niseko\\Niseko\\Niseko.Server\\Models\\TProductHomestay.cs",
+              "RelativeToolTip": "Niseko.Server\\Models\\TProductHomestay.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T09:33:21.961Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

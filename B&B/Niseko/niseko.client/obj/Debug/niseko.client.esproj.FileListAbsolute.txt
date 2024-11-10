@@ -1,0 +1,3 @@
+C:\Users\User\Documents\GitHub\ni\Niseko\niseko.client\obj\Debug\niseko.client.esproj.CoreCompileInputs.cache
+C:\Users\gn055\OneDrive\文件\GitHub\ni\Niseko\niseko.client\obj\Debug\niseko.client.esproj.CoreCompileInputs.cache
+C:\Users\gn055\OneDrive\文件\GitHub\ni2\Niseko\Niseko\niseko.client\obj\Debug\niseko.client.esproj.CoreCompileInputs.cache

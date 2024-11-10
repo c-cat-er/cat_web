@@ -1,0 +1,214 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "NisekoContext",
+   "ContextNamespace": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "Niseko.Server",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[TAuditLog]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TCoach]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TCoachLevel]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TCoachPrice]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TCoupon]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TDepartment]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TEmployee]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TEmployeeLoginRecord]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TLocation]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TMember]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TMemberLoginRecord]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TMemberLoginType]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TMemberNon]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TMemberReview]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TMemberShoppingCart]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TMemberShoppingCartCourse]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TMemberShoppingCartHomestay]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TMemberSkiLevel]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TMemberThirdPartyAccount]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TMemberWebsiteAccount]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TOrder]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TOrderDetail]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TOrderDetailCourse]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TOrderDetailHomestay]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TOrderPaymentMethod]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TOrderPaymentRecord]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TOrderPaymentStatus]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TProductCourse]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TProductCoursePrice]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TProductEquipment]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TProductEquipmentCategory]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TProductEvent]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TProductHomestay]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TProductHomestayPrice]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TProductHomestayRoom]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TProductImage]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TProductShuttle]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TProductShuttlePrice]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TProductStorage]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TProductTagMapping]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TTag]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TTagType]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TVendor]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseAsyncStoredProcedureCalls": true,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": true,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

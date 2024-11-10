@@ -1,0 +1,31 @@
+﻿form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+select {
+    cursor: pointer;
+    width: 200px;
+    margin: 12px auto;
+}
+input {
+    width: 200px !important;
+    margin: 0px auto;
+}
+
+.input-container {
+    position: relative;
+    width: 200px;
+    margin: 12px auto;
+}
+.input-container input {
+    padding-right: 3px;
+}
+#switchPasswd {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

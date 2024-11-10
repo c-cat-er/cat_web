@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.784122">
+  <PropertyGroup>
+    <StartupCommand>npm run dev</StartupCommand>
+    <JavaScriptTestRoot>.\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
+    <!-- Allows the build (or compile) script located on package.json to run on Build -->
+    <ShouldRunBuildScript>false</ShouldRunBuildScript>
+    <!-- Folder where production build objects will be placed -->
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\dist</BuildOutputFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="src\NewFolder\**" />
+    <TypeScriptConfiguration Remove="src\NewFolder\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\components\HelloWorld.vue" />
+    <None Remove="src\components\home\Footer.vue" />
+    <None Remove="src\components\home\Navbar.vue" />
+    <None Remove="src\components\lodging\LodgingIntro2.vue" />
+    <None Remove="src\components\TheWelcome.vue" />
+    <None Remove="src\components\WelcomeItem.vue" />
+    <None Remove="src\services\LoginService.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\components\course\" />
+  </ItemGroup>
+</Project>

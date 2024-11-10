@@ -1,0 +1,138 @@
+﻿.select {
+    width: 15vw;
+}
+.calendar-container {
+    width: 100%;
+    height: 80vh;
+}
+
+.fc-event {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+    color: #000;
+}
+.fc-event-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.fc-event:hover .fc-event-title {
+    white-space: nowrap;
+    overflow: visible;
+    white-space: normal;
+}
+.fc-event-tooltip {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 10001;
+}
+
+.fc-toolbar-title {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.fc-button {
+    background-color: #007bff !important;
+    border-color: #007bff !important; 
+    color: #fff;
+}
+.fc-button:hover {
+    background-color: #FF8000 !important; 
+    border-color: #FFFF40 !important;
+}
+
+.fc-daygrid-day {
+    background-color: #f0f0f0;
+}
+.fc-daygrid-day:hover {
+    background-color: #e0e0e0;
+}
+
+.fc-monthgrid-day {
+    background-color: #f0f0f0;
+    color: #000;
+}
+.fc-monthgrid-day:hover {
+    background-color: #e0e0e0;
+    color: #fff;
+}
+
+.fc-weekgrid-day {
+    background-color: #f0f0f0;
+    color: #000;
+}
+.fc-weekgrid-day:hover {
+    background-color: #e0e0e0;
+    color: #fff;
+}
+
+.fc-timegrid-event, .fc-daygrid-event {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+    color: #000 !important;
+}
+.fc-timegrid-event:hover .fc-event-title, .fc-daygrid-event:hover .fc-event-title {
+    overflow: visible;
+    white-space: normal;
+    color: #fff !important;
+}
+.fc-timegrid-event .fc-event-title, .fc-daygrid-event .fc-event-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000 !important;
+}
+.fc-timegrid-event:hover .fc-event-tooltip, .fc-daygrid-event:hover .fc-event-tooltip {
+    display: block;
+    color: #fff;
+}
+
+.event-consultation {
+    background-color: rgba(192, 10, 104, 0.5);
+    border-color: rgba(192, 10, 104, 0.5);
+    color: #000;
+}
+.event-consultation:hover {
+    background-color: rgba(192, 10, 104, 1);
+    border-color: rgba(192, 10, 104, 1);
+    color: #FFF;
+}
+
+.event-medical {
+    background-color: rgba(0, 255, 0, 0.5);
+    border-color: rgba(0, 255, 0, 0.5);
+    color: #000;
+}
+.event-medical:hover {
+    background-color: rgba(0, 255, 0, 1);
+    border-color: rgba(0, 255, 0, 1);
+    color: #FFF;
+}
+
+.event-surgery {
+    background-color: rgba(255, 0, 0, 0.5);
+    border-color: rgba(255, 69, 0, 0.5);
+    color: #000;
+}
+.event-surgery:hover {
+    background-color: rgba(255, 0, 0, 1);
+    border-color: rgba(255, 69, 0, 1);
+    color: #FFF;
+}
+
+.event-therapy {
+    background-color: rgba(255, 146, 0, 0.5);
+    border-color: rgba(30, 144, 255, 0.5);
+    color: #000;
+}
+.event-therapy:hover {
+    background-color: rgba(255, 146, 0, 1);
+    border-color: rgba(30, 144, 255, 1);
+    color: #FFF;
+}

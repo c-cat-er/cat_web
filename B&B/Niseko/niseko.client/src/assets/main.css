@@ -1,0 +1,40 @@
+@import './base.css';
+@import 'vuetify/styles';
+@import 'bootstrap/dist/css/bootstrap.css';
+@import 'bootstrap-vue-next/dist/bootstrap-vue-next.css';
+
+body {
+    font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif; /*л▌зя!!??*/
+}
+
+#app {
+    width: 100%; /*1280px*/
+    font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) { /*л▌зя!!??*/
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/*@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}*/

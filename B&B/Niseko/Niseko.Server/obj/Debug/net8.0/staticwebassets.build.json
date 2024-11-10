@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "RQZQ5exX5LLVOuZo47yrydIiNRvLmxfiZi+wJ+/ZRjI=",
+  "Source": "Niseko.Server",
+  "BasePath": "_content/Niseko.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\gn055\\OneDrive\\文件\\GitHub\\ni2\\Niseko\\Niseko\\niseko.client\\niseko.client.esproj",
+      "Version": 2,
+      "Source": "niseko.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <PackageJsonName Condition="$(PackageJsonName) == ''">niseko.client</PackageJsonName>
+    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">0.0.0</PackageJsonVersion>
+    <PackageJsonPrivate Condition="$(PackageJsonPrivate) == ''">true</PackageJsonPrivate>
+    <PackageJsonType Condition="$(PackageJsonType) == ''">module</PackageJsonType>
+    <PackageJsonScriptsDev Condition="$(PackageJsonScriptsDev) == ''">vite</PackageJsonScriptsDev>
+    <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">vite build</PackageJsonScriptsBuild>
+    <PackageJsonScriptsPreview Condition="$(PackageJsonScriptsPreview) == ''">vite preview</PackageJsonScriptsPreview>
+    <PackageJsonScriptsLint Condition="$(PackageJsonScriptsLint) == ''">eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore</PackageJsonScriptsLint>
+    <PackageJsonDependenciesMdiFont Condition="$(PackageJsonDependenciesMdiFont) == ''">^7.4.47</PackageJsonDependenciesMdiFont>
+    <PackageJsonDependenciesPaypalPaypalJs Condition="$(PackageJsonDependenciesPaypalPaypalJs) == ''">^8.1.1</PackageJsonDependenciesPaypalPaypalJs>
+    <PackageJsonDependenciesAxios Condition="$(PackageJsonDependenciesAxios) == ''">^1.7.2</PackageJsonDependenciesAxios>
+    <PackageJsonDependenciesBootstrap Condition="$(PackageJsonDependenciesBootstrap) == ''">^5.3.3</PackageJsonDependenciesBootstrap>
+    <PackageJsonDependenciesBootstrapVueNext Condition="$(PackageJsonDependenciesBootstrapVueNext) == ''">0.24.0</PackageJsonDependenciesBootstrapVueNext>
+    <PackageJsonDependenciesFlatpickr Condition="$(PackageJsonDependenciesFlatpickr) == ''">^4.6.13</PackageJsonDependenciesFlatpickr>
+    <PackageJsonDependenciesJsCookie Condition="$(PackageJsonDependenciesJsCookie) == ''">^3.0.5</PackageJsonDependenciesJsCookie>
+    <PackageJsonDependenciesJwtDecode Condition="$(PackageJsonDependenciesJwtDecode) == ''">^4.0.0</PackageJsonDependenciesJwtDecode>
+    <PackageJsonDependenciesPinia Condition="$(PackageJsonDependenciesPinia) == ''">^2.1.7</PackageJsonDependenciesPinia>
+    <PackageJsonDependenciesPiniaPluginPersistedstate Condition="$(PackageJsonDependenciesPiniaPluginPersistedstate) == ''">^3.2.1</PackageJsonDependenciesPiniaPluginPersistedstate>
+    <PackageJsonDependenciesVitePluginVuetify Condition="$(PackageJsonDependenciesVitePluginVuetify) == ''">2.0.4</PackageJsonDependenciesVitePluginVuetify>
+    <PackageJsonDependenciesVue Condition="$(PackageJsonDependenciesVue) == ''">3.4.35</PackageJsonDependenciesVue>
+    <PackageJsonDependenciesVueRouter Condition="$(PackageJsonDependenciesVueRouter) == ''">^4.4.0</PackageJsonDependenciesVueRouter>
+    <PackageJsonDependenciesVuetify Condition="$(PackageJsonDependenciesVuetify) == ''">3.6.14</PackageJsonDependenciesVuetify>
+    <PackageJsonDevdependenciesBabelCore Condition="$(PackageJsonDevdependenciesBabelCore) == ''">^7.24.9</PackageJsonDevdependenciesBabelCore>
+    <PackageJsonDevdependenciesBabelPresetEnv Condition="$(PackageJsonDevdependenciesBabelPresetEnv) == ''">^7.24.8</PackageJsonDevdependenciesBabelPresetEnv>
+    <PackageJsonDevdependenciesVitejsPluginVue Condition="$(PackageJsonDevdependenciesVitejsPluginVue) == ''">^5.0.5</PackageJsonDevdependenciesVitejsPluginVue>
+    <PackageJsonDevdependenciesBabelLoader Condition="$(PackageJsonDevdependenciesBabelLoader) == ''">^9.1.3</PackageJsonDevdependenciesBabelLoader>
+    <PackageJsonDevdependenciesEslint Condition="$(PackageJsonDevdependenciesEslint) == ''">^8.57.0</PackageJsonDevdependenciesEslint>
+    <PackageJsonDevdependenciesEslintPluginVue Condition="$(PackageJsonDevdependenciesEslintPluginVue) == ''">^9.27.0</PackageJsonDevdependenciesEslintPluginVue>
+    <PackageJsonDevdependenciesVite Condition="$(PackageJsonDevdependenciesVite) == ''">5.3.1</PackageJsonDevdependenciesVite>
+    <PackageJsonDevdependenciesWorkboxWebpackPlugin Condition="$(PackageJsonDevdependenciesWorkboxWebpackPlugin) == ''">^7.1.0</PackageJsonDevdependenciesWorkboxWebpackPlugin>
+    <PackageJsonDescription Condition="$(PackageJsonDescription) == ''">This template should help get you started developing with Vue 3 in Vite.</PackageJsonDescription>
+    <PackageJsonMain Condition="$(PackageJsonMain) == ''">vite.config.js</PackageJsonMain>
+    <PackageJsonKeywords Condition="$(PackageJsonKeywords) == ''">[]</PackageJsonKeywords>
+    <PackageJsonAuthor Condition="$(PackageJsonAuthor) == ''"></PackageJsonAuthor>
+    <PackageJsonLicense Condition="$(PackageJsonLicense) == ''">ISC</PackageJsonLicense>
+  </PropertyGroup>
+</Project>

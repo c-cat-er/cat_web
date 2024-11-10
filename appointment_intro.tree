@@ -1,0 +1,19 @@
+工作開發 1 -- appointment 掛號 web (勿公開)
+├── 專案架構概述:
+│   ├── boha.Server: .NET Core Web API。
+│   └── boha.clientN: .NET Core Web MVC。
+│
+├── 開發流程概述:
+│   ├── 1. 建立 Db, Schema, Index。
+│   ├── 2. boha.Server EF Core Tool (所有資料只放此)。
+│   ├── 3. 基本配置。
+│   └── 4. 創建所需檔案，使用 css、bootstrap、javascript、jQuery、C#、LINQ。
+├── 功能概述:
+│   ├── client
+│   │   ├── register\login Jwt token 基本驗證與通知
+│   │   ├── 多篩選區自動表格刷新
+│   │   ├── 表格欄位正逆排序與頁跳轉
+│   │   ├── 月曆動態刷新
+│   │   ├── 月曆顯示，月\週\日切換
+│   │   ├── 月曆事件視窗與通知
+│   │   └── ..

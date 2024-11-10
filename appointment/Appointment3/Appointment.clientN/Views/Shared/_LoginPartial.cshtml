@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var token = HttpContextAccessor.HttpContext.Session.GetString("JWTToken");
+    var isAuthenticated = !string.IsNullOrEmpty(token);
+}
+
+<ul class="navbar-nav" id="navBar">
+    @if (isAuthenticated)
+    {
+        <li class="nav-item" id="logoutForm">
+            <form class="form-inline" asp-controller="Home" asp-action="Logout" method="post">
+                <button type="submit" class="nav-link btn btn-link text-dark">登出</button>
+            </form>
+        </li>
+    }
+    else
+    {
+        @*
+    <li class="nav-item" id="registerLink">
+    <a class="nav-link text-dark" asp-controller="Home" asp-action="Register">註冊</a>
+    </li>
+    <li class="nav-item" id="loginLink">
+    <a class="nav-link text-dark" asp-controller="Home" asp-action="Login">登入</a>
+    </li>
+    *@
+    }
+</ul>

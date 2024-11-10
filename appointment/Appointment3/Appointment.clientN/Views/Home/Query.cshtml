@@ -1,0 +1,161 @@
+﻿@model Appointment.clientN.VMs.QueryVM
+@{
+    ViewData["Title"] = "Query";
+    var startTime = new TimeSpan(8, 0, 0);
+    var endTime = new TimeSpan(20, 0, 0);
+    var interval = new TimeSpan(0, 30, 0);
+    string userId = ViewBag.UserId;
+}
+
+<form id="registrationForm" data-swagger-api-url="@ViewBag.SwaggerApiUrl" data-user-id="@userId" onsubmit="return submitForm(event)">
+    <div>
+        <h2>查詢區</h2>
+        <div class="row mb-3">
+            <div class="col">
+                <label asp-for="CNUM">@Html.DisplayNameFor(model => model.CNUM)：</label>
+                <input asp-for="CNUM" id="CNUM" class="form-control form-control-user textbox" name="CNUM" maxlength="10" placeholder="請輸入會員編" />
+            </div>
+            <div class="col">
+                <label asp-for="CNAME">@Html.DisplayNameFor(model => model.CNAME)：</label>
+                <input asp-for="CNAME" id="CNAME" class="form-control form-control-user textbox" name="CNAME" maxlength="20" placeholder="請輸入姓名" />
+            </div>
+            <div class="col">
+                <label asp-for="CBIRTH">@Html.DisplayNameFor(model => model.CBIRTH)：</label>
+                <input asp-for="CBIRTH" id="CBIRTH" class="form-control form-control-user textbox" name="CBIRTH" placeholder="請選擇生日" data-input />
+            </div>
+            <div class="col">
+                <label asp-for="CMOBILE">@Html.DisplayNameFor(model => model.CMOBILE)：</label>
+                <input asp-for="CMOBILE" id="CMOBILE" class="form-control form-control-user textbox" name="CMOBILE" maxlength="12" placeholder="請輸入手機號" />
+                <span asp-validation-for="CMOBILE" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>預約區</h2>
+        <div class="row mb-3">
+            <div class="col">
+                <label asp-for="ACUTE">@Html.DisplayNameFor(model => model.ACUTE)：</label><br />
+                <select asp-for="ACUTE" class="select" id="ACUTE" title="選擇預約類型" name="ACUTE" onchange="toggleAcuteSelect()">
+                    <option value="未選" selected>未選</option>
+                    <option value="看診">看診</option>
+                    <option value="療程">療程</option>
+                    <option value="諮詢">諮詢</option>
+                    <option value="手術">手術</option>
+                </select>
+            </div>
+            <div class="col">
+                <div id="cureNoContainer">
+                    <label asp-for="CURENO">
+                        @Html.DisplayNameFor(model => model.CURENO)：
+                        <span id="cureNoOptionCount">已選<span class="count">${0}</span>項</span>
+                    </label><br />
+                    <select asp-for="CURENO" class="cureNo" id="CURENO" title="選擇預約療程項目" name="CURENO">
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <label asp-for="RDATE">@Html.DisplayNameFor(model => model.RDATE)：</label>
+                <input asp-for="RDATE" id="datetimepicker2" class="form-control form-control-user textbox" name="RDATE" placeholder="請選擇日期" data-input />
+            </div>
+            <div class="col">
+                <label asp-for="RTIME">@Html.DisplayNameFor(model => model.RTIME)：</label><br />
+                <select asp-for="RTIME" class="select" id="RTIME" title="選擇預約時間" name="RTIME">
+                    <option value="未選" selected>未選</option>
+                    @for (var time = startTime; time <= endTime; time = time.Add(interval))
+                    {
+                        <option value="@time.ToString(@"hh\:mm")">@time.ToString(@"hh\:mm")</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <label asp-for="CDOC">@Html.DisplayNameFor(model => model.CDOC)：</label>
+                <select asp-for="CDOC" class="select" id="CDOC" title="選擇執行人員一" name="CDOC">
+                    <option value="未選" selected>未選</option>
+                </select>
+            </div>
+            <div class="col-2">
+                <label asp-for="CDOCS">@Html.DisplayNameFor(model => model.CDOCS)：</label>
+                <select asp-for="CDOCS" class="select" id="CDOCS" title="選擇執行人員二" name="CDOCS">
+                    <option value="未選" selected>未選</option>
+                </select>
+            </div>
+            <div class="col-2">
+                <label asp-for="CDOCP">@Html.DisplayNameFor(model => model.CDOCP)：</label>
+                <select asp-for="CDOCP" class="select" id="CDOCP" title="選擇執行人員三" name="CDOCP">
+                    <option value="未選" selected>未選</option>
+                </select>
+            </div>
+            <div class="col-4">
+                <label asp-for="CMESS">@Html.DisplayNameFor(model => model.CMESS)：</label>
+                <textarea asp-for="CMESS" id="CMESS"></textarea>
+            </div>
+            <div class="col-2 table-buttons">
+                <button type="button" class="btn btn-danger" id="clearBtn" title="清空輸入按鈕" aria-label="清空輸入按鈕">清空</button>
+                <button type="button" class="btn btn-success" id="confirmRegistrationBtn" title="確定預約按鈕" aria-label="確定預約按鈕">預約</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div class="row mt-3" id="memberTableContainer">
+    <div class="col-4">
+        <table class="table" id="memberTable">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(m => m.CNUM)</th>
+                    <th>@Html.DisplayNameFor(m => m.CNAME)</th>
+                    <th>@Html.DisplayNameFor(m => m.CBIRTH)</th>
+                    <th>@Html.DisplayNameFor(m => m.CMOBILE)</th>
+                </tr>
+            </thead>
+            <tbody id="memberTableBody"></tbody>
+        </table>
+    </div>
+    <div class="col-8">
+        <table class="table" id="cureTable">
+            <thead>
+                <tr>
+                    <th>選</th>
+                    <th>@Html.DisplayNameFor(m => m.Results.First().SID)</th>
+                    <th>@Html.DisplayNameFor(m => m.Results.First().SERNO)</th>
+                    <th>@Html.DisplayNameFor(m => m.Results.First().SDATE)</th>
+                    <th>@Html.DisplayNameFor(m => m.Results.First().CURENO)</th>
+                    <th>@Html.DisplayNameFor(m => m.Results.First().CURENAME)</th>
+                    <th>@Html.DisplayNameFor(m => m.Results.First().SUBCNT)</th>
+                    <th>@Html.DisplayNameFor(m => m.Results.First().SUBQTY)</th>
+                </tr>
+            </thead>
+            <tbody id="cureTableBody"></tbody>
+        </table>
+    </div>
+</div>
+
+@section Styles {
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="~/lib/DataTables/datatables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/2.0.3/css/select.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="~/css/query.css">
+}
+
+@section Scripts {
+    @*
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    *@
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="~/lib/DataTables/datatables.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/select/2.0.3/js/dataTables.select.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.dataTables.responsive.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/1.11.3/i18n/zh-HANT.json"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+    <script src="~/js/query.js"></script>
+}

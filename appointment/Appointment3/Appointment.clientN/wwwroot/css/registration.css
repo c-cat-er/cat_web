@@ -1,0 +1,39 @@
+﻿#registrationForm {
+    border: 1px solid #0080FF;
+}
+
+.select {
+    width: 15vw;
+}
+
+.table tbody tr:hover {
+    background-color: lightgoldenrodyellow;
+}
+.dt-left {
+    text-align: left !important;
+}
+.dt-center {
+    text-align: center !important;
+}
+.dt-right {
+    text-align: right !important;
+}
+
+table.dataTable td,
+table.dataTable th {
+    text-align: center;
+    border: 1px solid #0080FF;
+}
+
+.acute-consultation {
+    background-color: rgba(192, 10, 104, 0.5) !important;
+}
+.acute-medical {
+    background-color: rgba(0, 255, 0, 0.5) !important;
+}
+.acute-surgery {
+    background-color: rgba(255, 0, 0, 0.5) !important;
+}
+.acute-therapy {
+    background-color: rgba(255, 146, 0, 0.5) !important;
+}

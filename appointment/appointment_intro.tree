@@ -1,4 +1,3 @@
-工作開發 1 -- appointment 掛號 web (勿公開)
 ├── 專案架構概述:
 │   ├── boha.Server: .NET Core Web API。
 │   └── boha.clientN: .NET Core Web MVC。

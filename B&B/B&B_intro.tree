@@ -1,4 +1,3 @@
-工作開發 2 -- niseko 民宿 web (勿公開)
 ├── 專案架構概述:
 │   ├── kico.Server: .NET Core Web API。
 │   ├── kico.client: Vue3js。

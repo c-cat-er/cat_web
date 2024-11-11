@@ -1,0 +1,13 @@
+﻿@model FormSubmit.Models.tUser
+
+<form asp-action="FormSubmit2" method="post">
+    <div>
+        <label asp-for="Name">Name：</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label asp-for="Email">Email：</label>
+        <input asp-for="Email" />
+    </div>
+    <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,84 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\train\\Concatenation_API\\WeatherApiWithRedisCacheOne\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4A95D43E-C3A4-451A-838C-B660752AD8C9}|WeatherApiWithRedisCacheOne.csproj|c:\\users\\user\\documents\\github\\mypublicwork\\program\\train\\concatenation_api\\weatherapiwithrediscacheone\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A95D43E-C3A4-451A-838C-B660752AD8C9}|WeatherApiWithRedisCacheOne.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A95D43E-C3A4-451A-838C-B660752AD8C9}|WeatherApiWithRedisCacheOne.csproj|c:\\users\\user\\documents\\github\\mypublicwork\\program\\train\\concatenation_api\\weatherapiwithrediscacheone\\services\\openweathermapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A95D43E-C3A4-451A-838C-B660752AD8C9}|WeatherApiWithRedisCacheOne.csproj|solutionrelative:services\\openweathermapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A95D43E-C3A4-451A-838C-B660752AD8C9}|WeatherApiWithRedisCacheOne.csproj|c:\\users\\user\\documents\\github\\mypublicwork\\program\\train\\concatenation_api\\weatherapiwithrediscacheone\\interface\\iweatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A95D43E-C3A4-451A-838C-B660752AD8C9}|WeatherApiWithRedisCacheOne.csproj|solutionrelative:interface\\iweatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 375,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OpenWeatherMapService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\train\\Concatenation_API\\WeatherApiWithRedisCacheOne\\Services\\OpenWeatherMapService.cs",
+              "RelativeDocumentMoniker": "Services\\OpenWeatherMapService.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\train\\Concatenation_API\\WeatherApiWithRedisCacheOne\\Services\\OpenWeatherMapService.cs",
+              "RelativeToolTip": "Services\\OpenWeatherMapService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T09:47:18.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IWeatherService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\train\\Concatenation_API\\WeatherApiWithRedisCacheOne\\Interface\\IWeatherService.cs",
+              "RelativeDocumentMoniker": "Interface\\IWeatherService.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\train\\Concatenation_API\\WeatherApiWithRedisCacheOne\\Interface\\IWeatherService.cs",
+              "RelativeToolTip": "Interface\\IWeatherService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T09:40:52.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\train\\Concatenation_API\\WeatherApiWithRedisCacheOne\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\train\\Concatenation_API\\WeatherApiWithRedisCacheOne\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBkAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T09:14:25.722Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 375,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

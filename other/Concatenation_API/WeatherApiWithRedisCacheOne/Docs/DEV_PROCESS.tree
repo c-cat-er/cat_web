@@ -1,0 +1,24 @@
+WeatherApiWithRedisCacheOne 專案
+├── 專案說明
+│   ├── 從開源 API 取得天氣狀況。
+│   └── 使用 Redis 快取減少 API 的請求和響應時間。
+├── 專案架構
+│   └── ASP.NET Core Web API。
+├── 專案流程
+│   ├── 建立介面檔 ~\\Interface\\IWeatherService.cs。
+│   ├── 建立類別檔 ~\\Services\\OpenWeatherMapService.cs。
+│   └── 4. Porgram.cs 註冊 DI、SHttpClient 服務。
+│       └── 加入 builder.Services.AddHttpClient<>();。
+│   ├── 安裝 NG 套件。
+│   ├── 建立類別檔 
+
+
+├── 參考資料
+│   └── https://paulfun.net/wordpress/?p=3921。
+
+
+其他: 
+設置快取失效時間：根據天氣數據的更新頻率，設置合適的快取失效時間，以確保快取中的數據始終保持最新。
+實現快取更新策略：定期更新快取中的數據，或者在使用者請求時，同時發送一個新的 API 請求以更新快取中的數據。
+實現快取穩定性策略：在設置快取時，考慮實現數據的後備策略，當快取數據過期或無法訪問時，可以使用預先定義的預設值或者通知使用者數據可能不可用。
+使用多級快取：如果可能的話，將數據存儲在多級快取中，例如將數據存儲在本地快取中，同時也存儲在 Redis 中，這樣可以進一步減少對 API 的依賴，提高數據的可用性和可靠性。

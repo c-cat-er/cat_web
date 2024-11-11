@@ -1,0 +1,14 @@
+CashFlow_Ecpay 專案
+├── 專案說明
+│   ├── 使用 Nodejs 串接綠界金流。
+│   ├── 到綠界(測試)號登入內，系統介接設定內找，和按照 .env 指示替換參數。
+│   └── 執行後會跳轉到 https://payment-stage.ecapy.com.tw/Cashier/AioCheckOut/V5 綠界付款頁面。
+├── 專案架構
+│   └── Nodejs
+├── 專案流程
+│   ├── 
+│   └── 
+├── 參考資料
+│   ├── https://ithelp.ithome.com.tw/articles/10318684。
+│   ├── https://www.youtube.com/watch?v=qVaVvesLgus。
+│   └── https://github.com/Wcc723/node-ironman-sample-2023/tree/feature/ecpay-sample。

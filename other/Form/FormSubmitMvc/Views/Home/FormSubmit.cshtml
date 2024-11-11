@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "表單提交";
+}
+
+<h2>表單提交</h2>
+@using(Html.BeginForm("FormSubmit", "Home", FormMethod.Post))
+@*Action name, Controller name, Method*@
+{
+    <div>
+        <label for="name"></label>
+        <input type="text" id="name" name="name" />
+        <label for="email"></label>
+        <input type="text" id="email" name="email" />
+        <input type="submit" value="提交" />
+    </div>
+}

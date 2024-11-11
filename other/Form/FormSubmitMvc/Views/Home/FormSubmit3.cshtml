@@ -1,0 +1,13 @@
+﻿@model FormSubmit.VM.TUserVM
+
+<form asp-action="FormSubmit3" method="post">
+    <div>
+        <label asp-for="UserName">UserName：</label>
+        <input asp-for="UserName" />
+    </div>
+    <div>
+        <label asp-for="Email">Email：</label>
+        <input asp-for="Email" />
+    </div>
+    <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>九宫格拼圖遊戲</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- 原圖和遊戲區 -->
+        <div class="container">
+            <div id="original-image"></div>
+            <div id="puzzle-container"></div>
+        </div>
+
+        <!-- 按鈕和狀態顯示區 -->
+        <div class="buttons-status-container">
+            <button onclick="shuffleTiles()">打亂</button>
+            <button onclick="generateSolution()">顯示答案</button>
+            <div id="status">狀態: 遊戲中</div>
+        </div>
+
+        <!-- 解答區(未完) -->
+        <div id="solution" class="centered-container"></div>
+    </div>
+
+    <script src="game.js"></script>
+    <script src="BFSsolver.js"></script>
+</body>
+</html>

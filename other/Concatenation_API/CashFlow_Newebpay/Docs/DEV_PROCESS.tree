@@ -1,0 +1,14 @@
+CashFlow_Newebpay 專案
+├── 專案說明
+│   ├── 使用 Nodejs 串接藍星金流。
+│   ├── 到藍星(測試)號登入內，系統資料設定內找，和按照 .env 指示替換參數。
+│   └── 執行後會跳轉到 藍星付款頁面。
+├── 專案架構
+│   └── Nodejs
+├── 專案流程
+│   ├── 
+│   └── 
+├── 參考資料
+│   ├── https://www.casper.tw/development/2023/09/26/newebay/
+│   ├── https://www.youtube.com/watch?v=-eg-fRDWNFg&pp=ygUJYXBp5Liy5o6l。
+│   └── https://github.com/Wcc723/node-ironman-sample-2023/tree/feature/newebpay-sample。

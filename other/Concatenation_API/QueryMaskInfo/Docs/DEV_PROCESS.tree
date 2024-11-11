@@ -1,0 +1,12 @@
+QueryMaskInfo 專案
+├── 專案說明
+│   ├── 從開源 API 取得當前口罩剩餘數量。
+│   └── 但目前的 URL 資料集以下架，故無法抓取資料，其他代碼應該沒錯。
+├── 專案架構
+│   └── ASP.NET Core Web API。
+├── 專案流程
+│   ├── ...
+│   └── ...
+├── 參考資料
+│   ├── https://blog.kkbruce.net/2020/02/aspnet-core-provider-mask-api.html。
+│   └── https://github.com/kkbruce/AspNetCore-Practice/blob/master/src/3.1/IHttpClientFactory/QueryMaskSample/Startup.cs

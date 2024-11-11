@@ -1,0 +1,13 @@
+﻿@model FormSubmit.DTO.TUserDTO
+
+<form asp-action="FormSubmit4" method="post">
+    <div>
+        <label asp-for="Name">UserName：</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label asp-for="Email">Email：</label>
+        <input asp-for="Email" />
+    </div>
+    <button type="submit">Submit</button>
+</form>

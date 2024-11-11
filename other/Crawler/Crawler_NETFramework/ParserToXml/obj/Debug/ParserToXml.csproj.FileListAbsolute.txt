@@ -1,0 +1,7 @@
+C:\Users\User\Documents\GitHub\MacWorks\program\train\Crawler\ParserToXml\bin\Debug\ParserToXml.exe.config
+C:\Users\User\Documents\GitHub\MacWorks\program\train\Crawler\ParserToXml\bin\Debug\ParserToXml.exe
+C:\Users\User\Documents\GitHub\MacWorks\program\train\Crawler\ParserToXml\bin\Debug\ParserToXml.pdb
+C:\Users\User\Documents\GitHub\MacWorks\program\train\Crawler\ParserToXml\obj\Debug\ParserToXml.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\MacWorks\program\train\Crawler\ParserToXml\obj\Debug\ParserToXml.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\MacWorks\program\train\Crawler\ParserToXml\obj\Debug\ParserToXml.exe
+C:\Users\User\Documents\GitHub\MacWorks\program\train\Crawler\ParserToXml\obj\Debug\ParserToXml.pdb

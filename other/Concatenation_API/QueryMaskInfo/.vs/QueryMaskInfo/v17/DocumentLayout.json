@@ -1,0 +1,99 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\train\\Concatenation_API\\QueryMaskInfo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A59B754C-B41C-4830-B729-6469B7215C20}|QueryMaskInfo.csproj|c:\\users\\user\\documents\\github\\mypublicwork\\program\\train\\concatenation_api\\querymaskinfo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A59B754C-B41C-4830-B729-6469B7215C20}|QueryMaskInfo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A59B754C-B41C-4830-B729-6469B7215C20}|QueryMaskInfo.csproj|c:\\users\\user\\documents\\github\\mypublicwork\\program\\train\\concatenation_api\\querymaskinfo\\controllers\\maskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A59B754C-B41C-4830-B729-6469B7215C20}|QueryMaskInfo.csproj|solutionrelative:controllers\\maskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A59B754C-B41C-4830-B729-6469B7215C20}|QueryMaskInfo.csproj|c:\\users\\user\\documents\\github\\mypublicwork\\program\\train\\concatenation_api\\querymaskinfo\\services\\maskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A59B754C-B41C-4830-B729-6469B7215C20}|QueryMaskInfo.csproj|solutionrelative:services\\maskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A59B754C-B41C-4830-B729-6469B7215C20}|QueryMaskInfo.csproj|c:\\users\\user\\documents\\github\\mypublicwork\\program\\train\\concatenation_api\\querymaskinfo\\models\\maskinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A59B754C-B41C-4830-B729-6469B7215C20}|QueryMaskInfo.csproj|solutionrelative:models\\maskinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 509,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MaskInfo.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\train\\Concatenation_API\\QueryMaskInfo\\Models\\MaskInfo.cs",
+              "RelativeDocumentMoniker": "Models\\MaskInfo.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\train\\Concatenation_API\\QueryMaskInfo\\Models\\MaskInfo.cs",
+              "RelativeToolTip": "Models\\MaskInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T07:06:50.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MaskService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\train\\Concatenation_API\\QueryMaskInfo\\Services\\MaskService.cs",
+              "RelativeDocumentMoniker": "Services\\MaskService.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\train\\Concatenation_API\\QueryMaskInfo\\Services\\MaskService.cs",
+              "RelativeToolTip": "Services\\MaskService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAQAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T07:02:46.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MaskController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\train\\Concatenation_API\\QueryMaskInfo\\Controllers\\MaskController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MaskController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\train\\Concatenation_API\\QueryMaskInfo\\Controllers\\MaskController.cs",
+              "RelativeToolTip": "Controllers\\MaskController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T03:07:21.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\train\\Concatenation_API\\QueryMaskInfo\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\MyPublicWork\\program\\train\\Concatenation_API\\QueryMaskInfo\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T03:06:50.734Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 375,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

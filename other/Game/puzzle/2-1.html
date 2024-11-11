@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>九宫格拼圖遊戲</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            padding-top: 20px;
+            gap: 20px;
+        }
+        #original-image, #puzzle-container {
+            width: 300px;
+            height: 300px;
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 2px;
+            border: 2px solid #ccc;
+        }
+        #original-image {
+            background-image: url('t1.jpeg');
+            background-size: 300px 300px;
+        }
+        .tile {
+            width: 100px;
+            height: 100px;
+            background-image: url('t1.jpeg');
+            background-size: 300px 300px;
+            cursor: pointer;
+        }
+        .hidden {
+            visibility: hidden;
+        }
+        #solution {
+            width: 920px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            border: 2px solid #ccc;
+        }
+        #status {
+            text-align: center;
+            font-size: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 原圖 -->
+    <div class="container">
+        <div id="original-image"></div>
+        <div id="puzzle-container"></div>
+    </div>
+
+    <!-- 遊戲區 -->
+    <div class="container">
+        <button onclick="shuffleTiles()">打乱</button>
+        <button onclick="generateSolution()">显示答案</button>
+        <div id="status">状态: 游戏中</div>
+    </div>
+
+    <!-- 解答區 -->
+    <div id="solution"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            initializeTiles();
+            shuffleTiles();
+        });
+
+        function initializeTiles() {
+            const container = document.getElementById('puzzle-container');
+            container.innerHTML = '';
+            const positions = Array.from(Array(9).keys());
+            positions.sort(() => Math.random() - 0.5);
+            positions.forEach((pos, index) => {
+                const tile = document.createElement('div');
+                tile.className = 'tile' + (index === 8 ? ' hidden' : '');
+                tile.style.backgroundPosition = `-${(pos % 3) * 100}px -${Math.floor(pos / 3) * 100}px`;
+                tile.addEventListener('click', () => swapTiles(index));
+                container.appendChild(tile);
+            });
+        }
+
+        function swapTiles(index) {
+            const emptyTile = document.querySelector('.hidden');
+            const clickedTile = document.getElementById('puzzle-container').children[index];
+            const emptyIndex = Array.from(emptyTile.parentNode.children).indexOf(emptyTile);
+            const clickedIndex = index;
+            const emptyX = emptyIndex % 3;
+            const emptyY = Math.floor(emptyIndex / 3);
+            const clickedX = clickedIndex % 3;
+            const clickedY = Math.floor(clickedIndex / 3);
+            const isAdjacent = (Math.abs(emptyX - clickedX) === 1 && emptyY === clickedY) || (Math.abs(emptyY - clickedY) === 1 && emptyX === clickedX);
+            if (isAdjacent) {
+                [clickedTile.style.backgroundPosition, emptyTile.style.backgroundPosition] = 
+                [emptyTile.style.backgroundPosition, clickedTile.style.backgroundPosition];
+                clickedTile.classList.add('hidden');
+                emptyTile.classList.remove('hidden');
+                checkIfSolved();
+            }
+        }
+
+        function shuffleTiles() {
+    const container = document.getElementById('puzzle-container');
+    let tiles = Array.from(container.children);
+    let positions = tiles.map((_, i) => i); // 获取索引数组
+
+    // 执行洗牌直到产生一个可解的排列
+    let isSolvable = false;
+    while (!isSolvable) {
+        // Fisher-Yates 洗牌算法
+        for (let i = positions.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [positions[i], positions[j]] = [positions[j], positions[i]];
+        }
+
+        // 检查是否可解
+        isSolvable = checkSolvable(positions);
+    }
+
+    // 应用新的位置
+    positions.forEach((pos, index) => {
+        tiles[index].style.backgroundPosition = `-${(pos % 3) * 100}px -${Math.floor(pos / 3) * 100}px`;
+        if (pos === 8) { // 假设最后一个索引为隐藏块
+            tiles[index].classList.add('hidden');
+        } else {
+            tiles[index].classList.remove('hidden');
+        }
+    });
+}
+
+function checkSolvable(positions) {
+    let inversionCount = 0;
+    const grid = positions.filter(pos => pos !== 8); // 排除隐藏块
+
+    // 计算逆序数
+    for (let i = 0; i < grid.length; i++) {
+        for (let j = i + 1; j < grid.length; j++) {
+            if (grid[i] > grid[j]) {
+                inversionCount++;
+            }
+        }
+    }
+
+    // 格子的逆序数必须为偶数才可解
+    return inversionCount % 2 === 0;
+}
+
+        function checkIfSolved() {
+            const tiles = Array.from(document.getElementById('puzzle-container').children);
+            const isSolved = tiles.every((tile, i) => tile.classList.contains('hidden') || 
+                tile.style.backgroundPosition === `-${(i % 3) * 100}px -${Math.floor(i / 3) * 100}px`);
+            document.getElementById('status').textContent = isSolved ? "拼图完成!" : "状态: 游戏中";
+            if (isSolved) {
+                alert("拼图完成!");
+            }
+        }
+
+        // 该函数用于触发解答的生成
+        function generateSolution() {
+            const tiles = Array.from(document.getElementById('puzzle-container').children).map(tile => {
+                if (tile.classList.contains('hidden')) {
+                    return 9; // 假设使用9表示空白块
+                }
+                return parseInt(tile.style.backgroundPosition.split(' ')[0]) / -100 + 3 * parseInt(tile.style.backgroundPosition.split(' ')[1]) / -100;
+            });
+            bfsSolver(tiles);  // 调用 BFS 解决方案算法
+        }
+    </script>
+    <script src="BFSsolver.js"></script>
+</body>
+</html>

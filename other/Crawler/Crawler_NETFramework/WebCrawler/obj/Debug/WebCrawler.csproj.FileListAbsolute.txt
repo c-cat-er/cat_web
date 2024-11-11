@@ -1,0 +1,7 @@
+C:\Users\User\Documents\GitHub\MacWorks\program\train\Crawler\WebCrawler\bin\Debug\WebCrawler.exe.config
+C:\Users\User\Documents\GitHub\MacWorks\program\train\Crawler\WebCrawler\bin\Debug\WebCrawler.exe
+C:\Users\User\Documents\GitHub\MacWorks\program\train\Crawler\WebCrawler\bin\Debug\WebCrawler.pdb
+C:\Users\User\Documents\GitHub\MacWorks\program\train\Crawler\WebCrawler\obj\Debug\WebCrawler.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\MacWorks\program\train\Crawler\WebCrawler\obj\Debug\WebCrawler.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\MacWorks\program\train\Crawler\WebCrawler\obj\Debug\WebCrawler.exe
+C:\Users\User\Documents\GitHub\MacWorks\program\train\Crawler\WebCrawler\obj\Debug\WebCrawler.pdb

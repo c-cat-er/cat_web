@@ -1,0 +1,45 @@
+//以下是我至今學的 Db 應用
+├── DB
+│   ├── RDB
+│   │   ├── MS-SQL
+│   │   │   ├── 語法
+│   │   │   │   ├── C\R\U\D..等常用與不常用語法
+│   │   │   │   ├── Index, Indexed View, Full-Text Search
+│   │   │   │   ├── Filegroup
+│   │   │   │   ├── Partitioned Tables (分區表)
+│   │   │   │   ├── Stored Procedure (預存程序)
+│   │   │   │   ├── Trigger (觸發器)
+│   │   │   │   ├── //Event Notification
+│   │   │   │   ├── Schema Chart
+│   │   │   │   └── ..
+│   │   │   └── 其他
+│   │   │       ├── Server 基本設置
+│   │   │       ├── HADR (高可用性與災難恢復)
+│   │   │       │   └── AlwaysOn 可用性組
+│   │   │       ├── 性能調優
+│   │   │       │   ├── 查詢優化
+│   │   │       │   └── ..
+│   │   │       ├── 安全性
+│   │   │       │   ├── 用戶權限管理
+│   │   │       │   ├── 加密&解密
+│   │   │       │   └── ASP.NET 的 SQL 注入防護
+│   │   │       ├── 自動化
+│   │   │       │   └── 自動化備份與恢復腳本 (T-SQL & PowerShell)
+│   │   │       └── 數據遷移與整合
+│   │   │           └── ..
+│   │   └── MySQL
+│   │       ├── 基本 C\R\U\D。
+│   │       └── ..
+│   ├── NRDB
+│   │   ├── Redis
+│   │   │   ├── //緩存設計 未完
+│   │   │   └── ..
+│   │   └── MongoDB
+│   │       └── ..
+│   └── Public Cloud
+│       ├── Azure
+│       │   ├── 基本建置
+│       │   └── ..
+│       └── AWS
+│           ├── 基本建置
+│           └── DB管理

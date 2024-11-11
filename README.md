@@ -1,7 +1,6 @@
 # cat_web
 
-- cuisine
--
-- appointment：工作開發 1 --
-- 工作開發 2 -- Niseko
-- 相關照片與影片：https://drive.google.com/drive/folders/1Fi_W1PeZKDYEpAoGYuptZ88UsRpiw1xa?usp=drive_link
+- ordering_kiosk：自助點餐機簡易系統
+- mod_pack：模組背包網站
+- appointment：網路掛號簡易平台
+- B&B：民宿網站

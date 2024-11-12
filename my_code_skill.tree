@@ -1,44 +1,39 @@
 //以下是我至今學的前後端應用
-├── MyProject //我寫過的專案
-│   ├── PlayFood (WinForms)
-│   ├── ModPack Website (ASP.NET Core\MVC)
-│   ├── ... (ASP.NET Core\MVC)
-│   └── ... (ASP.NET Core\MVC + Vuejs)
-├── Document //我寫過的文檔 (工作堪用，可能非正式)
-│   ├── Development Document
-│   ├── API Document
-│   ├── User Document
-│   ├── Testing Document
-│   ├── Maintenance Document
-│   ├── 開發估價單
-│   └── ..
+
 ├── basic Tools //我會的基本工具
 │   ├── 專管
 │   │   ├── UML 繪製
 │   │   ├── Notion
-│   │   └── ..
+│   │   └── 
 │   └── UI\UX
 │       ├── Draw.io
 │       ├── Figma
-│       └── ..
+│       └── 
 ├── Git Family
 │   ├── 基本 Git-Bash 指令
 │   ├── GitHub, GitHub-Desktop
 │   └── GitLab 專案管理
+├── 工業相關
+│   ├── Language
+│   │   ├── C#
+│   │   └── Python
+│   └── library
+│       ├── Pandas
+│       └── NumPy
 ├── Front-end
 │   ├── Language
 │   │   ├── HTML
 │   │   ├── CSS
 │   │   ├── JavaScript
 │   │   ├── SVG
-│   │   └── .. 
+│   │   └── 
 │   ├── library
 │   │   ├── Bootstrap (CSS)
 │   │   ├── jQuery (JavaScript)
-│   │   └── ..
+│   │   └── 
 │   ├── Framework
 │   │   ├── Vuejs (JavaScript)
-│   │   └── ..
+│   │   └── 
 │   ├── Package
 │   │   ├── Select2
 │   │   ├── DataTables
@@ -50,52 +45,52 @@
 │   │   ├── FullPage.js
 │   │   ├── Lax.js
 │   │   ├── SweetAlert2
-│   │   └── ..
+│   │   └── 
 │   ├── Storage method
 │   │   ├── Query String
 │   │   ├── localStorage, SessionStorage
 │   │   ├── Model
 │   │   ├── Cookies
-│   │   └── ..
+│   │   └── 
 │   ├── 認證
 │   │   ├── Session
 │   │   ├── JWT
 │   │   ├── //OAuth2 //未完
 │   │   ├── API-key
-│   │   └── ..
+│   │   └── 
 │   └── Other
 │       ├── Chrome DevTools //未完
 │       ├── use Axios, Fetch-API, AJAX
 │       ├── make RWD
 │       ├── 基本 SEO
-│       └── ..
+│       └── 
 ├── Back-end
 │   ├── Language
 │   │   ├── C#
 │   │   ├── LINQ
 │   │   ├── Helper, Razor
 │   │   ├── Python
-│   │   └── ..
+│   │   └── 
 │   ├── library
 │   │   ├── NumPy, Pandas (Python)
-│   │   └── ..
+│   │   └── 
 │   ├── Framework
 │   │   ├── WinForms
 │   │   ├── ADO.NET
 │   │   ├── ASP.NET
 │   │   ├── .NET Core
-│   │   └── ..
+│   │   └── 
 │   ├── Package
 │   │   ├── NLog
 │   │   ├── AutoMapper
 │   │   ├── PageList //僅基本 未完
 │   │   ├── Power-BI
 │   │   ├── SignalR
-│   │   └── ..
+│   │   └── 
 │   ├── Storage method
 │   │   ├── TempData, ViewBag, ViewData
 │   │   ├── file
-│   │   └── ..
+│   │   └── 
 │   └── Other
 │       ├── ORM EF-Core Tool, 反向工程
 │       ├── MVC
@@ -107,23 +102,23 @@
 │   ├── RESTful-API
 │   ├── GraphQL-API
 │   ├── 第三方 API
-│   └── ..
+│   └── 
 ├── Testing
 │   ├── Project Type
 │   │   ├── NUnit
 │   │   ├── //Web Driver Test for Edge(.NET Core) 未完
-│   │   └── ..
+│   │   └── 
 │   ├── Package
 │   │   ├── Moq
-│   │   └── ..
+│   │   └── 
 │   └── Tools
 │       ├── Selenium\js
-│       └── ..
+│       └── 
 ├── CI\CD & Auto-Tools
 │   ├── GitHub Actions //未完
-│   └── ..
+│   └── 
 ├── 部屬
 │   └── IIS .NET 架站
 ├── 其他
 │   ├── C# 爬蟲
-│   └── ..
+│   └── 

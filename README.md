@@ -1,6 +1,6 @@
 # cat_web (皆為自主開發 未完善 勿翻版 勿轉傳)
 
-- ordering_kiosk：自助點餐機簡易系統
-- mod_pack：模組背包網站
-- appointment：網路掛號簡易平台
-- B&B：民宿網站
+- 2023.12 ordering_kiosk：自助點餐機簡易系統
+- 2024.01 ~ 2024.03 mod_pack：模組背包網站
+- 2024.06 appointment：網路掛號簡易平台
+- 2024.07 ~ 2024.08 B&B：民宿網站
